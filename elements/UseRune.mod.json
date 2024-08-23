@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Use Rune",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "UseRuneOnKeyPressed"
+    }
+  }
+}

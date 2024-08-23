@@ -1,0 +1,87 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 416,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_remote_bomb",
+          "image": "remote_bomb.png",
+          "hoveredImage": "remote_bomb_hovered.png",
+          "onClick": {
+            "name": "RemoteBombs"
+          },
+          "x": 42,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magnesis",
+          "image": "magnesis.png",
+          "hoveredImage": "magnesis_hovered.png",
+          "onClick": {
+            "name": "Magnesis"
+          },
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stasis",
+          "image": "stasis.png",
+          "hoveredImage": "stasis_hovered.png",
+          "onClick": {
+            "name": "Stasis"
+          },
+          "x": 231,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_cryonis",
+          "image": "cryonis.png",
+          "hoveredImage": "cryonis_hovered.png",
+          "onClick": {
+            "name": "Cryonis"
+          },
+          "x": 321,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_master_cycle_zero",
+          "image": "master_cycle_zero.png",
+          "hoveredImage": "master_cycle_zero_hovered.png",
+          "onClick": {
+            "name": "MasterCycle"
+          },
+          "x": 186,
+          "y": 35
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

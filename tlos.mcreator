@@ -1,0 +1,461 @@
+{
+  "mod_elements": [
+    {
+      "name": "TLOSItems",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tlos_items",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SheikahSlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_slate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/item/sheikah_slate.json",
+          "src/main/java/net/mcreator/tlos/item/SheikahSlateItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SheikahSlateOn",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_slate_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/item/SheikahSlateOnItem.java",
+          "src/main/resources/assets/tlos/models/item/sheikah_slate_on.json"
+        ]
+      }
+    },
+    {
+      "name": "SheikahSlateRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_slate_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/SheikahSlateRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SheikahSlateGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_slate_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/world/inventory/SheikahSlateGUIMenu.java",
+          "src/main/java/net/mcreator/tlos/network/SheikahSlateGUIButtonMessage.java",
+          "src/main/java/net/mcreator/tlos/client/gui/SheikahSlateGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenSheikahSlateGUIOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_sheikah_slate_gui_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/OpenSheikahSlateGUIOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenSheikahSlateGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_sheikah_slate_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/network/OpenSheikahSlateGUIMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "SheikahSlateOnItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_slate_on_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/SheikahSlateOnItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cryonis",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryonis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/CryonisProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RuneSetup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_setup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/RuneSetupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UseRuneOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_rune_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/UseRuneOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UseRune",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_rune",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/network/UseRuneMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "MasterCycle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_cycle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/MasterCycleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magnesis",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnesis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/MagnesisProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stasis",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stasis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/StasisProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoteBombs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remote_bombs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/RemoteBombsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestingSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/item/TestingSwordItem.java",
+          "src/main/resources/assets/tlos/models/item/testing_sword.json"
+        ]
+      },
+      "path": "~/Testing Sword"
+    },
+    {
+      "name": "TestingSwordGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_sword_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/client/gui/TestingSwordGUIScreen.java",
+          "src/main/java/net/mcreator/tlos/network/TestingSwordGUIButtonMessage.java",
+          "src/main/java/net/mcreator/tlos/world/inventory/TestingSwordGUIMenu.java"
+        ]
+      },
+      "path": "~/Testing Sword"
+    },
+    {
+      "name": "TestingSwordRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_sword_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/TestingSwordRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Testing Sword"
+    },
+    {
+      "name": "TestingSwordDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_sword_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/TestingSwordDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Testing Sword"
+    },
+    {
+      "name": "TestingSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/TestingSwordLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Testing Sword"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "TestingSwordDamage2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:TestingSword"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.tlos.testing_sword_gui.button_finish": "Finish",
+      "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
+      "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
+      "item.tlos.testing_sword": "Testing Sword",
+      "item_group.tlos.tlos_items": "TLOS Items",
+      "item.tlos.sheikah_slate": "Sheikah Slate",
+      "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
+      "key.tlos.use_rune": "Use Rune",
+      "gui.tlos.testing_sword_gui.tsi": "INPUT"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Testing Sword",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tlos",
+    "modName": "The Legend of Steve",
+    "version": "1.0.0",
+    "author": "ldsbo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.6",
+    "modElementsPackage": "net.mcreator.tlos"
+  },
+  "mcreatorVersion": 202400232117
+}
