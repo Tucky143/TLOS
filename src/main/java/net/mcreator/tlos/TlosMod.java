@@ -20,8 +20,10 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.tlos.network.TlosModVariables;
 import net.mcreator.tlos.init.TlosModTabs;
+import net.mcreator.tlos.init.TlosModSounds;
 import net.mcreator.tlos.init.TlosModMenus;
 import net.mcreator.tlos.init.TlosModItems;
+import net.mcreator.tlos.init.TlosModEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -40,9 +42,10 @@ public class TlosMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		TlosModSounds.REGISTRY.register(modEventBus);
 
 		TlosModItems.REGISTRY.register(modEventBus);
-
+		TlosModEntities.REGISTRY.register(modEventBus);
 		TlosModTabs.REGISTRY.register(modEventBus);
 		TlosModVariables.ATTACHMENT_TYPES.register(modEventBus);
 

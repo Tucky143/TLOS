@@ -403,6 +403,105 @@
         ]
       },
       "path": "~/Testing Sword"
+    },
+    {
+      "name": "MasterCycleZERO",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_cycle_zero",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/client/renderer/MasterCycleZERORenderer.java",
+          "src/main/java/net/mcreator/tlos/entity/MasterCycleZEROEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CryonisAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryonis_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/CryonisAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MasterCycleAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_cycle_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/MasterCycleAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MasterCycleZEROOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_cycle_zero_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/MasterCycleZEROOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -413,7 +512,16 @@
       "value": "0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "master_cycle_crushes",
+      "files": [
+        "empty"
+      ],
+      "category": "neutral",
+      "subtitle": "Master Cycle Drives"
+    }
+  ],
   "tag_elements": {
     "ITEMS:minecraft:swords": [
       "~CUSTOM:TestingSword"
@@ -426,7 +534,9 @@
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tlos.testing_sword": "Testing Sword",
+      "subtitles.master_cycle_crushes": "Master Cycle Drives",
       "item_group.tlos.tlos_items": "TLOS Items",
+      "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
       "item.tlos.sheikah_slate": "Sheikah Slate",
       "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
       "key.tlos.use_rune": "Use Rune",
