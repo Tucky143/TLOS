@@ -28,9 +28,7 @@ public class TlosModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(TlosModItems.TESTING_SWORD.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(TlosModItems.SHEIKAH_SLATE.get());
 		}
 	}

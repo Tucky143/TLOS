@@ -291,120 +291,6 @@
       }
     },
     {
-      "name": "TestingSword",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testing_sword",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/item/TestingSwordItem.java",
-          "src/main/resources/assets/tlos/models/item/testing_sword.json"
-        ]
-      },
-      "path": "~/Testing Sword"
-    },
-    {
-      "name": "TestingSwordGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testing_sword_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/client/gui/TestingSwordGUIScreen.java",
-          "src/main/java/net/mcreator/tlos/network/TestingSwordGUIButtonMessage.java",
-          "src/main/java/net/mcreator/tlos/world/inventory/TestingSwordGUIMenu.java"
-        ]
-      },
-      "path": "~/Testing Sword"
-    },
-    {
-      "name": "TestingSwordRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testing_sword_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/procedures/TestingSwordRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Testing Sword"
-    },
-    {
-      "name": "TestingSwordDamage",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testing_sword_damage",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/procedures/TestingSwordDamageProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Testing Sword"
-    },
-    {
-      "name": "TestingSwordLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testing_sword_living_entity_is_hit_with_tool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/procedures/TestingSwordLivingEntityIsHitWithToolProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Testing Sword"
-    },
-    {
       "name": "MasterCycleZERO",
       "type": "livingentity",
       "compiles": true,
@@ -522,35 +408,23 @@
       "subtitle": "Master Cycle Drives"
     }
   ],
-  "tag_elements": {
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:TestingSword"
-    ]
-  },
+  "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "gui.tlos.testing_sword_gui.button_finish": "Finish",
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
-      "item.tlos.testing_sword": "Testing Sword",
       "subtitles.master_cycle_crushes": "Master Cycle Drives",
       "item_group.tlos.tlos_items": "TLOS Items",
       "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
       "item.tlos.sheikah_slate": "Sheikah Slate",
       "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
-      "key.tlos.use_rune": "Use Rune",
-      "gui.tlos.testing_sword_gui.tsi": "INPUT"
+      "key.tlos.use_rune": "Use Rune"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "Testing Sword",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "tlos",
