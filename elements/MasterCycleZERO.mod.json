@@ -21,14 +21,7 @@
     "boundingBoxScale": {
       "fixedValue": 1.4
     },
-    "modelLayers": [
-      {
-        "model": "ModelMasterCycle",
-        "texture": "master_cycle.png",
-        "disableHurtOverlay": false,
-        "glow": true
-      }
-    ],
+    "modelLayers": [],
     "modelWidth": 0.6,
     "modelHeight": 0.9,
     "modelShadowSize": 0.5,
