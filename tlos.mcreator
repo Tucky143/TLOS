@@ -388,6 +388,84 @@
           }
         ]
       }
+    },
+    {
+      "name": "MasterSwordToolInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_sword_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/MasterSwordToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MasterSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/item/MasterSwordItem.java",
+          "src/main/resources/assets/tlos/models/item/master_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "MasterSwordPowered",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_sword_powered",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/item/MasterSwordPoweredItem.java",
+          "src/main/resources/assets/tlos/models/item/master_sword_powered.json"
+        ]
+      }
+    },
+    {
+      "name": "MasterSwordPoweredToolInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_sword_powered_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/MasterSwordPoweredToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -408,15 +486,22 @@
       "subtitle": "Master Cycle Drives"
     }
   ],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:MasterSwordPowered",
+      "~CUSTOM:MasterSword"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.tlos.master_sword": "Master Sword",
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "subtitles.master_cycle_crushes": "Master Cycle Drives",
       "item_group.tlos.tlos_items": "TLOS Items",
       "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
+      "item.tlos.master_sword_powered": "Master Sword (POWERED)",
       "item.tlos.sheikah_slate": "Sheikah Slate",
       "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
       "key.tlos.use_rune": "Use Rune"

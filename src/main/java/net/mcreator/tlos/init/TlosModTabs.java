@@ -24,6 +24,8 @@ public class TlosModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOS_ITEMS = REGISTRY.register("tlos_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tlos.tlos_items")).icon(() -> new ItemStack(TlosModItems.SHEIKAH_SLATE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TlosModItems.SHEIKAH_SLATE.get());
+				tabData.accept(TlosModItems.MASTER_SWORD.get());
+				tabData.accept(TlosModItems.MASTER_SWORD_POWERED.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

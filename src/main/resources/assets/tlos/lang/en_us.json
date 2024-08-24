@@ -1,9 +1,11 @@
 {
+  "item.tlos.master_sword": "Master Sword",
   "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
   "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
   "subtitles.master_cycle_crushes": "Master Cycle Drives",
   "item_group.tlos.tlos_items": "TLOS Items",
   "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
+  "item.tlos.master_sword_powered": "Master Sword (POWERED)",
   "item.tlos.sheikah_slate": "Sheikah Slate",
   "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
   "key.tlos.use_rune": "Use Rune"
