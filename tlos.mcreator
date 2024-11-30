@@ -21,7 +21,8 @@
           "src/main/resources/assets/tlos/models/item/sheikah_slate.json",
           "src/main/java/net/mcreator/tlos/item/SheikahSlateItem.java"
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "SheikahSlateOn",
@@ -34,7 +35,8 @@
           "src/main/java/net/mcreator/tlos/item/SheikahSlateOnItem.java",
           "src/main/resources/assets/tlos/models/item/sheikah_slate_on.json"
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "SheikahSlateRightclicked",
@@ -52,7 +54,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "SheikahSlateGUI",
@@ -66,7 +69,8 @@
           "src/main/java/net/mcreator/tlos/network/SheikahSlateGUIButtonMessage.java",
           "src/main/java/net/mcreator/tlos/client/gui/SheikahSlateGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "OpenSheikahSlateGUIOnKeyPressed",
@@ -100,7 +104,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "OpenSheikahSlateGUI",
@@ -112,7 +117,8 @@
         "files": [
           "src/main/java/net/mcreator/tlos/network/OpenSheikahSlateGUIMessage.java"
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "SheikahSlateOnItemInInventoryTick",
@@ -134,7 +140,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "Cryonis",
@@ -152,25 +159,8 @@
             "type": "entity"
           }
         ]
-      }
-    },
-    {
-      "name": "RuneSetup",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rune_setup",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/procedures/RuneSetupProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "UseRuneOnKeyPressed",
@@ -204,7 +194,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "UseRune",
@@ -216,7 +207,8 @@
         "files": [
           "src/main/java/net/mcreator/tlos/network/UseRuneMessage.java"
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "MasterCycle",
@@ -234,7 +226,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "Magnesis",
@@ -252,7 +245,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "Stasis",
@@ -270,7 +264,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "RemoteBombs",
@@ -288,7 +283,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "MasterCycleZERO",
@@ -301,7 +297,8 @@
           "src/main/java/net/mcreator/tlos/client/renderer/MasterCycleZERORenderer.java",
           "src/main/java/net/mcreator/tlos/entity/MasterCycleZEROEntity.java"
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "CryonisAbility",
@@ -335,7 +332,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "MasterCycleAbility",
@@ -365,7 +363,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "MasterCycleZEROOnEntityTickUpdate",
@@ -387,33 +386,8 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "MasterSwordToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "master_sword_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/tlos/procedures/MasterSwordToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      },
+      "path": "~/Sheikah Slate"
     },
     {
       "name": "MasterSword",
@@ -442,14 +416,67 @@
       }
     },
     {
-      "name": "MasterSwordPoweredToolInHandTick",
+      "name": "SquareRemoteBomb",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "square_remote_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/entity/SquareRemoteBombEntity.java",
+          "src/main/java/net/mcreator/tlos/client/renderer/SquareRemoteBombRenderer.java"
+        ]
+      },
+      "path": "~/Sheikah Slate"
+    },
+    {
+      "name": "SquareRemoteBombEntityIsHurt",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "master_sword_powered_tool_in_hand_tick",
+      "registry_name": "square_remote_bomb_entity_is_hurt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlos/procedures/MasterSwordPoweredToolInHandTickProcedure.java"
+          "src/main/java/net/mcreator/tlos/procedures/SquareRemoteBombEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sheikah Slate"
+    },
+    {
+      "name": "RemoteBombAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remote_bomb_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/RemoteBombAbilityProcedure.java"
         ],
         "dependencies": [
           {
@@ -457,8 +484,119 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sheikah Slate"
+    },
+    {
+      "name": "SquareRemoteBombRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "square_remote_bomb_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/SquareRemoteBombRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sheikah Slate"
+    },
+    {
+      "name": "StasisAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stasis_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/StasisAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sheikah Slate"
+    },
+    {
+      "name": "KorokForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_woods",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/worldgen/placed_feature/lost_woods_tree.json",
+          "src/main/resources/data/tlos/worldgen/configured_feature/lost_woods_tree.json",
+          "src/main/resources/data/tlos/worldgen/biome/lost_woods.json"
+        ]
+      }
+    },
+    {
+      "name": "LostWoodsFogColor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_woods_fog_color",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/LostWoodsFogColorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -466,14 +604,378 @@
           }
         ]
       }
+    },
+    {
+      "name": "LostWoodsFog",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_woods_fog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/LostWoodsFogProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LostWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/block/LostWoodBlock.java",
+          "src/main/resources/assets/tlos/blockstates/lost_wood.json",
+          "src/main/resources/assets/tlos/models/block/lost_wood.json",
+          "src/main/resources/assets/tlos/models/item/lost_wood.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "LostLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/blockstates/lost_log.json",
+          "src/main/java/net/mcreator/tlos/block/LostLogBlock.java",
+          "src/main/resources/assets/tlos/models/block/lost_log.json",
+          "src/main/resources/assets/tlos/models/item/lost_log.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_log.json"
+        ]
+      }
+    },
+    {
+      "name": "LostPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/block/LostPlanksBlock.java",
+          "src/main/resources/assets/tlos/blockstates/lost_planks.json",
+          "src/main/resources/assets/tlos/models/block/lost_planks.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_planks.json",
+          "src/main/resources/assets/tlos/models/item/lost_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "LostStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/block/lost_stairs_inner.json",
+          "src/main/resources/assets/tlos/models/block/lost_stairs.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_stairs.json",
+          "src/main/resources/assets/tlos/models/item/lost_stairs.json",
+          "src/main/resources/assets/tlos/models/block/lost_stairs_outer.json",
+          "src/main/java/net/mcreator/tlos/block/LostStairsBlock.java",
+          "src/main/resources/assets/tlos/blockstates/lost_stairs.json"
+        ]
+      }
+    },
+    {
+      "name": "LostSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/loot_table/blocks/lost_slab.json",
+          "src/main/resources/assets/tlos/models/block/lost_slab_full.json",
+          "src/main/resources/assets/tlos/models/item/lost_slab.json",
+          "src/main/resources/assets/tlos/blockstates/lost_slab.json",
+          "src/main/resources/assets/tlos/models/block/lost_slab.json",
+          "src/main/java/net/mcreator/tlos/block/LostSlabBlock.java",
+          "src/main/resources/assets/tlos/models/block/lost_slab_top.json"
+        ]
+      }
+    },
+    {
+      "name": "LostFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/blockstates/lost_fence.json",
+          "src/main/java/net/mcreator/tlos/block/LostFenceBlock.java",
+          "src/main/resources/assets/tlos/models/item/lost_fence.json",
+          "src/main/resources/assets/tlos/models/block/lost_fence.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_fence.json",
+          "src/main/resources/assets/tlos/models/block/lost_fence_post.json",
+          "src/main/resources/assets/tlos/models/block/lost_fence_inventory.json"
+        ]
+      }
+    },
+    {
+      "name": "LostFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/item/lost_fence_gate.json",
+          "src/main/java/net/mcreator/tlos/block/LostFenceGateBlock.java",
+          "src/main/resources/assets/tlos/models/block/lost_fence_gate_wall.json",
+          "src/main/resources/assets/tlos/models/block/lost_fence_gate_wall_open.json",
+          "src/main/resources/assets/tlos/models/block/lost_fence_gate.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_fence_gate.json",
+          "src/main/resources/assets/tlos/models/block/lost_fence_gate_open.json",
+          "src/main/resources/assets/tlos/blockstates/lost_fence_gate.json"
+        ]
+      }
+    },
+    {
+      "name": "LostPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/blockstates/lost_pressure_plate.json",
+          "src/main/resources/assets/tlos/models/block/lost_pressure_plate_down.json",
+          "src/main/resources/assets/tlos/models/item/lost_pressure_plate.json",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_pressure_plate.json",
+          "src/main/resources/assets/tlos/models/block/lost_pressure_plate.json",
+          "src/main/java/net/mcreator/tlos/block/LostPressurePlateBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LostButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/blockstates/lost_button.json",
+          "src/main/resources/assets/tlos/models/block/lost_button_inventory.json",
+          "src/main/resources/assets/tlos/models/block/lost_button_pressed.json",
+          "src/main/resources/assets/tlos/models/block/lost_button.json",
+          "src/main/java/net/mcreator/tlos/block/LostButtonBlock.java",
+          "src/main/resources/data/tlos/loot_table/blocks/lost_button.json",
+          "src/main/resources/assets/tlos/models/item/lost_button.json"
+        ]
+      }
+    },
+    {
+      "name": "LostWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostPlanksLogRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_planks_log_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostPlanksWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_planks_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_planks_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_fence_gate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_pressure_plate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_button_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostStickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/recipe/lost_stick_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LostTree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/worldgen/configured_feature/lost_tree.json",
+          "src/main/resources/data/tlos/worldgen/placed_feature/lost_tree.json",
+          "src/main/resources/data/tlos/neoforge/biome_modifier/lost_tree_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "CentralKorokForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "central_korok_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tlos/worldgen/biome/central_korok_forest.json",
+          "src/main/resources/data/tlos/worldgen/placed_feature/central_korok_forest_tree.json",
+          "src/main/resources/data/tlos/worldgen/configured_feature/central_korok_forest_tree.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
     {
-      "name": "TestingSwordDamage2",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
+      "name": "cryonis_activated",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "magnesis_activated",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "remote_bomb_activated",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "stasis_activated",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "master_cycle_activated",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "player_holding_remote_bomb",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -487,6 +989,20 @@
     }
   ],
   "tag_elements": {
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:LostPlanks",
+      "~CUSTOM:LostLog",
+      "~CUSTOM:LostWood"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:LostSlab"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:LostFence"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:LostStairs"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:MasterSwordPowered",
       "~CUSTOM:MasterSword"
@@ -495,21 +1011,38 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.tlos.master_sword": "Master Sword",
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
-      "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "subtitles.master_cycle_crushes": "Master Cycle Drives",
+      "entity.tlos.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_items": "TLOS Items",
-      "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
-      "item.tlos.master_sword_powered": "Master Sword (POWERED)",
+      "key.tlos.use_rune": "Use Rune",
       "item.tlos.sheikah_slate": "Sheikah Slate",
+      "block.tlos.lost_wood": "Lost Wood",
+      "biome.tlos.central_korok_forest": "Central Korok Forest",
+      "block.tlos.lost_stairs": "Lost Stairs",
+      "item.tlos.master_sword": "Master Sword",
+      "block.tlos.lost_planks": "Lost Planks",
+      "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
+      "block.tlos.lost_fence_gate": "Lost Fence Gate",
+      "block.tlos.lost_button": "Lost Button",
+      "block.tlos.lost_fence": "Lost Fence",
+      "item.tlos.master_sword_powered": "Master Sword (POWERED)",
+      "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
+      "biome.tlos.lost_woods": "Lost Woods",
       "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
-      "key.tlos.use_rune": "Use Rune"
+      "block.tlos.lost_slab": "Lost Slab",
+      "block.tlos.lost_log": "Lost Log",
+      "block.tlos.lost_pressure_plate": "Lost Pressure Plate"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Sheikah Slate",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "tlos",
@@ -523,8 +1056,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.20.6",
+    "currentGenerator": "neoforge-1.21.1",
     "modElementsPackage": "net.mcreator.tlos"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400447413
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tlos:block/lost_log_top",
+    "up": "tlos:block/lost_log_top",
+    "north": "tlos:block/lost_log_side",
+    "east": "tlos:block/lost_log_side",
+    "south": "tlos:block/lost_log_side",
+    "west": "tlos:block/lost_log_side",
+    "particle": "tlos:block/lost_log_top"
+  },
+  "render_type": "solid"
+}

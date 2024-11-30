@@ -1,9 +1,9 @@
 package net.mcreator.tlos.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+
+import net.mcreator.tlos.network.TlosModVariables;
 
 public class UseRuneOnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -12,15 +12,17 @@ public class UseRuneOnKeyPressedProcedure {
 		double CX = 0;
 		double CY = 0;
 		double CZ = 0;
-		if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "").equals("cryonis")) {
+		if (entity.getData(TlosModVariables.PLAYER_VARIABLES).cryonis_activated) {
 			CryonisAbilityProcedure.execute(world, x, y, z, entity);
 		}
-		if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "").equals("master_cycle")) {
+		if (entity.getData(TlosModVariables.PLAYER_VARIABLES).master_cycle_activated) {
 			MasterCycleAbilityProcedure.execute(world, x, y, z);
+		}
+		if (entity.getData(TlosModVariables.PLAYER_VARIABLES).remote_bomb_activated) {
+			RemoteBombAbilityProcedure.execute(world, x, y, z, entity);
+		}
+		if (entity.getData(TlosModVariables.PLAYER_VARIABLES).stasis_activated) {
+			StasisAbilityProcedure.execute(world, x, y, z);
 		}
 	}
 }

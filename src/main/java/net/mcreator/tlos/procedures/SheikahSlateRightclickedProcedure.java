@@ -19,7 +19,7 @@ public class SheikahSlateRightclickedProcedure {
 		}
 		if (entity instanceof Player _player) {
 			ItemStack _stktoremove = new ItemStack(TlosModItems.SHEIKAH_SLATE.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 64, _player.inventoryMenu.getCraftSlots());
 		}
 	}
 }

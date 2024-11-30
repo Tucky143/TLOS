@@ -24,6 +24,7 @@ import net.mcreator.tlos.init.TlosModSounds;
 import net.mcreator.tlos.init.TlosModMenus;
 import net.mcreator.tlos.init.TlosModItems;
 import net.mcreator.tlos.init.TlosModEntities;
+import net.mcreator.tlos.init.TlosModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -43,6 +44,7 @@ public class TlosMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		TlosModSounds.REGISTRY.register(modEventBus);
+		TlosModBlocks.REGISTRY.register(modEventBus);
 
 		TlosModItems.REGISTRY.register(modEventBus);
 		TlosModEntities.REGISTRY.register(modEventBus);

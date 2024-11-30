@@ -12,7 +12,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class MasterCycleZERORenderer extends MobRenderer<MasterCycleZEROEntity, ModelMasterCycle<MasterCycleZEROEntity>> {
 	public MasterCycleZERORenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelMasterCycle(context.bakeLayer(ModelMasterCycle.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelMasterCycle<MasterCycleZEROEntity>(context.bakeLayer(ModelMasterCycle.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
@@ -22,6 +22,6 @@ public class MasterCycleZERORenderer extends MobRenderer<MasterCycleZEROEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(MasterCycleZEROEntity entity) {
-		return new ResourceLocation("tlos:textures/entities/master_cycle.png");
+		return ResourceLocation.parse("tlos:textures/entities/master_cycle.png");
 	}
 }

@@ -7,14 +7,13 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.tlos.network.TlosModVariables;
 import net.mcreator.tlos.TlosMod;
 
 public class CryonisAbilityProcedure {
@@ -24,9 +23,7 @@ public class CryonisAbilityProcedure {
 		double CX = 0;
 		double CY = 0;
 		double CZ = 0;
-		if ((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null
-				? _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()).getName()
-				: "").equals("cryonis")) {
+		if (entity.getData(TlosModVariables.PLAYER_VARIABLES).cryonis_activated) {
 			if (entity.isInWall()) {
 				TlosMod.LOGGER.info("Failed");
 			} else {
@@ -49,7 +46,7 @@ public class CryonisAbilityProcedure {
 						&& (world.getBlockState(BlockPos.containing(x, y + 3, z + 1))).getBlock() == Blocks.AIR && (world.getBlockState(BlockPos.containing(x, y + 3, z - 1))).getBlock() == Blocks.AIR
 						&& (world.getBlockState(BlockPos.containing(x + 1, y + 3, z))).getBlock() == Blocks.AIR && (world.getBlockState(BlockPos.containing(x - 1, y + 3, z))).getBlock() == Blocks.AIR) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("tlos", "cryonis"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("tlos", "cryonis"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x, y + 1, z), BlockPos.containing(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
@@ -71,7 +68,7 @@ public class CryonisAbilityProcedure {
 					});
 					TlosMod.queueServerWork(200, () -> {
 						if (world instanceof ServerLevel _serverworld) {
-							StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("tlos", "cryonis_empty"));
+							StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("tlos", "cryonis_empty"));
 							if (template != null) {
 								template.placeInWorld(_serverworld, BlockPos.containing(x, y + 1, z), BlockPos.containing(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 										_serverworld.random, 3);

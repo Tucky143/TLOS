@@ -20,7 +20,7 @@ import net.mcreator.tlos.TlosMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record OpenSheikahSlateGUIMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<OpenSheikahSlateGUIMessage> TYPE = new Type<>(new ResourceLocation(TlosMod.MODID, "key_open_sheikah_slate_gui"));
+	public static final Type<OpenSheikahSlateGUIMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(TlosMod.MODID, "key_open_sheikah_slate_gui"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, OpenSheikahSlateGUIMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OpenSheikahSlateGUIMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tlos:lost_planks",
+    "tlos:lost_log",
+    "tlos:lost_wood"
+  ]
+}

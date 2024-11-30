@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tlos:block/lost_slab"
+    },
+    "type=top": {
+      "model": "tlos:block/lost_slab_top"
+    },
+    "type=double": {
+      "model": "tlos:block/lost_slab_full"
+    }
+  }
+}

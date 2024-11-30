@@ -15,5 +15,5 @@ import net.mcreator.tlos.TlosMod;
 
 public class TlosModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(Registries.SOUND_EVENT, TlosMod.MODID);
-	public static final DeferredHolder<SoundEvent, SoundEvent> MASTER_CYCLE_CRUSHES = REGISTRY.register("master_cycle_crushes", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tlos", "master_cycle_crushes")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MASTER_CYCLE_CRUSHES = REGISTRY.register("master_cycle_crushes", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("tlos", "master_cycle_crushes")));
 }

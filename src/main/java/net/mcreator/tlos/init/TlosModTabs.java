@@ -32,6 +32,16 @@ public class TlosModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(TlosModItems.SHEIKAH_SLATE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(TlosModBlocks.LOST_WOOD.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_LOG.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_PLANKS.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_STAIRS.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_SLAB.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_FENCE.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_FENCE_GATE.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_PRESSURE_PLATE.get().asItem());
+			tabData.accept(TlosModBlocks.LOST_BUTTON.get().asItem());
 		}
 	}
 }

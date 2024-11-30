@@ -1,0 +1,8 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "particle": "tlos:block/lost_planks",
+    "texture": "tlos:block/lost_planks"
+  },
+  "render_type": "solid"
+}

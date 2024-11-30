@@ -29,7 +29,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record SheikahSlateGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<SheikahSlateGUIButtonMessage> TYPE = new Type<>(new ResourceLocation(TlosMod.MODID, "sheikah_slate_gui_buttons"));
+	public static final Type<SheikahSlateGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(TlosMod.MODID, "sheikah_slate_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, SheikahSlateGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SheikahSlateGUIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

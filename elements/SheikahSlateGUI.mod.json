@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 72,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -20,7 +20,8 @@
             "name": "RemoteBombs"
           },
           "x": 42,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -33,7 +34,8 @@
             "name": "Magnesis"
           },
           "x": 141,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -46,7 +48,8 @@
             "name": "Stasis"
           },
           "x": 231,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -59,7 +62,8 @@
             "name": "Cryonis"
           },
           "x": 321,
-          "y": 107
+          "y": 107,
+          "locked": false
         }
       },
       {
@@ -72,7 +76,8 @@
             "name": "MasterCycle"
           },
           "x": 186,
-          "y": 35
+          "y": 35,
+          "locked": false
         }
       }
     ],
