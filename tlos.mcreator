@@ -5,7 +5,7 @@
       "type": "tab",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tlom_items",
+      "registry_name": "tloa_items",
       "metadata": {
         "files": []
       }
@@ -18,8 +18,8 @@
       "registry_name": "sheikah_slate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/item/sheikah_slate.json",
-          "src/main/java/net/mcreator/tlom/item/SheikahSlateItem.java"
+          "src/main/resources/assets/tloa/models/item/sheikah_slate.json",
+          "src/main/java/net/mcreator/tloa/item/SheikahSlateItem.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -32,8 +32,8 @@
       "registry_name": "sheikah_slate_on",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/item/SheikahSlateOnItem.java",
-          "src/main/resources/assets/tlom/models/item/sheikah_slate_on.json"
+          "src/main/java/net/mcreator/tloa/item/SheikahSlateOnItem.java",
+          "src/main/resources/assets/tloa/models/item/sheikah_slate_on.json"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -46,7 +46,7 @@
       "registry_name": "sheikah_slate_rightclicked",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/SheikahSlateRightclickedProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/SheikahSlateRightclickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -65,9 +65,9 @@
       "registry_name": "sheikah_slate_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/client/gui/SheikahSlateGUIScreen.java",
-          "src/main/java/net/mcreator/tlom/network/SheikahSlateGUIButtonMessage.java",
-          "src/main/java/net/mcreator/tlom/world/inventory/SheikahSlateGUIMenu.java"
+          "src/main/java/net/mcreator/tloa/network/SheikahSlateGUIButtonMessage.java",
+          "src/main/java/net/mcreator/tloa/world/inventory/SheikahSlateGUIMenu.java",
+          "src/main/java/net/mcreator/tloa/client/gui/SheikahSlateGUIScreen.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -80,7 +80,7 @@
       "registry_name": "open_sheikah_slate_gui_on_key_pressed",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/OpenSheikahSlateGUIOnKeyPressedProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/OpenSheikahSlateGUIOnKeyPressedProcedure.java"
         ],
         "dependencies": [
           {
@@ -115,7 +115,7 @@
       "registry_name": "open_sheikah_slate_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/network/OpenSheikahSlateGUIMessage.java"
+          "src/main/java/net/mcreator/tloa/network/OpenSheikahSlateGUIMessage.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -128,7 +128,7 @@
       "registry_name": "sheikah_slate_on_item_in_inventory_tick",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/SheikahSlateOnItemInInventoryTickProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/SheikahSlateOnItemInInventoryTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -151,7 +151,7 @@
       "registry_name": "cryonis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/CryonisProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/CryonisProcedure.java"
         ],
         "dependencies": [
           {
@@ -170,7 +170,7 @@
       "registry_name": "use_rune_on_key_pressed",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/UseRuneOnKeyPressedProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/UseRuneOnKeyPressedProcedure.java"
         ],
         "dependencies": [
           {
@@ -205,7 +205,7 @@
       "registry_name": "use_rune",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/network/UseRuneMessage.java"
+          "src/main/java/net/mcreator/tloa/network/UseRuneMessage.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -218,7 +218,7 @@
       "registry_name": "master_cycle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/MasterCycleProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/MasterCycleProcedure.java"
         ],
         "dependencies": [
           {
@@ -237,7 +237,7 @@
       "registry_name": "magnesis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/MagnesisProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/MagnesisProcedure.java"
         ],
         "dependencies": [
           {
@@ -256,7 +256,7 @@
       "registry_name": "stasis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/StasisProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/StasisProcedure.java"
         ],
         "dependencies": [
           {
@@ -275,7 +275,7 @@
       "registry_name": "remote_bombs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/RemoteBombsProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/RemoteBombsProcedure.java"
         ],
         "dependencies": [
           {
@@ -294,8 +294,8 @@
       "registry_name": "master_cycle_zero",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/entity/MasterCycleZEROEntity.java",
-          "src/main/java/net/mcreator/tlom/client/renderer/MasterCycleZERORenderer.java"
+          "src/main/java/net/mcreator/tloa/entity/MasterCycleZEROEntity.java",
+          "src/main/java/net/mcreator/tloa/client/renderer/MasterCycleZERORenderer.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -308,7 +308,7 @@
       "registry_name": "cryonis_ability",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/CryonisAbilityProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/CryonisAbilityProcedure.java"
         ],
         "dependencies": [
           {
@@ -343,7 +343,7 @@
       "registry_name": "master_cycle_ability",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/MasterCycleAbilityProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/MasterCycleAbilityProcedure.java"
         ],
         "dependencies": [
           {
@@ -374,7 +374,7 @@
       "registry_name": "master_cycle_zero_on_entity_tick_update",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/MasterCycleZEROOnEntityTickUpdateProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/MasterCycleZEROOnEntityTickUpdateProcedure.java"
         ],
         "dependencies": [
           {
@@ -397,8 +397,8 @@
       "registry_name": "master_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/item/MasterSwordItem.java",
-          "src/main/resources/assets/tlom/models/item/master_sword.json"
+          "src/main/java/net/mcreator/tloa/item/MasterSwordItem.java",
+          "src/main/resources/assets/tloa/models/item/master_sword.json"
         ]
       }
     },
@@ -410,8 +410,8 @@
       "registry_name": "master_sword_powered",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/item/MasterSwordPoweredItem.java",
-          "src/main/resources/assets/tlom/models/item/master_sword_powered.json"
+          "src/main/java/net/mcreator/tloa/item/MasterSwordPoweredItem.java",
+          "src/main/resources/assets/tloa/models/item/master_sword_powered.json"
         ]
       }
     },
@@ -423,8 +423,8 @@
       "registry_name": "square_remote_bomb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/entity/SquareRemoteBombEntity.java",
-          "src/main/java/net/mcreator/tlom/client/renderer/SquareRemoteBombRenderer.java"
+          "src/main/java/net/mcreator/tloa/client/renderer/SquareRemoteBombRenderer.java",
+          "src/main/java/net/mcreator/tloa/entity/SquareRemoteBombEntity.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -437,7 +437,7 @@
       "registry_name": "square_remote_bomb_entity_is_hurt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/SquareRemoteBombEntityIsHurtProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/SquareRemoteBombEntityIsHurtProcedure.java"
         ],
         "dependencies": [
           {
@@ -476,7 +476,7 @@
       "registry_name": "remote_bomb_ability",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/RemoteBombAbilityProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/RemoteBombAbilityProcedure.java"
         ],
         "dependencies": [
           {
@@ -511,7 +511,7 @@
       "registry_name": "square_remote_bomb_right_clicked_on_entity",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/SquareRemoteBombRightClickedOnEntityProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/SquareRemoteBombRightClickedOnEntityProcedure.java"
         ],
         "dependencies": [
           {
@@ -538,7 +538,7 @@
       "registry_name": "stasis_ability",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/StasisAbilityProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/StasisAbilityProcedure.java"
         ],
         "dependencies": [
           {
@@ -569,9 +569,9 @@
       "registry_name": "lost_woods",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/worldgen/biome/lost_woods.json",
-          "src/main/resources/data/tlom/worldgen/placed_feature/lost_woods_tree.json",
-          "src/main/resources/data/tlom/worldgen/configured_feature/lost_woods_tree.json"
+          "src/main/resources/data/tloa/worldgen/configured_feature/lost_woods_tree.json",
+          "src/main/resources/data/tloa/worldgen/biome/lost_woods.json",
+          "src/main/resources/data/tloa/worldgen/placed_feature/lost_woods_tree.json"
         ]
       }
     },
@@ -583,7 +583,7 @@
       "registry_name": "lost_woods_fog_color",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/LostWoodsFogColorProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/LostWoodsFogColorProcedure.java"
         ],
         "dependencies": [
           {
@@ -613,7 +613,7 @@
       "registry_name": "lost_woods_fog",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/LostWoodsFogProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/LostWoodsFogProcedure.java"
         ],
         "dependencies": [
           {
@@ -643,11 +643,11 @@
       "registry_name": "lost_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/item/lost_wood.json",
-          "src/main/resources/data/tlom/loot_table/blocks/lost_wood.json",
-          "src/main/resources/assets/tlom/blockstates/lost_wood.json",
-          "src/main/java/net/mcreator/tlom/block/LostWoodBlock.java",
-          "src/main/resources/assets/tlom/models/block/lost_wood.json"
+          "src/main/resources/assets/tloa/models/block/lost_wood.json",
+          "src/main/resources/assets/tloa/models/item/lost_wood.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_wood.json",
+          "src/main/java/net/mcreator/tloa/block/LostWoodBlock.java",
+          "src/main/resources/assets/tloa/blockstates/lost_wood.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -660,11 +660,11 @@
       "registry_name": "lost_log",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/block/LostLogBlock.java",
-          "src/main/resources/data/tlom/loot_table/blocks/lost_log.json",
-          "src/main/resources/assets/tlom/models/block/lost_log.json",
-          "src/main/resources/assets/tlom/models/item/lost_log.json",
-          "src/main/resources/assets/tlom/blockstates/lost_log.json"
+          "src/main/resources/data/tloa/loot_table/blocks/lost_log.json",
+          "src/main/resources/assets/tloa/models/block/lost_log.json",
+          "src/main/java/net/mcreator/tloa/block/LostLogBlock.java",
+          "src/main/resources/assets/tloa/models/item/lost_log.json",
+          "src/main/resources/assets/tloa/blockstates/lost_log.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -677,11 +677,11 @@
       "registry_name": "lost_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/loot_table/blocks/lost_planks.json",
-          "src/main/resources/assets/tlom/models/item/lost_planks.json",
-          "src/main/resources/assets/tlom/blockstates/lost_planks.json",
-          "src/main/java/net/mcreator/tlom/block/LostPlanksBlock.java",
-          "src/main/resources/assets/tlom/models/block/lost_planks.json"
+          "src/main/resources/data/tloa/loot_table/blocks/lost_planks.json",
+          "src/main/java/net/mcreator/tloa/block/LostPlanksBlock.java",
+          "src/main/resources/assets/tloa/blockstates/lost_planks.json",
+          "src/main/resources/assets/tloa/models/block/lost_planks.json",
+          "src/main/resources/assets/tloa/models/item/lost_planks.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -694,13 +694,13 @@
       "registry_name": "lost_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/loot_table/blocks/lost_stairs.json",
-          "src/main/resources/assets/tlom/blockstates/lost_stairs.json",
-          "src/main/resources/assets/tlom/models/block/lost_stairs_inner.json",
-          "src/main/java/net/mcreator/tlom/block/LostStairsBlock.java",
-          "src/main/resources/assets/tlom/models/block/lost_stairs.json",
-          "src/main/resources/assets/tlom/models/item/lost_stairs.json",
-          "src/main/resources/assets/tlom/models/block/lost_stairs_outer.json"
+          "src/main/resources/data/tloa/loot_table/blocks/lost_stairs.json",
+          "src/main/resources/assets/tloa/models/block/lost_stairs_outer.json",
+          "src/main/resources/assets/tloa/models/block/lost_stairs.json",
+          "src/main/resources/assets/tloa/models/item/lost_stairs.json",
+          "src/main/resources/assets/tloa/models/block/lost_stairs_inner.json",
+          "src/main/java/net/mcreator/tloa/block/LostStairsBlock.java",
+          "src/main/resources/assets/tloa/blockstates/lost_stairs.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -713,13 +713,13 @@
       "registry_name": "lost_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/item/lost_slab.json",
-          "src/main/resources/assets/tlom/models/block/lost_slab.json",
-          "src/main/resources/assets/tlom/models/block/lost_slab_full.json",
-          "src/main/resources/data/tlom/loot_table/blocks/lost_slab.json",
-          "src/main/resources/assets/tlom/models/block/lost_slab_top.json",
-          "src/main/java/net/mcreator/tlom/block/LostSlabBlock.java",
-          "src/main/resources/assets/tlom/blockstates/lost_slab.json"
+          "src/main/resources/data/tloa/loot_table/blocks/lost_slab.json",
+          "src/main/resources/assets/tloa/models/block/lost_slab_full.json",
+          "src/main/java/net/mcreator/tloa/block/LostSlabBlock.java",
+          "src/main/resources/assets/tloa/models/item/lost_slab.json",
+          "src/main/resources/assets/tloa/models/block/lost_slab_top.json",
+          "src/main/resources/assets/tloa/models/block/lost_slab.json",
+          "src/main/resources/assets/tloa/blockstates/lost_slab.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -732,13 +732,13 @@
       "registry_name": "lost_fence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/block/LostFenceBlock.java",
-          "src/main/resources/assets/tlom/blockstates/lost_fence.json",
-          "src/main/resources/data/tlom/loot_table/blocks/lost_fence.json",
-          "src/main/resources/assets/tlom/models/block/lost_fence_inventory.json",
-          "src/main/resources/assets/tlom/models/block/lost_fence_post.json",
-          "src/main/resources/assets/tlom/models/item/lost_fence.json",
-          "src/main/resources/assets/tlom/models/block/lost_fence.json"
+          "src/main/resources/assets/tloa/models/block/lost_fence_post.json",
+          "src/main/java/net/mcreator/tloa/block/LostFenceBlock.java",
+          "src/main/resources/assets/tloa/blockstates/lost_fence.json",
+          "src/main/resources/assets/tloa/models/item/lost_fence.json",
+          "src/main/resources/assets/tloa/models/block/lost_fence_inventory.json",
+          "src/main/resources/assets/tloa/models/block/lost_fence.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_fence.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -751,14 +751,14 @@
       "registry_name": "lost_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/block/lost_fence_gate_open.json",
-          "src/main/resources/assets/tlom/blockstates/lost_fence_gate.json",
-          "src/main/resources/assets/tlom/models/block/lost_fence_gate_wall.json",
-          "src/main/resources/assets/tlom/models/block/lost_fence_gate_wall_open.json",
-          "src/main/resources/assets/tlom/models/block/lost_fence_gate.json",
-          "src/main/resources/assets/tlom/models/item/lost_fence_gate.json",
-          "src/main/resources/data/tlom/loot_table/blocks/lost_fence_gate.json",
-          "src/main/java/net/mcreator/tlom/block/LostFenceGateBlock.java"
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate_wall.json",
+          "src/main/java/net/mcreator/tloa/block/LostFenceGateBlock.java",
+          "src/main/resources/assets/tloa/models/item/lost_fence_gate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_fence_gate.json",
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate_open.json",
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate_wall_open.json",
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate.json",
+          "src/main/resources/assets/tloa/blockstates/lost_fence_gate.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -771,12 +771,12 @@
       "registry_name": "lost_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/block/lost_pressure_plate_down.json",
-          "src/main/resources/assets/tlom/blockstates/lost_pressure_plate.json",
-          "src/main/java/net/mcreator/tlom/block/LostPressurePlateBlock.java",
-          "src/main/resources/assets/tlom/models/block/lost_pressure_plate.json",
-          "src/main/resources/data/tlom/loot_table/blocks/lost_pressure_plate.json",
-          "src/main/resources/assets/tlom/models/item/lost_pressure_plate.json"
+          "src/main/resources/assets/tloa/models/item/lost_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/block/lost_pressure_plate_down.json",
+          "src/main/resources/assets/tloa/blockstates/lost_pressure_plate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/block/lost_pressure_plate.json",
+          "src/main/java/net/mcreator/tloa/block/LostPressurePlateBlock.java"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -789,13 +789,13 @@
       "registry_name": "lost_button",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/loot_table/blocks/lost_button.json",
-          "src/main/resources/assets/tlom/blockstates/lost_button.json",
-          "src/main/resources/assets/tlom/models/block/lost_button_inventory.json",
-          "src/main/resources/assets/tlom/models/block/lost_button.json",
-          "src/main/resources/assets/tlom/models/item/lost_button.json",
-          "src/main/resources/assets/tlom/models/block/lost_button_pressed.json",
-          "src/main/java/net/mcreator/tlom/block/LostButtonBlock.java"
+          "src/main/resources/assets/tloa/models/item/lost_button.json",
+          "src/main/java/net/mcreator/tloa/block/LostButtonBlock.java",
+          "src/main/resources/assets/tloa/models/block/lost_button_inventory.json",
+          "src/main/resources/assets/tloa/blockstates/lost_button.json",
+          "src/main/resources/assets/tloa/models/block/lost_button_pressed.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_button.json",
+          "src/main/resources/assets/tloa/models/block/lost_button.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -808,7 +808,7 @@
       "registry_name": "lost_wood_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_wood_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_wood_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -821,7 +821,7 @@
       "registry_name": "lost_planks_log_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_planks_log_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_planks_log_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -834,7 +834,7 @@
       "registry_name": "lost_planks_wood_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_planks_wood_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_planks_wood_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -847,7 +847,7 @@
       "registry_name": "lost_stairs_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_stairs_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_stairs_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -860,7 +860,7 @@
       "registry_name": "lost_slab_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_slab_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_slab_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -873,7 +873,7 @@
       "registry_name": "lost_fence_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_fence_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_fence_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -886,7 +886,7 @@
       "registry_name": "lost_fence_gate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_fence_gate_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_fence_gate_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -899,7 +899,7 @@
       "registry_name": "lost_pressure_plate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_pressure_plate_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_pressure_plate_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -912,7 +912,7 @@
       "registry_name": "lost_button_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_button_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_button_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -925,7 +925,7 @@
       "registry_name": "lost_stick_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/recipe/lost_stick_recipe.json"
+          "src/main/resources/data/tloa/recipe/lost_stick_recipe.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -938,9 +938,9 @@
       "registry_name": "lost_tree",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/worldgen/configured_feature/lost_tree.json",
-          "src/main/resources/data/tlom/neoforge/biome_modifier/lost_tree_biome_modifier.json",
-          "src/main/resources/data/tlom/worldgen/placed_feature/lost_tree.json"
+          "src/main/resources/data/tloa/worldgen/placed_feature/lost_tree.json",
+          "src/main/resources/data/tloa/worldgen/configured_feature/lost_tree.json",
+          "src/main/resources/data/tloa/neoforge/biome_modifier/lost_tree_biome_modifier.json"
         ]
       },
       "path": "~/Lost Wood Woodset"
@@ -953,9 +953,9 @@
       "registry_name": "central_korok_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/tlom/worldgen/placed_feature/central_korok_forest_tree.json",
-          "src/main/resources/data/tlom/worldgen/configured_feature/central_korok_forest_tree.json",
-          "src/main/resources/data/tlom/worldgen/biome/central_korok_forest.json"
+          "src/main/resources/data/tloa/worldgen/placed_feature/central_korok_forest_tree.json",
+          "src/main/resources/data/tloa/worldgen/biome/central_korok_forest.json",
+          "src/main/resources/data/tloa/worldgen/configured_feature/central_korok_forest_tree.json"
         ]
       }
     },
@@ -967,7 +967,7 @@
       "registry_name": "bullet_time",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/BulletTimeProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/BulletTimeProcedure.java"
         ],
         "dependencies": [
           {
@@ -1002,7 +1002,7 @@
       "metadata": {
         "return_type": "number",
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/GreenRupeePropertyValueProviderProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/GreenRupeePropertyValueProviderProcedure.java"
         ],
         "dependencies": []
       },
@@ -1016,8 +1016,8 @@
       "registry_name": "green_rupee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/item/green_rupee.json",
-          "src/main/java/net/mcreator/tlom/item/GreenRupeeItem.java"
+          "src/main/resources/assets/tloa/models/item/green_rupee.json",
+          "src/main/java/net/mcreator/tloa/item/GreenRupeeItem.java"
         ]
       },
       "path": "~/Rupee"
@@ -1030,8 +1030,8 @@
       "registry_name": "blue_rupee",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/item/BlueRupeeItem.java",
-          "src/main/resources/assets/tlom/models/item/blue_rupee.json"
+          "src/main/java/net/mcreator/tloa/item/BlueRupeeItem.java",
+          "src/main/resources/assets/tloa/models/item/blue_rupee.json"
         ]
       },
       "path": "~/Rupee"
@@ -1045,7 +1045,7 @@
       "metadata": {
         "return_type": "number",
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/BlueRupeePropertyValueProviderProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/BlueRupeePropertyValueProviderProcedure.java"
         ],
         "dependencies": []
       },
@@ -1059,8 +1059,8 @@
       "registry_name": "red_rupee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/item/red_rupee.json",
-          "src/main/java/net/mcreator/tlom/item/RedRupeeItem.java"
+          "src/main/resources/assets/tloa/models/item/red_rupee.json",
+          "src/main/java/net/mcreator/tloa/item/RedRupeeItem.java"
         ]
       },
       "path": "~/Rupee"
@@ -1074,7 +1074,7 @@
       "metadata": {
         "return_type": "number",
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/RedRupeePropertyValueProviderProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/RedRupeePropertyValueProviderProcedure.java"
         ],
         "dependencies": []
       },
@@ -1088,8 +1088,8 @@
       "registry_name": "purple_rupee",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/item/PurpleRupeeItem.java",
-          "src/main/resources/assets/tlom/models/item/purple_rupee.json"
+          "src/main/resources/assets/tloa/models/item/purple_rupee.json",
+          "src/main/java/net/mcreator/tloa/item/PurpleRupeeItem.java"
         ]
       },
       "path": "~/Rupee"
@@ -1103,7 +1103,7 @@
       "metadata": {
         "return_type": "number",
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/PurpleRupeePropertyValueProviderProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/PurpleRupeePropertyValueProviderProcedure.java"
         ],
         "dependencies": []
       },
@@ -1117,8 +1117,8 @@
       "registry_name": "silver_rupee",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tlom/item/SilverRupeeItem.java",
-          "src/main/resources/assets/tlom/models/item/silver_rupee.json"
+          "src/main/resources/assets/tloa/models/item/silver_rupee.json",
+          "src/main/java/net/mcreator/tloa/item/SilverRupeeItem.java"
         ]
       },
       "path": "~/Rupee"
@@ -1132,7 +1132,7 @@
       "metadata": {
         "return_type": "number",
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/SilverRupeePropertyValueProviderProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/SilverRupeePropertyValueProviderProcedure.java"
         ],
         "dependencies": []
       },
@@ -1146,8 +1146,8 @@
       "registry_name": "gold_rupee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tlom/models/item/gold_rupee.json",
-          "src/main/java/net/mcreator/tlom/item/GoldRupeeItem.java"
+          "src/main/java/net/mcreator/tloa/item/GoldRupeeItem.java",
+          "src/main/resources/assets/tloa/models/item/gold_rupee.json"
         ]
       },
       "path": "~/Rupee"
@@ -1161,7 +1161,7 @@
       "metadata": {
         "return_type": "number",
         "files": [
-          "src/main/java/net/mcreator/tlom/procedures/GoldRupeePropertyValueProviderProcedure.java"
+          "src/main/java/net/mcreator/tloa/procedures/GoldRupeePropertyValueProviderProcedure.java"
         ],
         "dependencies": []
       },
@@ -1172,7 +1172,7 @@
       "type": "tab",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tlom_blocks",
+      "registry_name": "tloa_blocks",
       "metadata": {
         "files": []
       }
@@ -1255,73 +1255,106 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "block.tlom.lost_slab": "Lost Slab",
       "item.tlos.purple_rupee": "Green Rupee",
       "key.tlos.use_rune": "Use Rune",
       "item.tlos.blue_rupee": "Green Rupee",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
       "block.tlom.lost_wood": "Lost Wood",
-      "biome.tlos.central_korok_forest": "Central Korok Forest",
       "item.tlos.silver_rupee.description_0": "Item representing 100 rupees",
       "item.tlom.blue_rupee": "Green Rupee",
-      "item.tlos.green_rupee.description_0": "Item representing 1 rupee",
-      "item_group.tlom.tlom_items": "TLOM Items",
+      "item.tloa.silver_rupee.description_0": "Item representing 100 rupees",
+      "item.tloa.gold_rupee.description_0": "Item representing 300 rupees",
+      "key.tloa.use_rune": "Use Rune",
       "block.tlos.lost_button": "Lost Button",
-      "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
-      "item.tlom.purple_rupee": "Green Rupee",
-      "item.tlos.master_sword_powered": "Master Sword (POWERED)",
       "item.tlom.green_rupee": "Green Rupee",
-      "item_group.tlom.tlom_blocks": "TLOM Blocks",
-      "block.tlos.lost_log": "Lost Log",
-      "item.tlom.red_rupee": "Green Rupee",
+      "block.tloa.lost_planks": "Lost Planks",
+      "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
+      "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "block.tlom.lost_fence_gate": "Lost Fence Gate",
+      "item.tloa.blue_rupee": "Green Rupee",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
-      "block.tlom.lost_log": "Lost Log",
-      "item.tlom.silver_rupee.description_0": "Item representing 100 rupees",
       "item.tlom.green_rupee.description_0": "Item representing 1 rupee",
-      "item.tlos.red_rupee.description_0": "Item representing 20 rupees",
-      "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
-      "item.tlom.gold_rupee.description_0": "Item representing 300 rupees",
-      "item.tlom.silver_rupee": "Green Rupee",
+      "item_group.tlom.tloa_items": "TLOA Items",
+      "item.tloa.gold_rupee": "Green Rupee",
+      "biome.tloa.lost_woods": "Lost Woods",
+      "item.tloa.red_rupee.description_0": "Item representing 20 rupees",
+      "block.tloa.lost_pressure_plate": "Lost Pressure Plate",
       "block.tlom.lost_stairs": "Lost Stairs",
       "entity.tlos.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_items": "TLOS Items",
       "item.tlos.sheikah_slate": "Sheikah Slate",
+      "item.tloa.master_sword_powered": "Master Sword (POWERED)",
+      "item_group.tloa.tloa_blocks": "TLOA Blocks",
       "block.tlos.lost_stairs": "Lost Stairs",
       "item.tlom.red_rupee.description_0": "Item representing 20 rupees",
-      "block.tlos.lost_planks": "Lost Planks",
-      "block.tlos.lost_fence_gate": "Lost Fence Gate",
-      "entity.tlom.master_cycle_zero": "Master Cycle ZERO",
-      "block.tlos.lost_fence": "Lost Fence",
+      "block.tloa.lost_button": "Lost Button",
+      "item.tloa.silver_rupee": "Green Rupee",
       "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
-      "biome.tlos.lost_woods": "Lost Woods",
-      "item.tlos.purple_rupee.description_0": "Item representing 50 rupees",
       "item.tlos.gold_rupee": "Green Rupee",
-      "block.tlos.lost_slab": "Lost Slab",
-      "item.tlos.silver_rupee": "Green Rupee",
-      "block.tlom.lost_pressure_plate": "Lost Pressure Plate",
-      "subtitles.master_cycle_crushes": "Master Cycle Drives",
+      "item.tloa.red_rupee": "Green Rupee",
       "block.tlom.lost_fence": "Lost Fence",
-      "item.tlom.sheikah_slate": "Sheikah Slate",
-      "key.tlom.open_sheikah_slate_gui": "Open Sheikah Slate",
-      "item.tlom.master_sword": "Master Sword",
+      "block.tloa.lost_stairs": "Lost Stairs",
       "block.tlom.lost_button": "Lost Button",
-      "block.tlom.lost_planks": "Lost Planks",
       "block.tlos.lost_wood": "Lost Wood",
-      "biome.tlom.central_korok_forest": "Central Korok Forest",
-      "item.tlos.master_sword": "Master Sword",
-      "item.tlom.purple_rupee.description_0": "Item representing 50 rupees",
-      "item.tlos.red_rupee": "Green Rupee",
+      "item_group.tloa.tloa_items": "TLOA Items",
+      "block.tloa.lost_slab": "Lost Slab",
+      "entity.tloa.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_blocks": "TLOS Blocks",
       "entity.tlom.square_remote_bomb": "Square Remote Bomb",
       "biome.tlom.lost_woods": "Lost Woods",
       "key.tlom.use_rune": "Use Rune",
       "item.tlom.blue_rupee.description_0": "Item representing 5 rupees",
       "block.tlos.lost_pressure_plate": "Lost Pressure Plate",
+      "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
+      "block.tlom.lost_slab": "Lost Slab",
+      "biome.tlos.central_korok_forest": "Central Korok Forest",
+      "block.tloa.lost_fence": "Lost Fence",
+      "item.tlos.green_rupee.description_0": "Item representing 1 rupee",
+      "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
+      "item.tlom.purple_rupee": "Green Rupee",
+      "item.tlos.master_sword_powered": "Master Sword (POWERED)",
+      "block.tlos.lost_log": "Lost Log",
+      "item.tlom.red_rupee": "Green Rupee",
+      "item_group.tlom.tloa_blocks": "TLOA Blocks",
+      "item.tloa.sheikah_slate_on": "Sheikah Slate (ON)",
+      "item.tloa.master_sword": "Master Sword",
+      "block.tlom.lost_fence_gate": "Lost Fence Gate",
+      "block.tloa.lost_fence_gate": "Lost Fence Gate",
+      "block.tlom.lost_log": "Lost Log",
+      "item.tlom.silver_rupee.description_0": "Item representing 100 rupees",
+      "block.tloa.lost_log": "Lost Log",
+      "biome.tloa.central_korok_forest": "Central Korok Forest",
+      "item.tloa.purple_rupee.description_0": "Item representing 50 rupees",
+      "item.tlos.red_rupee.description_0": "Item representing 20 rupees",
+      "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
+      "entity.tloa.master_cycle_zero": "Master Cycle ZERO",
+      "item.tlom.gold_rupee.description_0": "Item representing 300 rupees",
+      "item.tlom.silver_rupee": "Green Rupee",
+      "block.tlos.lost_planks": "Lost Planks",
+      "item.tloa.green_rupee.description_0": "Item representing 1 rupee",
+      "block.tlos.lost_fence_gate": "Lost Fence Gate",
+      "entity.tlom.master_cycle_zero": "Master Cycle ZERO",
+      "block.tlos.lost_fence": "Lost Fence",
+      "biome.tlos.lost_woods": "Lost Woods",
+      "item.tloa.blue_rupee.description_0": "Item representing 5 rupees",
+      "item.tlos.purple_rupee.description_0": "Item representing 50 rupees",
+      "block.tlos.lost_slab": "Lost Slab",
+      "item.tlos.silver_rupee": "Green Rupee",
+      "block.tloa.lost_wood": "Lost Wood",
+      "item.tloa.green_rupee": "Green Rupee",
+      "block.tlom.lost_pressure_plate": "Lost Pressure Plate",
+      "subtitles.master_cycle_crushes": "Master Cycle Drives",
+      "item.tlom.sheikah_slate": "Sheikah Slate",
+      "key.tlom.open_sheikah_slate_gui": "Open Sheikah Slate",
+      "item.tlom.master_sword": "Master Sword",
+      "block.tlom.lost_planks": "Lost Planks",
+      "biome.tlom.central_korok_forest": "Central Korok Forest",
+      "item.tlos.master_sword": "Master Sword",
+      "item.tlom.purple_rupee.description_0": "Item representing 50 rupees",
+      "item.tlos.red_rupee": "Green Rupee",
+      "item.tloa.purple_rupee": "Green Rupee",
       "item.tlom.gold_rupee": "Green Rupee"
     }
   },
@@ -1343,10 +1376,10 @@
     ]
   },
   "workspaceSettings": {
-    "modid": "tlom",
-    "modName": "The Legend of Minecraft",
+    "modid": "tloa",
+    "modName": "The Legend of Alex",
     "version": "0.0.1",
-    "description": "The Legend of Minecraft, a zelda based mod.",
+    "description": "The Legend of Alex, a zelda based mod.",
     "author": "Tucky143",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
@@ -1357,7 +1390,7 @@
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "Tucky143",
-    "modElementsPackage": "net.mcreator.tlom"
+    "modElementsPackage": "net.mcreator.tloa"
   },
   "mcreatorVersion": 202400447413
 }

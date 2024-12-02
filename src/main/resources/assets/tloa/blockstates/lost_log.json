@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "tloa:block/lost_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "tloa:block/lost_log"
+    },
+    "axis=z": {
+      "model": "tloa:block/lost_log",
+      "x": 90
+    }
+  }
+}

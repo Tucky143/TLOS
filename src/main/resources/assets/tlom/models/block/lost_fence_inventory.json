@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "tlom:block/lost_planks",
-    "particle": "tlom:block/lost_planks"
-  },
-  "render_type": "solid"
-}

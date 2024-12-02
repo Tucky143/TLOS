@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tloa:lost_wood"
+    }
+  ],
+  "result": {
+    "id": "tloa:lost_planks",
+    "count": 4
+  }
+}

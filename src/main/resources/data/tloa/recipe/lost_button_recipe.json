@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tloa:lost_planks"
+    }
+  ],
+  "result": {
+    "id": "tloa:lost_button",
+    "count": 1
+  }
+}

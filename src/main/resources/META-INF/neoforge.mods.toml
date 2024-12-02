@@ -3,25 +3,25 @@ loaderVersion="[4,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="tlom"
+modId="tloa"
 version="0.0.1"
-displayName="The Legend of Minecraft"
+displayName="The Legend of Alex"
 displayURL="https://mcreator.net"
 credits="Tucky143"
 authors="Tucky143"
-description="The Legend of Minecraft, a zelda based mod."
+description="The Legend of Alex, a zelda based mod."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.tlom]]
+[[dependencies.tloa]]
     modId="neoforge"
     type="required"
     versionRange="[21.1.65,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.tlom]]
+[[dependencies.tloa]]
     modId="minecraft"
     type="required"
     versionRange="[1.21.1]"

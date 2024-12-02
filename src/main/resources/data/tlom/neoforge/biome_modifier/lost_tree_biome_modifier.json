@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "tlom:lost_woods",
-  "features": "tlom:lost_tree",
-  "step": "vegetal_decoration"
-}

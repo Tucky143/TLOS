@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "tlom:lost_planks",
-    "tlom:lost_log",
-    "tlom:lost_wood"
+    "tloa:lost_planks",
+    "tloa:lost_log",
+    "tloa:lost_wood"
   ]
 }

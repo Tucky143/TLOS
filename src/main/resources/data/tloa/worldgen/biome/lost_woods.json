@@ -1,0 +1,47 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.2,
+  "downfall": 0,
+  "effects": {
+    "particle": {
+      "options": {
+        "type": "large_smoke"
+      },
+      "probability": 0.005
+    },
+    "foliage_color": -12954039,
+    "grass_color": -12954039,
+    "sky_color": -9136741,
+    "fog_color": -9142142,
+    "water_color": -12954282,
+    "water_fog_color": -12954282
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "tloa:lost_woods_tree",
+      "minecraft:patch_dead_bush_2"
+    ],
+    []
+  ]
+}

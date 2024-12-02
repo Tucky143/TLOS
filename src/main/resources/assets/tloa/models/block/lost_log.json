@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tloa:block/lost_log_top",
+    "up": "tloa:block/lost_log_top",
+    "north": "tloa:block/lost_log_side",
+    "east": "tloa:block/lost_log_side",
+    "south": "tloa:block/lost_log_side",
+    "west": "tloa:block/lost_log_side",
+    "particle": "tloa:block/lost_log_top"
+  },
+  "render_type": "solid"
+}

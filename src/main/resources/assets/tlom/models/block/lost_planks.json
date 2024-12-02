@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tlom:block/lost_planks",
-    "particle": "tlom:block/lost_planks"
-  },
-  "render_type": "solid"
-}

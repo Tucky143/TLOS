@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "tloa:block/lost_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "tloa:block/lost_wood"
+    },
+    "axis=z": {
+      "model": "tloa:block/lost_wood",
+      "x": 90
+    }
+  }
+}

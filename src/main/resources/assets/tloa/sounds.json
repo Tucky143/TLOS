@@ -1,0 +1,11 @@
+{
+  "master_cycle_crushes": {
+    "subtitle": "subtitles.master_cycle_crushes",
+    "sounds": [
+      {
+        "name": "tloa:empty",
+        "stream": false
+      }
+    ]
+  }
+}
