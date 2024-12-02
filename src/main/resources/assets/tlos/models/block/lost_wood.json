@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tlos:block/lost_log_side",
-    "particle": "tlos:block/lost_log_side"
-  },
-  "render_type": "solid"
-}

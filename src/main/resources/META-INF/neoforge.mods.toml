@@ -3,25 +3,25 @@ loaderVersion="[4,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="tlos"
+modId="tlom"
 version="0.0.1"
-displayName="The Legend of Steve"
+displayName="The Legend of Minecraft"
 displayURL="https://mcreator.net"
 credits="Tucky143"
 authors="Tucky143"
-description="The Legend of Zelda: Minecraft Edition"
+description="The Legend of Minecraft, a zelda based mod."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.tlos]]
+[[dependencies.tlom]]
     modId="neoforge"
     type="required"
     versionRange="[21.1.65,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.tlos]]
+[[dependencies.tlom]]
     modId="minecraft"
     type="required"
     versionRange="[1.21.1]"

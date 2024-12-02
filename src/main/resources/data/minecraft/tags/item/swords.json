@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tlos:master_sword_powered",
-    "tlos:master_sword"
+    "tlom:master_sword_powered",
+    "tlom:master_sword"
   ]
 }

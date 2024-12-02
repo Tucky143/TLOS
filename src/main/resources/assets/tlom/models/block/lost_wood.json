@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tlom:block/lost_log_side",
+    "particle": "tlom:block/lost_log_side"
+  },
+  "render_type": "solid"
+}

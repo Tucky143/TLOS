@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "particle": "tlom:block/lost_planks",
+    "texture": "tlom:block/lost_planks"
+  },
+  "render_type": "solid"
+}

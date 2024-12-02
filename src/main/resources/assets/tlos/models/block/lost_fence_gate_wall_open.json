@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_fence_gate_wall_open",
-  "textures": {
-    "particle": "tlos:block/lost_planks",
-    "texture": "tlos:block/lost_planks"
-  },
-  "render_type": "solid"
-}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "tlom:block/lost_planks",
+    "particle": "tlom:block/lost_planks"
+  },
+  "render_type": "solid"
+}

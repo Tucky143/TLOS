@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tlos:item/shiekah_slate_on"
-  }
-}

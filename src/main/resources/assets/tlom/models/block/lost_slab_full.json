@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "tlom:block/lost_planks",
+    "bottom": "tlom:block/lost_planks",
+    "top": "tlom:block/lost_planks",
+    "side": "tlom:block/lost_planks"
+  },
+  "render_type": "solid"
+}
