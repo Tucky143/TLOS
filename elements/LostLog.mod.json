@@ -44,7 +44,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "BUILDING_BLOCKS"
+        "value": "CUSTOM:TLOSBlocks"
       }
     ],
     "destroyTool": "axe",

@@ -24,3 +24,4 @@
 /locate biome tlos:lost_woods
 /tp @s 3155 71 306
 /locate biome tlos:central_korok_forest
+/summon minecraft:skeleton

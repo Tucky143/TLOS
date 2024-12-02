@@ -135,6 +135,7 @@ public class TlosModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "tlos_mapvars";
 		public boolean player_holding_remote_bomb = false;
+		public boolean bullet_time_active = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -144,11 +145,13 @@ public class TlosModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			player_holding_remote_bomb = nbt.getBoolean("player_holding_remote_bomb");
+			bullet_time_active = nbt.getBoolean("bullet_time_active");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putBoolean("player_holding_remote_bomb", player_holding_remote_bomb);
+			nbt.putBoolean("bullet_time_active", bullet_time_active);
 			return nbt;
 		}
 

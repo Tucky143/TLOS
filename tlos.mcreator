@@ -649,7 +649,8 @@
           "src/main/resources/assets/tlos/models/item/lost_wood.json",
           "src/main/resources/data/tlos/loot_table/blocks/lost_wood.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostLog",
@@ -665,7 +666,8 @@
           "src/main/resources/assets/tlos/models/item/lost_log.json",
           "src/main/resources/data/tlos/loot_table/blocks/lost_log.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostPlanks",
@@ -681,7 +683,8 @@
           "src/main/resources/data/tlos/loot_table/blocks/lost_planks.json",
           "src/main/resources/assets/tlos/models/item/lost_planks.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostStairs",
@@ -699,7 +702,8 @@
           "src/main/java/net/mcreator/tlos/block/LostStairsBlock.java",
           "src/main/resources/assets/tlos/blockstates/lost_stairs.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostSlab",
@@ -717,7 +721,8 @@
           "src/main/java/net/mcreator/tlos/block/LostSlabBlock.java",
           "src/main/resources/assets/tlos/models/block/lost_slab_top.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostFence",
@@ -735,7 +740,8 @@
           "src/main/resources/assets/tlos/models/block/lost_fence_post.json",
           "src/main/resources/assets/tlos/models/block/lost_fence_inventory.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostFenceGate",
@@ -754,7 +760,8 @@
           "src/main/resources/assets/tlos/models/block/lost_fence_gate_open.json",
           "src/main/resources/assets/tlos/blockstates/lost_fence_gate.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostPressurePlate",
@@ -771,7 +778,8 @@
           "src/main/resources/assets/tlos/models/block/lost_pressure_plate.json",
           "src/main/java/net/mcreator/tlos/block/LostPressurePlateBlock.java"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostButton",
@@ -789,7 +797,8 @@
           "src/main/resources/data/tlos/loot_table/blocks/lost_button.json",
           "src/main/resources/assets/tlos/models/item/lost_button.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostWoodRecipe",
@@ -801,7 +810,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostPlanksLogRecipe",
@@ -813,7 +823,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_planks_log_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostPlanksWoodRecipe",
@@ -825,7 +836,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_planks_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostStairsRecipe",
@@ -837,7 +849,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_stairs_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostSlabRecipe",
@@ -849,7 +862,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_slab_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostFenceRecipe",
@@ -861,7 +875,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_fence_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostFenceGateRecipe",
@@ -873,7 +888,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_fence_gate_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostPressurePlateRecipe",
@@ -885,7 +901,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_pressure_plate_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostButtonRecipe",
@@ -897,7 +914,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_button_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostStickRecipe",
@@ -909,7 +927,8 @@
         "files": [
           "src/main/resources/data/tlos/recipe/lost_stick_recipe.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "LostTree",
@@ -923,7 +942,8 @@
           "src/main/resources/data/tlos/worldgen/placed_feature/lost_tree.json",
           "src/main/resources/data/tlos/neoforge/biome_modifier/lost_tree_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Wood/Lost Wood"
     },
     {
       "name": "CentralKorokForest",
@@ -937,6 +957,224 @@
           "src/main/resources/data/tlos/worldgen/placed_feature/central_korok_forest_tree.json",
           "src/main/resources/data/tlos/worldgen/configured_feature/central_korok_forest_tree.json"
         ]
+      }
+    },
+    {
+      "name": "BulletTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_time",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/BulletTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenRupeePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_rupee_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/GreenRupeePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "GreenRupee",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_rupee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/item/green_rupee.json",
+          "src/main/java/net/mcreator/tlos/item/GreenRupeeItem.java"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "BlueRupee",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_rupee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/item/BlueRupeeItem.java",
+          "src/main/resources/assets/tlos/models/item/blue_rupee.json"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "BlueRupeePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_rupee_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/BlueRupeePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "RedRupee",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_rupee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/item/red_rupee.json",
+          "src/main/java/net/mcreator/tlos/item/RedRupeeItem.java"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "RedRupeePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_rupee_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/RedRupeePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "PurpleRupee",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_rupee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/item/purple_rupee.json",
+          "src/main/java/net/mcreator/tlos/item/PurpleRupeeItem.java"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "PurpleRupeePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_rupee_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/PurpleRupeePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "SilverRupee",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_rupee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tlos/models/item/silver_rupee.json",
+          "src/main/java/net/mcreator/tlos/item/SilverRupeeItem.java"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "SilverRupeePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_rupee_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/SilverRupeePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "GoldRupee",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rupee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tlos/item/GoldRupeeItem.java",
+          "src/main/resources/assets/tlos/models/item/gold_rupee.json"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "GoldRupeePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rupee_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tlos/procedures/GoldRupeePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "TLOSBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tlos_blocks",
+      "metadata": {
+        "files": []
       }
     }
   ],
@@ -976,6 +1214,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "bullet_time_active",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -1008,20 +1252,34 @@
       "~CUSTOM:MasterSword"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:TLOSItems": [
+      "SheikahSlate",
+      "MasterSwordPowered",
+      "MasterSword",
+      "GreenRupee",
+      "BlueRupee",
+      "RedRupee",
+      "PurpleRupee",
+      "SilverRupee",
+      "GoldRupee"
+    ]
+  },
   "language_map": {
     "en_us": {
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
-      "subtitles.master_cycle_crushes": "Master Cycle Drives",
+      "item.tlos.green_rupee": "Green Rupee",
+      "item.tlos.purple_rupee": "Green Rupee",
       "entity.tlos.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_items": "TLOS Items",
       "key.tlos.use_rune": "Use Rune",
       "item.tlos.sheikah_slate": "Sheikah Slate",
-      "block.tlos.lost_wood": "Lost Wood",
+      "item.tlos.blue_rupee": "Green Rupee",
       "biome.tlos.central_korok_forest": "Central Korok Forest",
       "block.tlos.lost_stairs": "Lost Stairs",
-      "item.tlos.master_sword": "Master Sword",
+      "item.tlos.silver_rupee.description_0": "Item representing 100 rupees",
       "block.tlos.lost_planks": "Lost Planks",
+      "item.tlos.green_rupee.description_0": "Item representing 1 rupee",
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "block.tlos.lost_fence_gate": "Lost Fence Gate",
       "block.tlos.lost_button": "Lost Button",
@@ -1029,9 +1287,20 @@
       "item.tlos.master_sword_powered": "Master Sword (POWERED)",
       "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
       "biome.tlos.lost_woods": "Lost Woods",
-      "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
+      "item.tlos.purple_rupee.description_0": "Item representing 50 rupees",
+      "item.tlos.gold_rupee": "Green Rupee",
       "block.tlos.lost_slab": "Lost Slab",
+      "item.tlos.silver_rupee": "Green Rupee",
       "block.tlos.lost_log": "Lost Log",
+      "subtitles.master_cycle_crushes": "Master Cycle Drives",
+      "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
+      "block.tlos.lost_wood": "Lost Wood",
+      "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
+      "item.tlos.master_sword": "Master Sword",
+      "item.tlos.red_rupee": "Green Rupee",
+      "item_group.tlos.tlos_blocks": "TLOS Blocks",
+      "item.tlos.red_rupee.description_0": "Item representing 20 rupees",
+      "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
       "block.tlos.lost_pressure_plate": "Lost Pressure Plate"
     }
   },
@@ -1041,22 +1310,37 @@
       {
         "name": "Sheikah Slate",
         "children": []
+      },
+      {
+        "name": "Wood",
+        "children": [
+          {
+            "name": "Lost Wood",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Rupee",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "tlos",
     "modName": "The Legend of Steve",
-    "version": "1.0.0",
-    "author": "ldsbo, MCreator",
+    "version": "0.0.1",
+    "description": "The Legend of Zelda: Minecraft Edition",
+    "author": "Tucky143",
     "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "license": "Academic Free License v3.0",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
+    "credits": "Tucky143",
     "modElementsPackage": "net.mcreator.tlos"
   },
   "mcreatorVersion": 202400447413

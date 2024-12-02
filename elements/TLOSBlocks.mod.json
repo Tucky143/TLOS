@@ -1,0 +1,11 @@
+{
+  "_fv": 72,
+  "_type": "tab",
+  "definition": {
+    "name": "TLOS Blocks",
+    "icon": {
+      "value": "CUSTOM:LostLog"
+    },
+    "showSearch": true
+  }
+}
