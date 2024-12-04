@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "tloa:deku_slab",
     "tloa:lost_slab"
   ]
 }

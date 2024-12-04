@@ -32,6 +32,8 @@ import net.mcreator.tloa.item.RedRupeeItem;
 import net.mcreator.tloa.item.PurpleRupeeItem;
 import net.mcreator.tloa.item.MasterSwordPoweredItem;
 import net.mcreator.tloa.item.MasterSwordItem;
+import net.mcreator.tloa.item.LightBowItem;
+import net.mcreator.tloa.item.LightArrowItemItem;
 import net.mcreator.tloa.item.GreenRupeeItem;
 import net.mcreator.tloa.item.GoldRupeeItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
@@ -58,6 +60,18 @@ public class TloaModItems {
 	public static final DeferredItem<Item> PURPLE_RUPEE = REGISTRY.register("purple_rupee", PurpleRupeeItem::new);
 	public static final DeferredItem<Item> SILVER_RUPEE = REGISTRY.register("silver_rupee", SilverRupeeItem::new);
 	public static final DeferredItem<Item> GOLD_RUPEE = REGISTRY.register("gold_rupee", GoldRupeeItem::new);
+	public static final DeferredItem<Item> DEKU_WOOD = block(TloaModBlocks.DEKU_WOOD);
+	public static final DeferredItem<Item> DEKU_LOG = block(TloaModBlocks.DEKU_LOG);
+	public static final DeferredItem<Item> DEKU_PLANKS = block(TloaModBlocks.DEKU_PLANKS);
+	public static final DeferredItem<Item> DEKU_LEAVES = block(TloaModBlocks.DEKU_LEAVES);
+	public static final DeferredItem<Item> DEKU_STAIRS = block(TloaModBlocks.DEKU_STAIRS);
+	public static final DeferredItem<Item> DEKU_SLAB = block(TloaModBlocks.DEKU_SLAB);
+	public static final DeferredItem<Item> DEKU_FENCE = block(TloaModBlocks.DEKU_FENCE);
+	public static final DeferredItem<Item> DEKU_FENCE_GATE = block(TloaModBlocks.DEKU_FENCE_GATE);
+	public static final DeferredItem<Item> DEKU_PRESSURE_PLATE = block(TloaModBlocks.DEKU_PRESSURE_PLATE);
+	public static final DeferredItem<Item> DEKU_BUTTON = block(TloaModBlocks.DEKU_BUTTON);
+	public static final DeferredItem<Item> LIGHT_BOW = REGISTRY.register("light_bow", LightBowItem::new);
+	public static final DeferredItem<Item> LIGHT_ARROW_ITEM = REGISTRY.register("light_arrow_item", LightArrowItemItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -25,3 +25,19 @@
 /tp @s 3155 71 306
 /locate biome tlos:central_korok_forest
 /summon minecraft:skeleton
+/locate biome tloa:central_korok_forest
+/tp @s 1199 92 898
+/locate biome tloa:central_korok_forest
+/tp @s 3286 -46 -3381
+/tick rate 3
+/tick rate 20
+/give @a tloa:sheikah_slate
+/give @a bow
+/summon tloa:master_cycle_zero
+/give @a tloa:deku_button
+/data get entity @p
+/data remove entity @p tloa:money
+/data modify entity @p tloa:money set value 1
+/data
+/data get entity Dev
+/summon tloa:master_cycle_zero

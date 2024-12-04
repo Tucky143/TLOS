@@ -1,0 +1,48 @@
+{
+  "_fv": 72,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DekuLog"
+      },
+      {
+        "value": "CUSTOM:DekuLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DekuLog"
+      },
+      {
+        "value": "CUSTOM:DekuLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DekuWood"
+    },
+    "name": "deku_wood_recipe",
+    "namespace": "mod"
+  }
+}

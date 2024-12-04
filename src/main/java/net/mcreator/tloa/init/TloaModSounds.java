@@ -15,5 +15,6 @@ import net.mcreator.tloa.TloaMod;
 
 public class TloaModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(Registries.SOUND_EVENT, TloaMod.MODID);
-	public static final DeferredHolder<SoundEvent, SoundEvent> MASTER_CYCLE_CRUSHES = REGISTRY.register("master_cycle_crushes", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("tloa", "master_cycle_crushes")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> RUPEE_ADDED = REGISTRY.register("rupee_added", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("tloa", "rupee_added")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> LIGHT_ARROW_SPLASH = REGISTRY.register("light_arrow_splash", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("tloa", "light_arrow_splash")));
 }

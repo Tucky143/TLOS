@@ -1,9 +1,18 @@
 {
-  "master_cycle_crushes": {
-    "subtitle": "subtitles.master_cycle_crushes",
+  "rupee_added": {
+    "subtitle": "subtitles.rupee_added",
     "sounds": [
       {
-        "name": "tloa:empty",
+        "name": "tloa:rupee_added",
+        "stream": false
+      }
+    ]
+  },
+  "light_arrow_splash": {
+    "subtitle": "subtitles.light_arrow_splash",
+    "sounds": [
+      {
+        "name": "tloa:arrow_splash",
         "stream": false
       }
     ]

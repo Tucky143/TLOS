@@ -11,8 +11,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -44,21 +42,39 @@ public class BulletTimeProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/crossbow")))
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/bow")))) {
 			if (!entity.onGround()) {
-				new Object() {
-					void timedLoop(int current, int total, int ticks) {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/crossbow")))
-								|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/bow")))) {
-							if (!entity.onGround()) {
-								TloaModVariables.MapVariables.get(world).bullet_time_active = true;
-								TloaModVariables.MapVariables.get(world).syncData(world);
-								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 5, 15, false, false));
-								if (world instanceof ServerLevel _level)
-									_level.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "tick rate 5");
+				if (0.08 < Math.abs(entity.getDeltaMovement().y())) {
+					new Object() {
+						void timedLoop(int current, int total, int ticks) {
+							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/crossbow")))
+									|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/bow")))) {
+								if (!entity.onGround()) {
+									{
+										TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+										_vars.bullet_time_active = true;
+										_vars.syncPlayerVariables(entity);
+									}
+									if (world instanceof ServerLevel _level)
+										_level.getServer().getCommands()
+												.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "tick rate 4");
+								} else {
+									{
+										TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+										_vars.bullet_time_active = false;
+										_vars.syncPlayerVariables(entity);
+									}
+									if (world instanceof ServerLevel _level)
+										_level.getServer().getCommands()
+												.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "tick rate 20");
+									if (true) {
+										return;
+									}
+								}
 							} else {
-								TloaModVariables.MapVariables.get(world).bullet_time_active = false;
-								TloaModVariables.MapVariables.get(world).syncData(world);
+								{
+									TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+									_vars.bullet_time_active = false;
+									_vars.syncPlayerVariables(entity);
+								}
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands()
 											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "tick rate 20");
@@ -66,24 +82,15 @@ public class BulletTimeProcedure {
 									return;
 								}
 							}
-						} else {
-							TloaModVariables.MapVariables.get(world).bullet_time_active = false;
-							TloaModVariables.MapVariables.get(world).syncData(world);
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-										"tick rate 20");
-							if (true) {
-								return;
-							}
+							final int tick2 = ticks;
+							TloaMod.queueServerWork(tick2, () -> {
+								if (total > current + 1) {
+									timedLoop(current + 1, total, tick2);
+								}
+							});
 						}
-						final int tick2 = ticks;
-						TloaMod.queueServerWork(tick2, () -> {
-							if (total > current + 1) {
-								timedLoop(current + 1, total, tick2);
-							}
-						});
-					}
-				}.timedLoop(0, 100000000, 1);
+					}.timedLoop(0, 100000000, 1);
+				}
 			}
 		}
 	}

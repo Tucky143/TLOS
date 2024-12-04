@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tloa:green_rupee",
+    "tloa:blue_rupee",
+    "tloa:red_rupee",
+    "tloa:purple_rupee",
+    "tloa:silver_rupee",
+    "tloa:gold_rupee"
+  ]
+}

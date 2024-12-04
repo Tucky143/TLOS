@@ -1,0 +1,33 @@
+{
+  "_fv": 72,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:LightArrowItem"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:light_arrow_splash"
+    },
+    "igniteFire": false,
+    "power": 4.0,
+    "damage": 4.0,
+    "knockback": 0,
+    "entityModel": "Modelarrow",
+    "customModelTexture": "light_arrow.png",
+    "modelWidth": 0.19999999999999998,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "LightArrowProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "LightArrowProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "LightArrowProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "LightArrowWhileProjectileFlyingTick"
+    }
+  }
+}

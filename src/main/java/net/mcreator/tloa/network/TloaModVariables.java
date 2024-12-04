@@ -66,12 +66,14 @@ public class TloaModVariables {
 		public static void clonePlayer(PlayerEvent.Clone event) {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
+			clone.bullet_time_active = original.bullet_time_active;
 			if (!event.isWasDeath()) {
 				clone.cryonis_activated = original.cryonis_activated;
 				clone.magnesis_activated = original.magnesis_activated;
 				clone.remote_bomb_activated = original.remote_bomb_activated;
 				clone.stasis_activated = original.stasis_activated;
 				clone.master_cycle_activated = original.master_cycle_activated;
+				clone.money = original.money;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -135,7 +137,6 @@ public class TloaModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "tloa_mapvars";
 		public boolean player_holding_remote_bomb = false;
-		public boolean bullet_time_active = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -145,13 +146,11 @@ public class TloaModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			player_holding_remote_bomb = nbt.getBoolean("player_holding_remote_bomb");
-			bullet_time_active = nbt.getBoolean("bullet_time_active");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putBoolean("player_holding_remote_bomb", player_holding_remote_bomb);
-			nbt.putBoolean("bullet_time_active", bullet_time_active);
 			return nbt;
 		}
 
@@ -218,6 +217,8 @@ public class TloaModVariables {
 		public boolean remote_bomb_activated = false;
 		public boolean stasis_activated = false;
 		public boolean master_cycle_activated = false;
+		public boolean bullet_time_active = false;
+		public double money = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -227,6 +228,8 @@ public class TloaModVariables {
 			nbt.putBoolean("remote_bomb_activated", remote_bomb_activated);
 			nbt.putBoolean("stasis_activated", stasis_activated);
 			nbt.putBoolean("master_cycle_activated", master_cycle_activated);
+			nbt.putBoolean("bullet_time_active", bullet_time_active);
+			nbt.putDouble("money", money);
 			return nbt;
 		}
 
@@ -237,6 +240,8 @@ public class TloaModVariables {
 			remote_bomb_activated = nbt.getBoolean("remote_bomb_activated");
 			stasis_activated = nbt.getBoolean("stasis_activated");
 			master_cycle_activated = nbt.getBoolean("master_cycle_activated");
+			bullet_time_active = nbt.getBoolean("bullet_time_active");
+			money = nbt.getDouble("money");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

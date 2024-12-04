@@ -18,6 +18,16 @@ import net.mcreator.tloa.block.LostLogBlock;
 import net.mcreator.tloa.block.LostFenceGateBlock;
 import net.mcreator.tloa.block.LostFenceBlock;
 import net.mcreator.tloa.block.LostButtonBlock;
+import net.mcreator.tloa.block.DekuWoodBlock;
+import net.mcreator.tloa.block.DekuStairsBlock;
+import net.mcreator.tloa.block.DekuSlabBlock;
+import net.mcreator.tloa.block.DekuPressurePlateBlock;
+import net.mcreator.tloa.block.DekuPlanksBlock;
+import net.mcreator.tloa.block.DekuLogBlock;
+import net.mcreator.tloa.block.DekuLeavesBlock;
+import net.mcreator.tloa.block.DekuFenceGateBlock;
+import net.mcreator.tloa.block.DekuFenceBlock;
+import net.mcreator.tloa.block.DekuButtonBlock;
 import net.mcreator.tloa.TloaMod;
 
 public class TloaModBlocks {
@@ -31,6 +41,16 @@ public class TloaModBlocks {
 	public static final DeferredBlock<Block> LOST_FENCE_GATE = REGISTRY.register("lost_fence_gate", LostFenceGateBlock::new);
 	public static final DeferredBlock<Block> LOST_PRESSURE_PLATE = REGISTRY.register("lost_pressure_plate", LostPressurePlateBlock::new);
 	public static final DeferredBlock<Block> LOST_BUTTON = REGISTRY.register("lost_button", LostButtonBlock::new);
+	public static final DeferredBlock<Block> DEKU_WOOD = REGISTRY.register("deku_wood", DekuWoodBlock::new);
+	public static final DeferredBlock<Block> DEKU_LOG = REGISTRY.register("deku_log", DekuLogBlock::new);
+	public static final DeferredBlock<Block> DEKU_PLANKS = REGISTRY.register("deku_planks", DekuPlanksBlock::new);
+	public static final DeferredBlock<Block> DEKU_LEAVES = REGISTRY.register("deku_leaves", DekuLeavesBlock::new);
+	public static final DeferredBlock<Block> DEKU_STAIRS = REGISTRY.register("deku_stairs", DekuStairsBlock::new);
+	public static final DeferredBlock<Block> DEKU_SLAB = REGISTRY.register("deku_slab", DekuSlabBlock::new);
+	public static final DeferredBlock<Block> DEKU_FENCE = REGISTRY.register("deku_fence", DekuFenceBlock::new);
+	public static final DeferredBlock<Block> DEKU_FENCE_GATE = REGISTRY.register("deku_fence_gate", DekuFenceGateBlock::new);
+	public static final DeferredBlock<Block> DEKU_PRESSURE_PLATE = REGISTRY.register("deku_pressure_plate", DekuPressurePlateBlock::new);
+	public static final DeferredBlock<Block> DEKU_BUTTON = REGISTRY.register("deku_button", DekuButtonBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "tloa:deku_planks",
+    "tloa:deku_log",
+    "tloa:deku_wood",
     "tloa:lost_planks",
     "tloa:lost_log",
     "tloa:lost_wood"

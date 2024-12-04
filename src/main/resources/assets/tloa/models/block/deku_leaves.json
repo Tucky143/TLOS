@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tloa:block/deku_leaves",
+    "particle": "tloa:block/deku_leaves"
+  }
+}

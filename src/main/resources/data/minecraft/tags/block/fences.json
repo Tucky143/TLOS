@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "tloa:lost_fence"
+    "tloa:deku_fence",
+    "tloa:lost_fence",
+    "tloa:deku_fence_gate",
+    "tloa:lost_fence_gate"
   ]
 }

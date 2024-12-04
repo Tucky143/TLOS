@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.tloa.client.model.Modelarrow;
 import net.mcreator.tloa.client.model.ModelSquareRemoteBomb;
 import net.mcreator.tloa.client.model.ModelMasterCycle;
 
@@ -17,6 +18,7 @@ public class TloaModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelSquareRemoteBomb.LAYER_LOCATION, ModelSquareRemoteBomb::createBodyLayer);
+		event.registerLayerDefinition(Modelarrow.LAYER_LOCATION, Modelarrow::createBodyLayer);
 		event.registerLayerDefinition(ModelMasterCycle.LAYER_LOCATION, ModelMasterCycle::createBodyLayer);
 	}
 }

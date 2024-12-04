@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "tloa:deku_stairs",
     "tloa:lost_stairs"
   ]
 }

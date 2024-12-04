@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tloa:deku_planks"
+    }
+  ],
+  "result": {
+    "id": "tloa:deku_button",
+    "count": 1
+  }
+}

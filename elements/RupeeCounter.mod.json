@@ -1,0 +1,58 @@
+{
+  "_fv": 72,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "rupee_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_RIGHT",
+          "x": 342,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_rupee.png",
+          "use1Xscale": true,
+          "anchorPoint": "TOP_RIGHT",
+          "x": 342,
+          "y": 3,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_money",
+          "text": {
+            "fixedValue": "Money",
+            "name": "MoneyOverlayValue"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_RIGHT",
+          "x": 360,
+          "y": 7,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 10,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

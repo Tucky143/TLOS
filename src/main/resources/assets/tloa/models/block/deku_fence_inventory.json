@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "tloa:block/deku_planks",
+    "particle": "tloa:block/deku_planks"
+  },
+  "render_type": "solid"
+}

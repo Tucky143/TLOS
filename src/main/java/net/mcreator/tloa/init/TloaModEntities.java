@@ -18,6 +18,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.tloa.entity.SquareRemoteBombEntity;
 import net.mcreator.tloa.entity.MasterCycleZEROEntity;
+import net.mcreator.tloa.entity.LightArrowEntity;
 import net.mcreator.tloa.TloaMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -29,6 +30,8 @@ public class TloaModEntities {
 			EntityType.Builder.<SquareRemoteBombEntity>of(SquareRemoteBombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3)
 
 					.sized(0.6f, 0.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<LightArrowEntity>> LIGHT_ARROW = register("light_arrow",
+			EntityType.Builder.<LightArrowEntity>of(LightArrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.2f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

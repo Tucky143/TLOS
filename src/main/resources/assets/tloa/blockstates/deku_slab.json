@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tloa:block/deku_slab"
+    },
+    "type=top": {
+      "model": "tloa:block/deku_slab_top"
+    },
+    "type=double": {
+      "model": "tloa:block/deku_slab_full"
+    }
+  }
+}

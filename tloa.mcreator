@@ -650,7 +650,7 @@
           "src/main/resources/assets/tloa/blockstates/lost_wood.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostLog",
@@ -667,7 +667,7 @@
           "src/main/resources/assets/tloa/blockstates/lost_log.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostPlanks",
@@ -684,7 +684,7 @@
           "src/main/resources/assets/tloa/models/item/lost_planks.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostStairs",
@@ -703,7 +703,7 @@
           "src/main/resources/assets/tloa/blockstates/lost_stairs.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostSlab",
@@ -722,7 +722,7 @@
           "src/main/resources/assets/tloa/blockstates/lost_slab.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostFence",
@@ -741,7 +741,7 @@
           "src/main/resources/data/tloa/loot_table/blocks/lost_fence.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostFenceGate",
@@ -761,7 +761,7 @@
           "src/main/resources/assets/tloa/blockstates/lost_fence_gate.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostPressurePlate",
@@ -779,7 +779,7 @@
           "src/main/java/net/mcreator/tloa/block/LostPressurePlateBlock.java"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostButton",
@@ -798,7 +798,7 @@
           "src/main/resources/assets/tloa/models/block/lost_button.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostWoodRecipe",
@@ -811,7 +811,7 @@
           "src/main/resources/data/tloa/recipe/lost_wood_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostPlanksLogRecipe",
@@ -824,7 +824,7 @@
           "src/main/resources/data/tloa/recipe/lost_planks_log_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostPlanksWoodRecipe",
@@ -837,7 +837,7 @@
           "src/main/resources/data/tloa/recipe/lost_planks_wood_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostStairsRecipe",
@@ -850,7 +850,7 @@
           "src/main/resources/data/tloa/recipe/lost_stairs_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostSlabRecipe",
@@ -863,7 +863,7 @@
           "src/main/resources/data/tloa/recipe/lost_slab_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostFenceRecipe",
@@ -876,7 +876,7 @@
           "src/main/resources/data/tloa/recipe/lost_fence_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostFenceGateRecipe",
@@ -889,7 +889,7 @@
           "src/main/resources/data/tloa/recipe/lost_fence_gate_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostPressurePlateRecipe",
@@ -902,7 +902,7 @@
           "src/main/resources/data/tloa/recipe/lost_pressure_plate_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostButtonRecipe",
@@ -915,7 +915,7 @@
           "src/main/resources/data/tloa/recipe/lost_button_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostStickRecipe",
@@ -928,7 +928,7 @@
           "src/main/resources/data/tloa/recipe/lost_stick_recipe.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "LostTree",
@@ -943,7 +943,7 @@
           "src/main/resources/data/tloa/neoforge/biome_modifier/lost_tree_biome_modifier.json"
         ]
       },
-      "path": "~/Lost Wood Woodset"
+      "path": "~/Lost Wood"
     },
     {
       "name": "CentralKorokForest",
@@ -1176,6 +1176,485 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "DekuWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/blockstates/deku_wood.json",
+          "src/main/resources/assets/tloa/models/item/deku_wood.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_wood.json",
+          "src/main/resources/assets/tloa/models/block/deku_wood.json",
+          "src/main/java/net/mcreator/tloa/block/DekuWoodBlock.java"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/block/deku_log.json",
+          "src/main/resources/assets/tloa/blockstates/deku_log.json",
+          "src/main/resources/assets/tloa/models/item/deku_log.json",
+          "src/main/java/net/mcreator/tloa/block/DekuLogBlock.java",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_log.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/block/DekuPlanksBlock.java",
+          "src/main/resources/assets/tloa/models/item/deku_planks.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_planks.json",
+          "src/main/resources/assets/tloa/blockstates/deku_planks.json",
+          "src/main/resources/assets/tloa/models/block/deku_planks.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/block/deku_leaves.json",
+          "src/main/java/net/mcreator/tloa/block/DekuLeavesBlock.java",
+          "src/main/resources/assets/tloa/blockstates/deku_leaves.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_leaves.json",
+          "src/main/resources/assets/tloa/models/item/deku_leaves.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/block/DekuStairsBlock.java",
+          "src/main/resources/assets/tloa/blockstates/deku_stairs.json",
+          "src/main/resources/assets/tloa/models/block/deku_stairs.json",
+          "src/main/resources/assets/tloa/models/block/deku_stairs_inner.json",
+          "src/main/resources/assets/tloa/models/block/deku_stairs_outer.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_stairs.json",
+          "src/main/resources/assets/tloa/models/item/deku_stairs.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/block/DekuSlabBlock.java",
+          "src/main/resources/assets/tloa/models/block/deku_slab_top.json",
+          "src/main/resources/assets/tloa/models/item/deku_slab.json",
+          "src/main/resources/assets/tloa/blockstates/deku_slab.json",
+          "src/main/resources/assets/tloa/models/block/deku_slab_full.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_slab.json",
+          "src/main/resources/assets/tloa/models/block/deku_slab.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/deku_fence.json",
+          "src/main/resources/assets/tloa/blockstates/deku_fence.json",
+          "src/main/java/net/mcreator/tloa/block/DekuFenceBlock.java",
+          "src/main/resources/assets/tloa/models/block/deku_fence_post.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence_inventory.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_fence.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/deku_fence_gate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_fence_gate.json",
+          "src/main/java/net/mcreator/tloa/block/DekuFenceGateBlock.java",
+          "src/main/resources/assets/tloa/models/block/deku_fence_gate_open.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence_gate_wall.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence_gate.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence_gate_wall_open.json",
+          "src/main/resources/assets/tloa/blockstates/deku_fence_gate.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/block/deku_pressure_plate_down.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/block/deku_pressure_plate.json",
+          "src/main/resources/assets/tloa/blockstates/deku_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/item/deku_pressure_plate.json",
+          "src/main/java/net/mcreator/tloa/block/DekuPressurePlateBlock.java"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/block/DekuButtonBlock.java",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_button.json",
+          "src/main/resources/assets/tloa/models/item/deku_button.json",
+          "src/main/resources/assets/tloa/models/block/deku_button_inventory.json",
+          "src/main/resources/assets/tloa/blockstates/deku_button.json",
+          "src/main/resources/assets/tloa/models/block/deku_button.json",
+          "src/main/resources/assets/tloa/models/block/deku_button_pressed.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_wood_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuPlanksLogRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_planks_log_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuPlanksWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_planks_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_planks_wood_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_slab_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_fence_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_button_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "DekuStickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/deku_stick_recipe.json"
+        ]
+      },
+      "path": "~/Deku Wood"
+    },
+    {
+      "name": "LightBow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/light_bow.json",
+          "src/main/java/net/mcreator/tloa/item/LightBowItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LightArrowItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_arrow_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/item/LightArrowItemItem.java",
+          "src/main/resources/assets/tloa/models/item/light_arrow_item.json"
+        ]
+      }
+    },
+    {
+      "name": "LightArrowWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_arrow_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/LightArrowWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightArrow",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/client/renderer/LightArrowRenderer.java",
+          "src/main/java/net/mcreator/tloa/entity/LightArrowEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "LightArrowProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_arrow_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/LightArrowProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RupeeRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rupee_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/RupeeRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "RupeeCounter",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rupee_counter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/client/screens/RupeeCounterOverlay.java"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "MoneyOverlayValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_overlay_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/MoneyOverlayValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rupee"
     }
   ],
   "variable_elements": [
@@ -1218,38 +1697,97 @@
     {
       "name": "bullet_time_active",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "money",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
     }
   ],
   "sound_elements": [
     {
-      "name": "master_cycle_crushes",
+      "name": "rupee_added",
       "files": [
-        "empty"
+        "rupee_added"
       ],
-      "category": "neutral",
-      "subtitle": "Master Cycle Drives"
+      "category": "player",
+      "subtitle": "Rupee Collected"
+    },
+    {
+      "name": "light_arrow_splash",
+      "files": [
+        "arrow_splash"
+      ],
+      "category": "player",
+      "subtitle": "Light Arrow Splashes"
     }
   ],
   "tag_elements": {
+    "ITEMS:mod:light_bow": [
+      "CUSTOM:LightBow"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "CUSTOM:DekuFence",
+      "CUSTOM:DekuFenceGate"
+    ],
+    "ITEMS:mod:rupee": [
+      "CUSTOM:GreenRupee",
+      "CUSTOM:BlueRupee",
+      "CUSTOM:RedRupee",
+      "CUSTOM:PurpleRupee",
+      "CUSTOM:SilverRupee",
+      "CUSTOM:GoldRupee"
+    ],
+    "BIOMES:minecraft:is_overworld": [
+      "CUSTOM:CentralKorokForest",
+      "CUSTOM:KorokForest"
+    ],
+    "BLOCKS:minecraft:logs": [
+      "CUSTOM:LostLog",
+      "CUSTOM:DekuLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:DekuLeaves"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:DekuPlanks",
+      "~CUSTOM:DekuLog",
+      "~CUSTOM:DekuWood",
       "~CUSTOM:LostPlanks",
       "~CUSTOM:LostLog",
       "~CUSTOM:LostWood"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:DekuSlab",
       "~CUSTOM:LostSlab"
     ],
     "BLOCKS:minecraft:fences": [
-      "~CUSTOM:LostFence"
+      "~CUSTOM:DekuFence",
+      "~CUSTOM:LostFence",
+      "CUSTOM:DekuFenceGate",
+      "CUSTOM:LostFenceGate"
+    ],
+    "ITEMS:minecraft:enchantable/bow": [
+      "CUSTOM:LightBow"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:DekuStairs",
       "~CUSTOM:LostStairs"
+    ],
+    "BIOMES:mod:is_zelda": [
+      "CUSTOM:CentralKorokForest",
+      "CUSTOM:KorokForest"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:MasterSwordPowered",
       "~CUSTOM:MasterSword"
+    ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:LostPlanks",
+      "CUSTOM:DekuPlanks"
     ]
   },
   "tab_element_order": {},
@@ -1258,9 +1796,10 @@
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
       "item.tlos.purple_rupee": "Green Rupee",
+      "gui.tloa.rupee_counter.label_empty": "",
       "key.tlos.use_rune": "Use Rune",
-      "item.tlos.blue_rupee": "Green Rupee",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
+      "item.tlos.blue_rupee": "Green Rupee",
       "block.tlom.lost_wood": "Lost Wood",
       "item.tlos.silver_rupee.description_0": "Item representing 100 rupees",
       "item.tlom.blue_rupee": "Green Rupee",
@@ -1269,18 +1808,24 @@
       "key.tloa.use_rune": "Use Rune",
       "block.tlos.lost_button": "Lost Button",
       "item.tlom.green_rupee": "Green Rupee",
+      "block.tloa.deku_fence": "Deku Fence",
       "block.tloa.lost_planks": "Lost Planks",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "item.tloa.blue_rupee": "Green Rupee",
+      "item.tloa.blue_rupee": "Blue Rupee",
+      "block.tloa.deku_wood": "Deku Wood",
+      "block.tloa.deku_planks": "Deku Planks",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
       "item.tlom.green_rupee.description_0": "Item representing 1 rupee",
       "item_group.tlom.tloa_items": "TLOA Items",
-      "item.tloa.gold_rupee": "Green Rupee",
+      "block.tloa.deku_button": "Deku Button",
+      "item.tloa.gold_rupee": "Gold Rupee",
       "biome.tloa.lost_woods": "Lost Woods",
+      "gui.tloa.rupee_counter.label_money": "Money",
       "item.tloa.red_rupee.description_0": "Item representing 20 rupees",
       "block.tloa.lost_pressure_plate": "Lost Pressure Plate",
+      "block.tloa.deku_stairs": "Deku Stairs",
       "block.tlom.lost_stairs": "Lost Stairs",
       "entity.tlos.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_items": "TLOS Items",
@@ -1290,10 +1835,11 @@
       "block.tlos.lost_stairs": "Lost Stairs",
       "item.tlom.red_rupee.description_0": "Item representing 20 rupees",
       "block.tloa.lost_button": "Lost Button",
-      "item.tloa.silver_rupee": "Green Rupee",
+      "item.tloa.silver_rupee": "Silver Rupee",
       "entity.tlos.master_cycle_zero": "Master Cycle ZERO",
       "item.tlos.gold_rupee": "Green Rupee",
-      "item.tloa.red_rupee": "Green Rupee",
+      "subtitles.rupee_added": "Rupee Collected",
+      "item.tloa.red_rupee": "Red Rupee",
       "block.tlom.lost_fence": "Lost Fence",
       "block.tloa.lost_stairs": "Lost Stairs",
       "block.tlom.lost_button": "Lost Button",
@@ -1302,6 +1848,7 @@
       "block.tloa.lost_slab": "Lost Slab",
       "entity.tloa.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_blocks": "TLOS Blocks",
+      "block.tloa.deku_pressure_plate": "Deku Pressure Plate",
       "entity.tlom.square_remote_bomb": "Square Remote Bomb",
       "biome.tlom.lost_woods": "Lost Woods",
       "key.tlom.use_rune": "Use Rune",
@@ -1312,26 +1859,31 @@
       "biome.tlos.central_korok_forest": "Central Korok Forest",
       "block.tloa.lost_fence": "Lost Fence",
       "item.tlos.green_rupee.description_0": "Item representing 1 rupee",
+      "item.tloa.light_arrow_item": "Light Arrow",
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tlom.purple_rupee": "Green Rupee",
       "item.tlos.master_sword_powered": "Master Sword (POWERED)",
+      "block.tloa.deku_slab": "Deku Slab",
       "block.tlos.lost_log": "Lost Log",
       "item.tlom.red_rupee": "Green Rupee",
       "item_group.tlom.tloa_blocks": "TLOA Blocks",
       "item.tloa.sheikah_slate_on": "Sheikah Slate (ON)",
       "item.tloa.master_sword": "Master Sword",
       "block.tlom.lost_fence_gate": "Lost Fence Gate",
+      "item.tloa.light_bow": "Light Bow",
       "block.tloa.lost_fence_gate": "Lost Fence Gate",
       "block.tlom.lost_log": "Lost Log",
       "item.tlom.silver_rupee.description_0": "Item representing 100 rupees",
       "block.tloa.lost_log": "Lost Log",
       "biome.tloa.central_korok_forest": "Central Korok Forest",
+      "block.tloa.deku_leaves": "Deku Leaves",
       "item.tloa.purple_rupee.description_0": "Item representing 50 rupees",
       "item.tlos.red_rupee.description_0": "Item representing 20 rupees",
       "item.tlos.sheikah_slate_on": "Sheikah Slate (ON)",
       "entity.tloa.master_cycle_zero": "Master Cycle ZERO",
       "item.tlom.gold_rupee.description_0": "Item representing 300 rupees",
       "item.tlom.silver_rupee": "Green Rupee",
+      "block.tloa.deku_log": "Deku Log",
       "block.tlos.lost_planks": "Lost Planks",
       "item.tloa.green_rupee.description_0": "Item representing 1 rupee",
       "block.tlos.lost_fence_gate": "Lost Fence Gate",
@@ -1354,7 +1906,9 @@
       "item.tlos.master_sword": "Master Sword",
       "item.tlom.purple_rupee.description_0": "Item representing 50 rupees",
       "item.tlos.red_rupee": "Green Rupee",
-      "item.tloa.purple_rupee": "Green Rupee",
+      "block.tloa.deku_fence_gate": "Deku Fence Gate",
+      "subtitles.light_arrow_splash": "Light Arrow Splashes",
+      "item.tloa.purple_rupee": "Purple Rupee",
       "item.tlom.gold_rupee": "Green Rupee"
     }
   },
@@ -1370,7 +1924,11 @@
         "children": []
       },
       {
-        "name": "Lost Wood Woodset",
+        "name": "Lost Wood",
+        "children": []
+      },
+      {
+        "name": "Deku Wood",
         "children": []
       }
     ]

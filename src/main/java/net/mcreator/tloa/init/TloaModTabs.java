@@ -32,9 +32,10 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.PURPLE_RUPEE.get());
 				tabData.accept(TloaModItems.SILVER_RUPEE.get());
 				tabData.accept(TloaModItems.GOLD_RUPEE.get());
+				tabData.accept(TloaModItems.LIGHT_BOW.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS = REGISTRY.register("tloa_blocks",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks")).icon(() -> new ItemStack(TloaModBlocks.LOST_LOG.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks")).icon(() -> new ItemStack(TloaModBlocks.DEKU_LEAVES.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TloaModBlocks.LOST_WOOD.get().asItem());
 				tabData.accept(TloaModBlocks.LOST_LOG.get().asItem());
 				tabData.accept(TloaModBlocks.LOST_PLANKS.get().asItem());
@@ -44,6 +45,16 @@ public class TloaModTabs {
 				tabData.accept(TloaModBlocks.LOST_FENCE_GATE.get().asItem());
 				tabData.accept(TloaModBlocks.LOST_PRESSURE_PLATE.get().asItem());
 				tabData.accept(TloaModBlocks.LOST_BUTTON.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_WOOD.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_LOG.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_PLANKS.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_LEAVES.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_STAIRS.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_SLAB.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_FENCE.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_FENCE_GATE.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_PRESSURE_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_BUTTON.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
