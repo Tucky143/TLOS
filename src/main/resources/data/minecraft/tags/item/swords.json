@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "tloa:kokiri_sword",
     "tloa:master_sword_powered",
     "tloa:master_sword"
   ]

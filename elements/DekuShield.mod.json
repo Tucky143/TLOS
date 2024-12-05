@@ -1,0 +1,39 @@
+{
+  "_fv": 72,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shield",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "deku_shield_item",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Deku Shield",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TLOSItems"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 15,
+    "damageVsEntity": 4.0,
+    "usageCount": 402,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:DekuPlanks"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

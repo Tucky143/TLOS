@@ -400,7 +400,8 @@
           "src/main/java/net/mcreator/tloa/item/MasterSwordItem.java",
           "src/main/resources/assets/tloa/models/item/master_sword.json"
         ]
-      }
+      },
+      "path": "~/Swords"
     },
     {
       "name": "MasterSwordPowered",
@@ -413,7 +414,8 @@
           "src/main/java/net/mcreator/tloa/item/MasterSwordPoweredItem.java",
           "src/main/resources/assets/tloa/models/item/master_sword_powered.json"
         ]
-      }
+      },
+      "path": "~/Swords"
     },
     {
       "name": "SquareRemoteBomb",
@@ -1500,7 +1502,8 @@
           "src/main/resources/assets/tloa/models/item/light_bow.json",
           "src/main/java/net/mcreator/tloa/item/LightBowItem.java"
         ]
-      }
+      },
+      "path": "~/Bows"
     },
     {
       "name": "LightArrowItem",
@@ -1513,7 +1516,8 @@
           "src/main/java/net/mcreator/tloa/item/LightArrowItemItem.java",
           "src/main/resources/assets/tloa/models/item/light_arrow_item.json"
         ]
-      }
+      },
+      "path": "~/Bows"
     },
     {
       "name": "LightArrowWhileProjectileFlyingTick",
@@ -1543,7 +1547,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Bows"
     },
     {
       "name": "LightArrow",
@@ -1556,7 +1561,8 @@
           "src/main/java/net/mcreator/tloa/client/renderer/LightArrowRenderer.java",
           "src/main/java/net/mcreator/tloa/entity/LightArrowEntity.java"
         ]
-      }
+      },
+      "path": "~/Bows"
     },
     {
       "name": "LightArrowProjectileHitsBlock",
@@ -1586,7 +1592,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Bows"
     },
     {
       "name": "RupeeRightClicked",
@@ -1655,6 +1662,50 @@
         ]
       },
       "path": "~/Rupee"
+    },
+    {
+      "name": "DekuShield",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_shield",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/deku_shield_0.json",
+          "src/main/java/net/mcreator/tloa/item/DekuShieldItem.java",
+          "src/main/resources/assets/tloa/models/item/deku_shield.json"
+        ]
+      },
+      "path": "~/Shields"
+    },
+    {
+      "name": "HylianShield",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hylian_shield",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/item/HylianShieldItem.java",
+          "src/main/resources/assets/tloa/models/item/hylian_shield_0.json",
+          "src/main/resources/assets/tloa/models/item/hylian_shield.json"
+        ]
+      },
+      "path": "~/Shields"
+    },
+    {
+      "name": "KokiriSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kokiri_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/item/KokiriSwordItem.java",
+          "src/main/resources/assets/tloa/models/item/kokiri_sword.json"
+        ]
+      },
+      "path": "~/Swords"
     }
   ],
   "variable_elements": [
@@ -1782,6 +1833,7 @@
       "CUSTOM:KorokForest"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:KokiriSword",
       "~CUSTOM:MasterSwordPowered",
       "~CUSTOM:MasterSword"
     ],
@@ -1795,11 +1847,11 @@
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "item.tlos.purple_rupee": "Green Rupee",
       "gui.tloa.rupee_counter.label_empty": "",
+      "item.tlos.purple_rupee": "Green Rupee",
       "key.tlos.use_rune": "Use Rune",
-      "item.tlom.master_sword_powered": "Master Sword (POWERED)",
       "item.tlos.blue_rupee": "Green Rupee",
+      "item.tlom.master_sword_powered": "Master Sword (POWERED)",
       "block.tlom.lost_wood": "Lost Wood",
       "item.tlos.silver_rupee.description_0": "Item representing 100 rupees",
       "item.tlom.blue_rupee": "Green Rupee",
@@ -1818,8 +1870,8 @@
       "block.tloa.deku_planks": "Deku Planks",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
       "item.tlom.green_rupee.description_0": "Item representing 1 rupee",
-      "item_group.tlom.tloa_items": "TLOA Items",
       "block.tloa.deku_button": "Deku Button",
+      "item_group.tlom.tloa_items": "TLOA Items",
       "item.tloa.gold_rupee": "Gold Rupee",
       "biome.tloa.lost_woods": "Lost Woods",
       "gui.tloa.rupee_counter.label_money": "Money",
@@ -1829,6 +1881,7 @@
       "block.tlom.lost_stairs": "Lost Stairs",
       "entity.tlos.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_items": "TLOS Items",
+      "item.tloa.kokiri_sword": "Kokiri Sword",
       "item.tlos.sheikah_slate": "Sheikah Slate",
       "item.tloa.master_sword_powered": "Master Sword (POWERED)",
       "item_group.tloa.tloa_blocks": "TLOA Blocks",
@@ -1869,6 +1922,7 @@
       "item_group.tlom.tloa_blocks": "TLOA Blocks",
       "item.tloa.sheikah_slate_on": "Sheikah Slate (ON)",
       "item.tloa.master_sword": "Master Sword",
+      "item.tloa.hylian_shield": "Hylian Shield",
       "block.tlom.lost_fence_gate": "Lost Fence Gate",
       "item.tloa.light_bow": "Light Bow",
       "block.tloa.lost_fence_gate": "Lost Fence Gate",
@@ -1901,6 +1955,7 @@
       "item.tlom.sheikah_slate": "Sheikah Slate",
       "key.tlom.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tlom.master_sword": "Master Sword",
+      "item.tloa.deku_shield": "Deku Shield",
       "block.tlom.lost_planks": "Lost Planks",
       "biome.tlom.central_korok_forest": "Central Korok Forest",
       "item.tlos.master_sword": "Master Sword",
@@ -1929,6 +1984,18 @@
       },
       {
         "name": "Deku Wood",
+        "children": []
+      },
+      {
+        "name": "Shields",
+        "children": []
+      },
+      {
+        "name": "Bows",
+        "children": []
+      },
+      {
+        "name": "Swords",
         "children": []
       }
     ]

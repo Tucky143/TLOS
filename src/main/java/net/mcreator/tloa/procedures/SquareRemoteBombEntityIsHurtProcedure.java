@@ -7,18 +7,27 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 
+import net.mcreator.tloa.entity.SquareRemoteBombEntity;
+import net.mcreator.tloa.TloaMod;
+
 public class SquareRemoteBombEntityIsHurtProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity) {
 		if (damagesource == null || entity == null)
 			return;
 		if (damagesource.is(DamageTypes.FALL)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth(2);
+				_entity.setHealth(1);
 		} else {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.NONE);
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(0);
+			TloaMod.queueServerWork(20, () -> {
+				if (entity instanceof SquareRemoteBombEntity) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.setHealth(0);
+				}
+			});
 		}
 	}
 }

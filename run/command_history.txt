@@ -41,3 +41,6 @@
 /data
 /data get entity Dev
 /summon tloa:master_cycle_zero
+/summon wither
+/time set day
+/kill @e

@@ -22,7 +22,7 @@ public class SquareRemoteBombRightClickedOnEntityProcedure {
 		if (TloaModVariables.MapVariables.get(world).player_holding_remote_bomb) {
 			TloaModVariables.MapVariables.get(world).player_holding_remote_bomb = false;
 			TloaModVariables.MapVariables.get(world).syncData(world);
-			entity.push((sourceentity.getLookAngle().x * 1.5), (sourceentity.getLookAngle().y * 1.5), (sourceentity.getLookAngle().z * 1.5));
+			entity.push((sourceentity.getLookAngle().x * 1.8), (sourceentity.getLookAngle().y * 1.8), (sourceentity.getLookAngle().z * 1.8));
 		} else {
 			TloaModVariables.MapVariables.get(world).player_holding_remote_bomb = true;
 			TloaModVariables.MapVariables.get(world).syncData(world);

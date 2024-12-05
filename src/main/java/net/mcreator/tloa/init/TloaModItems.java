@@ -14,6 +14,8 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
@@ -34,8 +36,11 @@ import net.mcreator.tloa.item.MasterSwordPoweredItem;
 import net.mcreator.tloa.item.MasterSwordItem;
 import net.mcreator.tloa.item.LightBowItem;
 import net.mcreator.tloa.item.LightArrowItemItem;
+import net.mcreator.tloa.item.KokiriSwordItem;
+import net.mcreator.tloa.item.HylianShieldItem;
 import net.mcreator.tloa.item.GreenRupeeItem;
 import net.mcreator.tloa.item.GoldRupeeItem;
+import net.mcreator.tloa.item.DekuShieldItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
 import net.mcreator.tloa.TloaMod;
 
@@ -72,6 +77,9 @@ public class TloaModItems {
 	public static final DeferredItem<Item> DEKU_BUTTON = block(TloaModBlocks.DEKU_BUTTON);
 	public static final DeferredItem<Item> LIGHT_BOW = REGISTRY.register("light_bow", LightBowItem::new);
 	public static final DeferredItem<Item> LIGHT_ARROW_ITEM = REGISTRY.register("light_arrow_item", LightArrowItemItem::new);
+	public static final DeferredItem<Item> DEKU_SHIELD = REGISTRY.register("deku_shield", DekuShieldItem::new);
+	public static final DeferredItem<Item> HYLIAN_SHIELD = REGISTRY.register("hylian_shield", HylianShieldItem::new);
+	public static final DeferredItem<Item> KOKIRI_SWORD = REGISTRY.register("kokiri_sword", KokiriSwordItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -91,6 +99,8 @@ public class TloaModItems {
 				ItemProperties.register(PURPLE_RUPEE.get(), ResourceLocation.parse("tloa:purple_rupee_value"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) PurpleRupeePropertyValueProviderProcedure.execute());
 				ItemProperties.register(SILVER_RUPEE.get(), ResourceLocation.parse("tloa:silver_rupee_value"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) SilverRupeePropertyValueProviderProcedure.execute());
 				ItemProperties.register(GOLD_RUPEE.get(), ResourceLocation.parse("tloa:gold_rupee_value"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) GoldRupeePropertyValueProviderProcedure.execute());
+				ItemProperties.register(DEKU_SHIELD.get(), ResourceLocation.parse("minecraft:blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), ResourceLocation.parse("minecraft:blocking")));
+				ItemProperties.register(HYLIAN_SHIELD.get(), ResourceLocation.parse("minecraft:blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), ResourceLocation.parse("minecraft:blocking")));
 			});
 		}
 	}
