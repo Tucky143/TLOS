@@ -1824,13 +1824,13 @@
     "ITEMS:minecraft:enchantable/bow": [
       "CUSTOM:LightBow"
     ],
-    "BLOCKS:minecraft:stairs": [
-      "~CUSTOM:DekuStairs",
-      "~CUSTOM:LostStairs"
-    ],
     "BIOMES:mod:is_zelda": [
       "CUSTOM:CentralKorokForest",
       "CUSTOM:KorokForest"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:DekuStairs",
+      "~CUSTOM:LostStairs"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:KokiriSword",
