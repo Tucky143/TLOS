@@ -1706,6 +1706,71 @@
         ]
       },
       "path": "~/Swords"
+    },
+    {
+      "name": "ParagliderItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paraglider_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/ParagliderItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Paraglider",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paraglider",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/paraglider.json",
+          "src/main/java/net/mcreator/tloa/item/ParagliderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Gliding",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/GlidingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1938,6 +2003,7 @@
       "item.tlom.gold_rupee.description_0": "Item representing 300 rupees",
       "item.tlom.silver_rupee": "Green Rupee",
       "block.tloa.deku_log": "Deku Log",
+      "item.tloa.paraglider": "Paraglider",
       "block.tlos.lost_planks": "Lost Planks",
       "item.tloa.green_rupee.description_0": "Item representing 1 rupee",
       "block.tlos.lost_fence_gate": "Lost Fence Gate",

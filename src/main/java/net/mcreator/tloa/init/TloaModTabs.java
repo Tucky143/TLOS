@@ -36,6 +36,7 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.DEKU_SHIELD.get());
 				tabData.accept(TloaModItems.HYLIAN_SHIELD.get());
 				tabData.accept(TloaModItems.KOKIRI_SWORD.get());
+				tabData.accept(TloaModItems.PARAGLIDER.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS = REGISTRY.register("tloa_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks")).icon(() -> new ItemStack(TloaModBlocks.DEKU_LEAVES.get())).displayItems((parameters, tabData) -> {

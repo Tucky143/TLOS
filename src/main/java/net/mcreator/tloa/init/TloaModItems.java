@@ -32,6 +32,7 @@ import net.mcreator.tloa.item.SheikahSlateOnItem;
 import net.mcreator.tloa.item.SheikahSlateItem;
 import net.mcreator.tloa.item.RedRupeeItem;
 import net.mcreator.tloa.item.PurpleRupeeItem;
+import net.mcreator.tloa.item.ParagliderItem;
 import net.mcreator.tloa.item.MasterSwordPoweredItem;
 import net.mcreator.tloa.item.MasterSwordItem;
 import net.mcreator.tloa.item.LightBowItem;
@@ -80,6 +81,7 @@ public class TloaModItems {
 	public static final DeferredItem<Item> DEKU_SHIELD = REGISTRY.register("deku_shield", DekuShieldItem::new);
 	public static final DeferredItem<Item> HYLIAN_SHIELD = REGISTRY.register("hylian_shield", HylianShieldItem::new);
 	public static final DeferredItem<Item> KOKIRI_SWORD = REGISTRY.register("kokiri_sword", KokiriSwordItem::new);
+	public static final DeferredItem<Item> PARAGLIDER = REGISTRY.register("paraglider", ParagliderItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

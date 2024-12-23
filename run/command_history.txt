@@ -1,4 +1,3 @@
-/time set night
 /time set midnight
 /time set day
 /tick rate 20
@@ -44,3 +43,8 @@
 /summon wither
 /time set day
 /kill @e
+/item replace entity 794af7bc-f07d-41d8-8afa-af2edc0c372a weapon.mainhand with tloa:paraglider
+/item replace entity 794af7bc-f07d-41d8-8afa-af2edc0c372a weapon with tloa:paraglider
+/tp 794af7bc-f07d-41d8-8afa-af2edc0c372a ~ ~100 ~
+/kill @e
+/give @a tloa:paraglider
