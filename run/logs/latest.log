@@ -1,26 +1,26 @@
-[23Dec2024 14:35:00.970] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.1.65, --assetIndex, 17, --assetsDir, C:\\Users\\ldsbo\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.neoForgeVersion, 21.1.65, --fml.fmlVersion, 4.0.24, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
-[23Dec2024 14:35:00.973] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-[23Dec2024 14:35:00.974] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[23Dec2024 14:35:01.114] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[23Dec2024 14:35:01.225] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[23Dec2024 14:35:01.280] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[23Dec2024 14:35:01.405] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/ldsbo/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23131!/ Service=ModLauncher Env=CLIENT
-[23Dec2024 14:35:01.564] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) Iris(R) Xe Graphics GL version 4.6.0 - Build 30.0.101.1029, Intel
-[23Dec2024 14:35:01.850] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[23Dec2024 14:35:02.625] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 21.1.65, --gameDir, ., --assetsDir, C:\Users\ldsbo\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[23Dec2024 14:35:04.617] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 315 milliseconds
-[23Dec2024 14:35:04.857] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[23Dec2024 14:35:09.556] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23Dec2024 14:35:09.556] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23Dec2024 14:35:09.558] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23Dec2024 14:35:09.559] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23Dec2024 14:35:09.560] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23Dec2024 14:35:09.675] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ldsbo/MCreatorWorkspaces/TheLegendofSteve/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/assets/.mcassetsroot' uses unexpected schema
-[23Dec2024 14:35:09.675] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ldsbo/MCreatorWorkspaces/TheLegendofSteve/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/data/.mcassetsroot' uses unexpected schema
-[23Dec2024 14:35:09.714] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[23Dec2024 14:35:09.723] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[23Dec2024 14:35:09.912] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[23Dec2024 14:35:10.459] [Download-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService/]: Couldn't look up profile properties for 380df991-f603-344c-a090-369bad2a924a
+[23Dec2024 19:01:32.074] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.1.65, --assetIndex, 17, --assetsDir, C:\\Users\\ldsbo\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.neoForgeVersion, 21.1.65, --fml.fmlVersion, 4.0.24, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
+[23Dec2024 19:01:32.080] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[23Dec2024 19:01:32.082] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[23Dec2024 19:01:32.368] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[23Dec2024 19:01:32.568] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[23Dec2024 19:01:32.657] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[23Dec2024 19:01:32.875] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/ldsbo/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23131!/ Service=ModLauncher Env=CLIENT
+[23Dec2024 19:01:33.166] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) Iris(R) Xe Graphics GL version 4.6.0 - Build 30.0.101.1029, Intel
+[23Dec2024 19:01:33.687] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[23Dec2024 19:01:35.261] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 21.1.65, --gameDir, ., --assetsDir, C:\Users\ldsbo\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[23Dec2024 19:01:38.997] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 634 milliseconds
+[23Dec2024 19:01:39.463] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[23Dec2024 19:01:47.978] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Dec2024 19:01:47.979] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Dec2024 19:01:47.982] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[23Dec2024 19:01:47.984] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[23Dec2024 19:01:47.985] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Dec2024 19:01:48.213] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ldsbo/MCreatorWorkspaces/TheLegendofSteve/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/assets/.mcassetsroot' uses unexpected schema
+[23Dec2024 19:01:48.214] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ldsbo/MCreatorWorkspaces/TheLegendofSteve/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/data/.mcassetsroot' uses unexpected schema
+[23Dec2024 19:01:48.287] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23Dec2024 19:01:48.306] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[23Dec2024 19:01:48.487] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[23Dec2024 19:01:48.747] [Download-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService/]: Couldn't look up profile properties for 380df991-f603-344c-a090-369bad2a924a
 com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://sessionserver.mojang.com/session/minecraft/profile/380df991f603344ca090369bad2a924a?unsigned=false due to Connection reset by peer
 	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23111!/:?]
 	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23111!/:?]
@@ -55,7 +55,7 @@ Caused by: java.net.SocketException: Connection reset by peer
 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
 	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23111!/:?]
 	... 8 more
-[23Dec2024 14:35:10.457] [Yggdrasil Key Fetcher/ERROR] [com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo/]: Failed to request yggdrasil public key
+[23Dec2024 19:01:48.747] [Yggdrasil Key Fetcher/ERROR] [com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo/]: Failed to request yggdrasil public key
 com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection reset by peer
 	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23111!/:?]
 	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23111!/:?]
@@ -91,265 +91,65 @@ Caused by: java.net.SocketException: Connection reset by peer
 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
 	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23111!/:?]
 	... 9 more
-[23Dec2024 14:35:10.717] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.65, for MC 1.21.1
-[23Dec2024 14:35:12.534] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
-[23Dec2024 14:35:12.845] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/tloa
-[23Dec2024 14:35:13.065] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[23Dec2024 14:35:13.065] [Worker-Main-8/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[23Dec2024 14:35:14.500] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[23Dec2024 14:35:14.500] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[23Dec2024 14:35:15.642] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
-[23Dec2024 14:35:15.642] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[23Dec2024 14:35:15.750] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x2 minecraft:textures/atlas/blocks.png-atlas
-[23Dec2024 14:35:16.005] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[23Dec2024 14:35:16.010] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[23Dec2024 14:35:16.022] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[23Dec2024 14:35:16.027] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[23Dec2024 14:35:16.080] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[23Dec2024 14:35:16.082] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[23Dec2024 14:35:16.085] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[23Dec2024 14:35:16.088] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[23Dec2024 14:35:16.164] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[23Dec2024 14:35:16.176] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[23Dec2024 14:35:16.185] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[23Dec2024 14:35:16.193] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[23Dec2024 14:35:16.201] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[23Dec2024 14:35:16.607] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[23Dec2024 14:35:17.253] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[23Dec2024 14:35:22.234] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1310 recipes
-[23Dec2024 14:35:22.489] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
-[23Dec2024 14:35:23.023] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[23Dec2024 14:35:23.024] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[23Dec2024 14:35:24.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[23Dec2024 14:35:24.733] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[23Dec2024 14:35:24.870] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[23Dec2024 14:35:24.882] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 447 ms
-[23Dec2024 14:35:24.937] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[23Dec2024 14:35:24.937] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[23Dec2024 14:35:25.681] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:dca440ad] logged in with entity id 75 at (135.22111946076072, 66.0, 54.82728284096688)
-[23Dec2024 14:35:25.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[23Dec2024 14:35:25.914] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
-[23Dec2024 14:35:25.920] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 79 advancements
-[23Dec2024 14:35:32.971] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[23Dec2024 14:35:32.975] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[23Dec2024 14:35:42.300] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[23Dec2024 14:35:42.303] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[23Dec2024 14:36:01.184] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[23Dec2024 14:36:01.187] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[23Dec2024 14:36:39.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Replaced a slot on Zombie with [Paraglider]]
-[23Dec2024 14:36:39.109] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Replaced a slot on Zombie with [Paraglider]
-[23Dec2024 14:36:57.377] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[23Dec2024 14:37:21.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Replaced a slot on Zombie with [Paraglider]]
-[23Dec2024 14:37:21.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Replaced a slot on Zombie with [Paraglider]
-[23Dec2024 14:38:03.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Zombie to 176.862884, 164.000000, -61.091123]
-[23Dec2024 14:38:03.280] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Zombie to 176.862884, 164.000000, -61.091123
-[23Dec2024 14:38:21.679] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 79 advancements
-[23Dec2024 14:38:56.434] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 82 advancements
-[23Dec2024 14:39:33.886] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 84 advancements
-[23Dec2024 14:40:01.904] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.904] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.909] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.909] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.909] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.909] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.910] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.910] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.910] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.910] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.990] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.992] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.995] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.995] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.996] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.997] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.997] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.997] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.997] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.997] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:01.998] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:01.998] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.133] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.133] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.133] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.134] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.137] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.137] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.137] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.137] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.137] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.137] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.328] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.328] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.328] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.328] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.328] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.328] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.329] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.329] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.329] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.329] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.329] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.330] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.330] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.330] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.330] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.330] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.330] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.331] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.331] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.331] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.331] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.331] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.331] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.331] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.331] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.331] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.332] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.332] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.332] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.332] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.333] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.333] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.334] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.334] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.335] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.335] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.335] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.335] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.335] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.336] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.336] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.336] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.336] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.336] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.336] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.336] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.337] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.337] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.339] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.339] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.339] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.339] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.340] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.340] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.434] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.434] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.435] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.435] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.454] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.454] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.455] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.455] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.456] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.456] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.456] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.456] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.457] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.457] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.457] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.457] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.457] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.457] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.457] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.457] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.457] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.457] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.458] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.458] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:02.458] [Sound engine/WARN] [com.mojang.blaze3d.audio.Library/]: Maximum sound pool size 247 reached
-[23Dec2024 14:40:02.458] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Failed to create new sound handle
-[23Dec2024 14:40:10.576] [Yggdrasil Key Fetcher/ERROR] [com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo/]: Failed to request yggdrasil public key
-com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to Connection reset
-	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23111!/:?]
-	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23111!/:?]
-	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.54.jar%23111!/:?]
-	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.54.jar%23111!/:?]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160) ~[?:?]
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
-	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:586) ~[?:?]
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1675) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599) ~[?:?]
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
-	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23111!/:?]
-	... 9 more
-[23Dec2024 14:41:11.595] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed
-[23Dec2024 14:41:11.599] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed
-[23Dec2024 14:41:11.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed 202 entities]
-[23Dec2024 14:41:11.611] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Killed 202 entities
-[23Dec2024 14:41:15.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed
-[23Dec2024 14:41:15.064] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed
-[23Dec2024 14:41:15.068] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed 192 entities]
-[23Dec2024 14:41:15.076] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Killed 192 entities
-[23Dec2024 14:42:11.174] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:42:11.185] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:42:11.197] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:42:11.201] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:42:26.073] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:42:26.087] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:42:26.097] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:42:26.103] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:42:57.823] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:42:57.836] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:42:57.842] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:42:57.844] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:43:19.723] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:43:19.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:43:19.744] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:43:19.748] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:43:23.724] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:43:23.735] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:43:23.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:43:23.746] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:43:45.872] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:43:45.880] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:43:45.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:43:45.893] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:43:50.374] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:43:50.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:43:50.386] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:43:50.390] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:44:59.874] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[23Dec2024 14:44:59.875] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[23Dec2024 14:45:15.110] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Paraglider] to Dev]
-[23Dec2024 14:45:15.111] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Paraglider] to Dev
-[23Dec2024 14:45:20.777] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.cod.ambient
-[23Dec2024 14:46:02.633] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 104 advancements
-[23Dec2024 14:46:05.146] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[23Dec2024 14:46:05.150] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[23Dec2024 14:46:05.623] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Dec2024 14:46:05.633] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:46:05.644] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:46:05.648] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:46:06.026] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[23Dec2024 14:46:06.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[23Dec2024 14:46:06.036] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[23Dec2024 14:46:06.075] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[23Dec2024 14:46:06.075] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[23Dec2024 14:46:06.075] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[23Dec2024 14:46:06.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
-[23Dec2024 14:46:06.187] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
-[23Dec2024 14:46:06.190] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
-[23Dec2024 14:46:06.256] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Test 1): All chunks are saved
-[23Dec2024 14:46:06.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23Dec2024 14:46:06.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23Dec2024 14:46:06.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[23Dec2024 14:46:07.096] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[23Dec2024 19:01:48.890] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.65, for MC 1.21.1
+[23Dec2024 19:01:50.538] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[23Dec2024 19:01:51.096] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/tloa
+[23Dec2024 19:01:51.403] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[23Dec2024 19:01:51.428] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[23Dec2024 19:01:53.636] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[23Dec2024 19:01:53.637] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[23Dec2024 19:01:55.392] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
+[23Dec2024 19:01:55.393] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[23Dec2024 19:01:55.522] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x2 minecraft:textures/atlas/blocks.png-atlas
+[23Dec2024 19:01:55.976] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[23Dec2024 19:01:55.988] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[23Dec2024 19:01:56.006] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[23Dec2024 19:01:56.013] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[23Dec2024 19:01:56.111] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[23Dec2024 19:01:56.115] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[23Dec2024 19:01:56.121] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[23Dec2024 19:01:56.125] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23Dec2024 19:01:56.301] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[23Dec2024 19:01:56.331] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23Dec2024 19:01:56.350] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[23Dec2024 19:01:56.365] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[23Dec2024 19:01:56.376] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[23Dec2024 19:01:56.965] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[23Dec2024 19:01:58.030] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[23Dec2024 19:02:04.517] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1310 recipes
+[23Dec2024 19:02:04.869] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[23Dec2024 19:02:05.847] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[23Dec2024 19:02:05.848] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Dec2024 19:02:08.300] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Dec2024 19:02:08.685] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[23Dec2024 19:02:08.998] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Dec2024 19:02:09.000] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 683 ms
+[23Dec2024 19:02:09.135] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[23Dec2024 19:02:09.135] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 10, from 0
+[23Dec2024 19:02:10.700] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:61a8ce3d] logged in with entity id 67 at (97.59200446415034, 75.90760083295264, -23.41088129121238)
+[23Dec2024 19:02:10.871] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Dec2024 19:02:11.151] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
+[23Dec2024 19:02:11.163] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 114 advancements
+[23Dec2024 19:02:40.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Sheikah Grate] to Dev]
+[23Dec2024 19:02:40.729] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Sheikah Grate] to Dev
+[23Dec2024 19:03:07.013] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Sheikah Grate] to Dev]
+[23Dec2024 19:03:07.017] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Sheikah Grate] to Dev
+[23Dec2024 19:03:43.658] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[23Dec2024 19:04:01.602] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Dec2024 19:04:01.685] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
+[23Dec2024 19:04:01.747] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
+[23Dec2024 19:04:01.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
+[23Dec2024 19:04:02.112] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Dec2024 19:04:02.112] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Dec2024 19:04:02.131] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Dec2024 19:04:02.164] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Dec2024 19:04:02.165] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Dec2024 19:04:02.165] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Dec2024 19:04:02.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:overworld
+[23Dec2024 19:04:02.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_nether
+[23Dec2024 19:04:02.412] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test 1]'/minecraft:the_end
+[23Dec2024 19:04:02.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Test 1): All chunks are saved
+[23Dec2024 19:04:02.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Dec2024 19:04:02.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Dec2024 19:04:02.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Dec2024 19:04:03.585] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

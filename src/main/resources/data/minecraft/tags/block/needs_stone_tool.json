@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tloa:glowing_sheikah_plate",
+    "tloa:glowing_chiseled_sheikah_plate",
+    "tloa:chiseled_sheikah_plate",
+    "tloa:designed_sheikah_plate",
+    "tloa:sheikah_plate",
+    "tloa:sheikah_light"
+  ]
+}

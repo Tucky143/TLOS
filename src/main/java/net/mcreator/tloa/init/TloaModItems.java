@@ -82,6 +82,14 @@ public class TloaModItems {
 	public static final DeferredItem<Item> HYLIAN_SHIELD = REGISTRY.register("hylian_shield", HylianShieldItem::new);
 	public static final DeferredItem<Item> KOKIRI_SWORD = REGISTRY.register("kokiri_sword", KokiriSwordItem::new);
 	public static final DeferredItem<Item> PARAGLIDER = REGISTRY.register("paraglider", ParagliderItem::new);
+	public static final DeferredItem<Item> SHEIKAH_LIGHT = block(TloaModBlocks.SHEIKAH_LIGHT);
+	public static final DeferredItem<Item> SHEIKAH_GRATE = block(TloaModBlocks.SHEIKAH_GRATE);
+	public static final DeferredItem<Item> SHEIKAH_GRATE_WALL = block(TloaModBlocks.SHEIKAH_GRATE_WALL);
+	public static final DeferredItem<Item> SHEIKAH_PLATE = block(TloaModBlocks.SHEIKAH_PLATE);
+	public static final DeferredItem<Item> DESIGNED_SHEIKAH_PLATE = block(TloaModBlocks.DESIGNED_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.CHISELED_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> GLOWING_CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> GLOWING_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_SHEIKAH_PLATE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
