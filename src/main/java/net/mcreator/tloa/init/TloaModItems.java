@@ -90,6 +90,7 @@ public class TloaModItems {
 	public static final DeferredItem<Item> CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.CHISELED_SHEIKAH_PLATE);
 	public static final DeferredItem<Item> GLOWING_CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE);
 	public static final DeferredItem<Item> GLOWING_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> SHEIKAH_PLATE_SLAB = block(TloaModBlocks.SHEIKAH_PLATE_SLAB);
 
 	// Start of user code block custom items
 	// End of user code block custom items

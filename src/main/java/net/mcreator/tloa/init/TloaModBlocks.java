@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.tloa.block.SheikahPlateSlabBlock;
 import net.mcreator.tloa.block.SheikahPlateBlock;
 import net.mcreator.tloa.block.SheikahLightBlock;
 import net.mcreator.tloa.block.SheikahGrateWallBlock;
@@ -67,6 +68,7 @@ public class TloaModBlocks {
 	public static final DeferredBlock<Block> CHISELED_SHEIKAH_PLATE = REGISTRY.register("chiseled_sheikah_plate", ChiseledSheikahPlateBlock::new);
 	public static final DeferredBlock<Block> GLOWING_CHISELED_SHEIKAH_PLATE = REGISTRY.register("glowing_chiseled_sheikah_plate", GlowingChiseledSheikahPlateBlock::new);
 	public static final DeferredBlock<Block> GLOWING_SHEIKAH_PLATE = REGISTRY.register("glowing_sheikah_plate", GlowingSheikahPlateBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_PLATE_SLAB = REGISTRY.register("sheikah_plate_slab", SheikahPlateSlabBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

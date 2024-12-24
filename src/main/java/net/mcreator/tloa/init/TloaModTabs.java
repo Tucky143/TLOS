@@ -38,6 +38,37 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.KOKIRI_SWORD.get());
 				tabData.accept(TloaModItems.PARAGLIDER.get());
 			}).withSearchBar().build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS_TAB = REGISTRY.register("tloa_blocks_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks_tab")).icon(() -> new ItemStack(TloaModBlocks.SHEIKAH_LIGHT.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TloaModBlocks.LOST_WOOD.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_LOG.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_PLANKS.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_STAIRS.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_SLAB.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_FENCE.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_FENCE_GATE.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_PRESSURE_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.LOST_BUTTON.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_WOOD.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_LOG.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_PLANKS.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_LEAVES.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_STAIRS.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_SLAB.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_FENCE.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_FENCE_GATE.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_PRESSURE_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.DEKU_BUTTON.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_LIGHT.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_GRATE.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_GRATE_WALL.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.DESIGNED_SHEIKAH_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.CHISELED_SHEIKAH_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.GLOWING_SHEIKAH_PLATE.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_PLATE_SLAB.get().asItem());
+			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
