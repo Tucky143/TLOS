@@ -19,7 +19,7 @@
           "onClick": {
             "name": "RemoteBombs"
           },
-          "x": 42,
+          "x": 6,
           "y": 107,
           "locked": false
         }
@@ -33,7 +33,7 @@
           "onClick": {
             "name": "Magnesis"
           },
-          "x": 141,
+          "x": 96,
           "y": 107,
           "locked": false
         }
@@ -47,7 +47,7 @@
           "onClick": {
             "name": "Stasis"
           },
-          "x": 231,
+          "x": 276,
           "y": 107,
           "locked": false
         }
@@ -61,7 +61,7 @@
           "onClick": {
             "name": "Cryonis"
           },
-          "x": 321,
+          "x": 357,
           "y": 107,
           "locked": false
         }
@@ -76,7 +76,103 @@
             "name": "MasterCycle"
           },
           "x": 186,
-          "y": 35,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_remote_bomb",
+          "text": {
+            "fixedValue": "Remote Bomb"
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magnesis",
+          "text": {
+            "fixedValue": "Magnesis"
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_master_cycle",
+          "text": {
+            "fixedValue": "Master Cycle"
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stasis",
+          "text": {
+            "fixedValue": "Stasis"
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 294,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cryonis",
+          "text": {
+            "fixedValue": "Cryonis"
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 366,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_runes",
+          "text": {
+            "fixedValue": "Runes"
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 204,
+          "y": 44,
           "locked": false
         }
       }

@@ -39,7 +39,7 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.PARAGLIDER.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS_TAB = REGISTRY.register("tloa_blocks_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks_tab")).icon(() -> new ItemStack(TloaModBlocks.SHEIKAH_LIGHT.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks_tab")).icon(() -> new ItemStack(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TloaModBlocks.LOST_WOOD.get().asItem());
 				tabData.accept(TloaModBlocks.LOST_LOG.get().asItem());
 				tabData.accept(TloaModBlocks.LOST_PLANKS.get().asItem());

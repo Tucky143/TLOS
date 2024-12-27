@@ -75,13 +75,19 @@ public class SheikahSlateGUIScreen extends AbstractContainerScreen<SheikahSlateG
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.tloa.sheikah_slate_gui.label_remote_bomb"), 9, 52, -16737793, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.tloa.sheikah_slate_gui.label_magnesis"), 108, 52, -16737793, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.tloa.sheikah_slate_gui.label_master_cycle"), 189, 52, -16737793, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.tloa.sheikah_slate_gui.label_stasis"), 288, 52, -16737793, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.tloa.sheikah_slate_gui.label_cryonis"), 360, 52, -16737793, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.tloa.sheikah_slate_gui.label_runes"), 198, 7, -16737793, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_remote_bomb = new ImageButton(this.leftPos + 36, this.topPos + 70, 64, 64,
-				new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/remote_bomb.png"), ResourceLocation.parse("tloa:textures/screens/remote_bomb_hovered.png")), e -> {
+		imagebutton_remote_bomb = new ImageButton(this.leftPos + 0, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/remote_bomb.png"), ResourceLocation.parse("tloa:textures/screens/remote_bomb_hovered.png")),
+				e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new SheikahSlateGUIButtonMessage(0, x, y, z));
 						SheikahSlateGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -94,7 +100,7 @@ public class SheikahSlateGUIScreen extends AbstractContainerScreen<SheikahSlateG
 		};
 		guistate.put("button:imagebutton_remote_bomb", imagebutton_remote_bomb);
 		this.addRenderableWidget(imagebutton_remote_bomb);
-		imagebutton_magnesis = new ImageButton(this.leftPos + 135, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/magnesis.png"), ResourceLocation.parse("tloa:textures/screens/magnesis_hovered.png")), e -> {
+		imagebutton_magnesis = new ImageButton(this.leftPos + 90, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/magnesis.png"), ResourceLocation.parse("tloa:textures/screens/magnesis_hovered.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new SheikahSlateGUIButtonMessage(1, x, y, z));
 				SheikahSlateGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -107,7 +113,7 @@ public class SheikahSlateGUIScreen extends AbstractContainerScreen<SheikahSlateG
 		};
 		guistate.put("button:imagebutton_magnesis", imagebutton_magnesis);
 		this.addRenderableWidget(imagebutton_magnesis);
-		imagebutton_stasis = new ImageButton(this.leftPos + 225, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/stasis.png"), ResourceLocation.parse("tloa:textures/screens/stasis_hovered.png")), e -> {
+		imagebutton_stasis = new ImageButton(this.leftPos + 270, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/stasis.png"), ResourceLocation.parse("tloa:textures/screens/stasis_hovered.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new SheikahSlateGUIButtonMessage(2, x, y, z));
 				SheikahSlateGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
@@ -120,7 +126,7 @@ public class SheikahSlateGUIScreen extends AbstractContainerScreen<SheikahSlateG
 		};
 		guistate.put("button:imagebutton_stasis", imagebutton_stasis);
 		this.addRenderableWidget(imagebutton_stasis);
-		imagebutton_cryonis = new ImageButton(this.leftPos + 315, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/cryonis.png"), ResourceLocation.parse("tloa:textures/screens/cryonis_hovered.png")), e -> {
+		imagebutton_cryonis = new ImageButton(this.leftPos + 351, this.topPos + 70, 64, 64, new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/cryonis.png"), ResourceLocation.parse("tloa:textures/screens/cryonis_hovered.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new SheikahSlateGUIButtonMessage(3, x, y, z));
 				SheikahSlateGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
@@ -133,7 +139,7 @@ public class SheikahSlateGUIScreen extends AbstractContainerScreen<SheikahSlateG
 		};
 		guistate.put("button:imagebutton_cryonis", imagebutton_cryonis);
 		this.addRenderableWidget(imagebutton_cryonis);
-		imagebutton_master_cycle_zero = new ImageButton(this.leftPos + 180, this.topPos + -2, 64, 64,
+		imagebutton_master_cycle_zero = new ImageButton(this.leftPos + 180, this.topPos + 70, 64, 64,
 				new WidgetSprites(ResourceLocation.parse("tloa:textures/screens/master_cycle_zero.png"), ResourceLocation.parse("tloa:textures/screens/master_cycle_zero_hovered.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new SheikahSlateGUIButtonMessage(4, x, y, z));

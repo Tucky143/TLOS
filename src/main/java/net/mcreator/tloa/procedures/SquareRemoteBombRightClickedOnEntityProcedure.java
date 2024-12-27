@@ -22,7 +22,7 @@ public class SquareRemoteBombRightClickedOnEntityProcedure {
 		if (TloaModVariables.MapVariables.get(world).player_holding_remote_bomb) {
 			TloaModVariables.MapVariables.get(world).player_holding_remote_bomb = false;
 			TloaModVariables.MapVariables.get(world).syncData(world);
-			entity.push((sourceentity.getLookAngle().x * 1.8), (sourceentity.getLookAngle().y * 1.8), (sourceentity.getLookAngle().z * 1.8));
+			entity.push((sourceentity.getLookAngle().x * 1.8), (sourceentity.getLookAngle().y * 2), (sourceentity.getLookAngle().z * 1.8));
 		} else {
 			TloaModVariables.MapVariables.get(world).player_holding_remote_bomb = true;
 			TloaModVariables.MapVariables.get(world).syncData(world);
@@ -30,9 +30,9 @@ public class SquareRemoteBombRightClickedOnEntityProcedure {
 				void timedLoop(int current, int total, int ticks) {
 					{
 						Entity _ent = entity;
-						_ent.teleportTo((sourceentity.getX()), (sourceentity.getY() + 1.5), (sourceentity.getZ()));
+						_ent.teleportTo((sourceentity.getX()), (sourceentity.getY() + 1.6), (sourceentity.getZ()));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((sourceentity.getX()), (sourceentity.getY() + 1.5), (sourceentity.getZ()), _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport((sourceentity.getX()), (sourceentity.getY() + 1.6), (sourceentity.getZ()), _ent.getYRot(), _ent.getXRot());
 					}
 					if (!TloaModVariables.MapVariables.get(world).player_holding_remote_bomb) {
 						if (true) {

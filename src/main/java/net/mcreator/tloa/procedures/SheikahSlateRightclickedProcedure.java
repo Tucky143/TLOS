@@ -13,13 +13,13 @@ public class SheikahSlateRightclickedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(TloaModItems.SHEIKAH_SLATE.get());
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
 			ItemStack _setstack = new ItemStack(TloaModItems.SHEIKAH_SLATE_ON.get()).copy();
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(TloaModItems.SHEIKAH_SLATE.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 64, _player.inventoryMenu.getCraftSlots());
 		}
 	}
 }
