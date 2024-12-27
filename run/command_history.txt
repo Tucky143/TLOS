@@ -1,18 +1,3 @@
-/kill @e
-/give @a minecraft:acacia_fence
-/give @a minecraft:enchanted_golden_apple 64
-/summon pig
-/locate biome tlos:korok_forest
-/tp @s -453 66 317
-/locate biome tlos:lost_woods
-/tp @s 2913 173 -2856
-/place feature tlos:lost_woods_tree
-/summon minecraft:wither
-/summon pig
-/summon cow
-/summon minecraft:chicken
-/locate biome tlos:central_korok_forest
-/locate biome tlos:lost_woods
 /tp @s 3155 71 306
 /locate biome tlos:central_korok_forest
 /summon minecraft:skeleton
@@ -48,3 +33,18 @@
 /give @a tloa:sheikah_grate
 /give @a tloa:sheikah_grate_wall
 /kill
+/fill 120 62 -125
+/fill 120 62 -125 124 77 -121 tloa:sheikah_light
+/fill 120 62 -125 124 92 -121 tloa:sheikah_light
+/fill 119 61 -126 125 93 -120 tloa:sheikah_grate
+/fill 120 62 -125 124 92 -121 tloa:sheikah_light
+/fill 119 61 -126 125 93 -120 tloa:sheikah_grate outline
+/time set night
+/fill 119 93 -126
+/fill ~ ~ ~
+/fill 126 93 -119
+/fill 126 93 -119 ~ ~ ~ tloa:sheikah_plate
+/fill 118 99 -127
+/fill 118 99 -127 126 99 -119 tloa:sheikah_plate
+/fill 118 100 -127
+/fill 118 100 -127 126 102 -119 tloa:sheikah_plate replace air
