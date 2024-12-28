@@ -1,5 +1,5 @@
 {
-  "parent": "tloa:block/designed_sheikah_plate",
+  "parent": "tloa:block/sheikah_stone",
   "display": {
     "thirdperson": {
       "rotation": [

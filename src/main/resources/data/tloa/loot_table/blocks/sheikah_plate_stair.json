@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "tloa:blocks/designed_sheikah_plate",
+  "random_sequence": "tloa:blocks/sheikah_plate_stair",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tloa:designed_sheikah_plate"
+          "name": "tloa:sheikah_plate_stair"
         }
       ]
     }

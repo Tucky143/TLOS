@@ -1784,6 +1784,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1870,22 +1874,6 @@
       }
     },
     {
-      "name": "DesignedSheikahPlate",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "designed_sheikah_plate",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/tloa/models/item/designed_sheikah_plate.json",
-          "src/main/resources/data/tloa/loot_table/blocks/designed_sheikah_plate.json",
-          "src/main/resources/assets/tloa/models/block/designed_sheikah_plate.json",
-          "src/main/resources/assets/tloa/blockstates/designed_sheikah_plate.json",
-          "src/main/java/net/mcreator/tloa/block/DesignedSheikahPlateBlock.java"
-        ]
-      }
-    },
-    {
       "name": "ChiseledSheikahPlate",
       "type": "block",
       "compiles": true,
@@ -1948,6 +1936,114 @@
           "src/main/resources/assets/tloa/models/item/sheikah_plate_slab.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_top.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_full.json"
+        ]
+      }
+    },
+    {
+      "name": "SheikahPlateStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_plate_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/blockstates/sheikah_plate_stair.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_stair_outer.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_stair.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_plate_stair.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_stair.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_stair_inner.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahPlateStairBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SheikahPlateWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_plate_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/blockstates/sheikah_plate_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_inventory.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahPlateWallBlock.java",
+          "src/main/resources/assets/tloa/models/item/sheikah_plate_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_wall.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_post.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_side_tall.json"
+        ]
+      }
+    },
+    {
+      "name": "SheikahStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneBlock.java",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone.json",
+          "src/main/resources/assets/tloa/blockstates/sheikah_stone.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "SheikahStoneSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_stone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_slab.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_full.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_stone_slab.json",
+          "src/main/resources/assets/tloa/blockstates/sheikah_stone_slab.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneSlabBlock.java",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_top.json"
+        ]
+      }
+    },
+    {
+      "name": "SheikahStoneStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_stone_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/blockstates/sheikah_stone_stair.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneStairBlock.java",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_stair.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_stone_stair.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_stair.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_outer.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "SheikahStoneWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheikah_stone_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/blockstates/sheikah_stone_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_post.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_wall.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneWallBlock.java",
+          "src/main/resources/assets/tloa/models/item/sheikah_stone_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_side_tall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_inventory.json"
         ]
       }
     }
@@ -2056,16 +2152,23 @@
       "~CUSTOM:LostWood"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:SheikahStoneSlab",
       "~CUSTOM:SheikahPlateSlab",
       "~CUSTOM:DekuSlab",
       "~CUSTOM:LostSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SheikahLight",
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahStoneStair",
+      "~CUSTOM:SheikahStoneSlab",
+      "~CUSTOM:SheikahStone",
+      "~CUSTOM:SheikahPlateWall",
+      "~CUSTOM:SheikahPlateStair",
       "~CUSTOM:SheikahPlateSlab",
       "~CUSTOM:GlowingSheikahPlate",
       "~CUSTOM:GlowingChiseledSheikahPlate",
       "~CUSTOM:ChiseledSheikahPlate",
-      "~CUSTOM:DesignedSheikahPlate",
       "~CUSTOM:SheikahPlate"
     ],
     "BLOCKS:minecraft:fences": [
@@ -2075,17 +2178,25 @@
       "CUSTOM:LostFenceGate"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:SheikahLight",
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahStoneStair",
+      "~CUSTOM:SheikahStoneSlab",
+      "~CUSTOM:SheikahStone",
+      "~CUSTOM:SheikahPlateWall",
+      "~CUSTOM:SheikahPlateStair",
       "~CUSTOM:SheikahPlateSlab",
       "~CUSTOM:GlowingSheikahPlate",
       "~CUSTOM:GlowingChiseledSheikahPlate",
       "~CUSTOM:ChiseledSheikahPlate",
-      "~CUSTOM:DesignedSheikahPlate",
       "~CUSTOM:SheikahPlate"
     ],
     "ITEMS:minecraft:enchantable/bow": [
       "CUSTOM:LightBow"
     ],
     "BLOCKS:minecraft:walls": [
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahPlateWall",
       "~CUSTOM:SheikahGrateWall"
     ],
     "BIOMES:mod:is_zelda": [
@@ -2093,6 +2204,8 @@
       "CUSTOM:KorokForest"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:SheikahStoneStair",
+      "~CUSTOM:SheikahPlateStair",
       "~CUSTOM:DekuStairs",
       "~CUSTOM:LostStairs"
     ],
@@ -2111,8 +2224,8 @@
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "gui.tloa.rupee_counter.label_empty": "",
       "item.tlos.purple_rupee": "Green Rupee",
+      "gui.tloa.rupee_counter.label_empty": "",
       "block.tloa.sheikah_grate_wall": "Sheikah Grate",
       "key.tlos.use_rune": "Use Rune",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
@@ -2125,24 +2238,24 @@
       "key.tloa.use_rune": "Use Rune",
       "block.tlos.lost_button": "Lost Button",
       "block.tloa.sheikah_plate": "Sheikah Plate",
+      "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
       "block.tloa.lost_planks": "Lost Planks",
+      "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
-      "block.tloa.designed_sheikah_plate": "Designed Sheikah Plate",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "item.tloa.blue_rupee": "Blue Rupee",
       "block.tloa.deku_wood": "Deku Wood",
+      "item.tloa.blue_rupee": "Blue Rupee",
       "block.tloa.deku_planks": "Deku Planks",
       "block.tloa.sheikah_light": "Sheikah Light",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
       "item.tlom.green_rupee.description_0": "Item representing 1 rupee",
       "gui.tloa.sheikah_slate_gui.label_remote_bomb": "Remote Bomb",
-      "enchantment.minecraft.unbreaking": "Durability Up",
-      "block.tloa.deku_button": "Deku Button",
       "item_group.tlom.tloa_items": "TLOA Items",
+      "block.tloa.deku_button": "Deku Button",
+      "enchantment.minecraft.unbreaking": "Durability Up",
       "gui.tloa.sheikah_slate_gui.label_stasis": "Stasis",
       "item.tloa.gold_rupee": "Gold Rupee",
       "gui.tloa.sheikah_slate_gui.label_runes": "Runes",
@@ -2157,6 +2270,7 @@
       "item.tloa.kokiri_sword": "Kokiri Sword",
       "item.tlos.sheikah_slate": "Sheikah Slate",
       "item.tloa.master_sword_powered": "Master Sword (POWERED)",
+      "block.tloa.sheikah_plate_stair": "Sheikah Plate Stair",
       "block.tlos.lost_stairs": "Lost Stairs",
       "item.tlom.red_rupee.description_0": "Item representing 20 rupees",
       "block.tloa.lost_button": "Lost Button",
@@ -2178,6 +2292,7 @@
       "block.tloa.deku_pressure_plate": "Deku Pressure Plate",
       "entity.tlom.square_remote_bomb": "Square Remote Bomb",
       "biome.tlom.lost_woods": "Lost Woods",
+      "block.tloa.sheikah_stone_slab": "Sheikah Stone Slab",
       "key.tlom.use_rune": "Use Rune",
       "item.tlom.blue_rupee.description_0": "Item representing 5 rupees",
       "block.tlos.lost_pressure_plate": "Lost Pressure Plate",
@@ -2199,6 +2314,7 @@
       "item.tloa.hylian_shield": "Hylian Shield",
       "block.tlom.lost_fence_gate": "Lost Fence Gate",
       "item.tloa.light_bow": "Light Bow",
+      "block.tloa.sheikah_stone_stair": "Sheikah Stone Stair",
       "block.tloa.lost_fence_gate": "Lost Fence Gate",
       "block.tlom.lost_log": "Lost Log",
       "item.tlom.silver_rupee.description_0": "Item representing 100 rupees",
@@ -2212,6 +2328,7 @@
       "entity.tloa.master_cycle_zero": "Master Cycle ZERO",
       "item.tlom.gold_rupee.description_0": "Item representing 300 rupees",
       "item.tlom.silver_rupee": "Green Rupee",
+      "block.tloa.sheikah_stone_wall": "Sheikah Stone Wall",
       "block.tloa.deku_log": "Deku Log",
       "item.tloa.paraglider": "Paraglider",
       "block.tlos.lost_planks": "Lost Planks",
@@ -2229,6 +2346,7 @@
       "item.tlos.silver_rupee": "Green Rupee",
       "block.tloa.lost_wood": "Lost Wood",
       "item.tloa.green_rupee": "Green Rupee",
+      "block.tloa.sheikah_plate_wall": "Sheikah Plate Wall",
       "block.tlom.lost_pressure_plate": "Lost Pressure Plate",
       "subtitles.master_cycle_crushes": "Master Cycle Drives",
       "item.tlom.sheikah_slate": "Sheikah Slate",

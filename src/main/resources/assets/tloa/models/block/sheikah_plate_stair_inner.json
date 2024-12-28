@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "tloa:block/sheikah_plate",
+    "bottom": "tloa:block/sheikah_plate",
+    "top": "tloa:block/sheikah_plate",
+    "side": "tloa:block/sheikah_plate"
+  },
+  "render_type": "solid"
+}

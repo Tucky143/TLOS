@@ -86,11 +86,16 @@ public class TloaModItems {
 	public static final DeferredItem<Item> SHEIKAH_GRATE = block(TloaModBlocks.SHEIKAH_GRATE);
 	public static final DeferredItem<Item> SHEIKAH_GRATE_WALL = block(TloaModBlocks.SHEIKAH_GRATE_WALL);
 	public static final DeferredItem<Item> SHEIKAH_PLATE = block(TloaModBlocks.SHEIKAH_PLATE);
-	public static final DeferredItem<Item> DESIGNED_SHEIKAH_PLATE = block(TloaModBlocks.DESIGNED_SHEIKAH_PLATE);
 	public static final DeferredItem<Item> CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.CHISELED_SHEIKAH_PLATE);
 	public static final DeferredItem<Item> GLOWING_CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE);
 	public static final DeferredItem<Item> GLOWING_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_SHEIKAH_PLATE);
 	public static final DeferredItem<Item> SHEIKAH_PLATE_SLAB = block(TloaModBlocks.SHEIKAH_PLATE_SLAB);
+	public static final DeferredItem<Item> SHEIKAH_PLATE_STAIR = block(TloaModBlocks.SHEIKAH_PLATE_STAIR);
+	public static final DeferredItem<Item> SHEIKAH_PLATE_WALL = block(TloaModBlocks.SHEIKAH_PLATE_WALL);
+	public static final DeferredItem<Item> SHEIKAH_STONE = block(TloaModBlocks.SHEIKAH_STONE);
+	public static final DeferredItem<Item> SHEIKAH_STONE_SLAB = block(TloaModBlocks.SHEIKAH_STONE_SLAB);
+	public static final DeferredItem<Item> SHEIKAH_STONE_STAIR = block(TloaModBlocks.SHEIKAH_STONE_STAIR);
+	public static final DeferredItem<Item> SHEIKAH_STONE_WALL = block(TloaModBlocks.SHEIKAH_STONE_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -2,10 +2,10 @@
   "_fv": 72,
   "_type": "block",
   "definition": {
-    "texture": "sheikah_plate_design",
-    "textureTop": "",
+    "texture": "sheikah_stone",
+    "textureTop": "sheikah_stone",
     "textureLeft": "",
-    "textureFront": "",
+    "textureFront": "sheikah_stone",
     "textureRight": "",
     "textureBack": "",
     "renderType": 11,
@@ -16,6 +16,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Wall",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -34,7 +35,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Designed Sheikah Plate",
+    "name": "Sheikah Stone Wall",
     "specialInformation": {
       "fixedValue": []
     },

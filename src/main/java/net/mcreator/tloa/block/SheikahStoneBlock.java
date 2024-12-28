@@ -8,8 +8,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class DesignedSheikahPlateBlock extends Block {
-	public DesignedSheikahPlateBlock() {
+public class SheikahStoneBlock extends Block {
+	public SheikahStoneBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(4.5f, 10f).requiresCorrectToolForDrops());
 	}
 

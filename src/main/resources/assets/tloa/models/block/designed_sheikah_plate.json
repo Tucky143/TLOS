@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tloa:block/sheikah_plate_design",
-    "particle": "tloa:block/sheikah_plate_design"
-  },
-  "render_type": "solid"
-}

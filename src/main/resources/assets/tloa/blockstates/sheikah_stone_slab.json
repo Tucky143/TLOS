@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tloa:block/sheikah_stone_slab"
+    },
+    "type=top": {
+      "model": "tloa:block/sheikah_stone_slab_top"
+    },
+    "type=double": {
+      "model": "tloa:block/sheikah_stone_slab_full"
+    }
+  }
+}

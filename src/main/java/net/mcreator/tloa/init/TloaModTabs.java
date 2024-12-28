@@ -63,11 +63,16 @@ public class TloaModTabs {
 				tabData.accept(TloaModBlocks.SHEIKAH_GRATE.get().asItem());
 				tabData.accept(TloaModBlocks.SHEIKAH_GRATE_WALL.get().asItem());
 				tabData.accept(TloaModBlocks.SHEIKAH_PLATE.get().asItem());
-				tabData.accept(TloaModBlocks.DESIGNED_SHEIKAH_PLATE.get().asItem());
 				tabData.accept(TloaModBlocks.CHISELED_SHEIKAH_PLATE.get().asItem());
 				tabData.accept(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE.get().asItem());
 				tabData.accept(TloaModBlocks.GLOWING_SHEIKAH_PLATE.get().asItem());
 				tabData.accept(TloaModBlocks.SHEIKAH_PLATE_SLAB.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_PLATE_STAIR.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_PLATE_WALL.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_STONE.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_STONE_SLAB.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_STONE_STAIR.get().asItem());
+				tabData.accept(TloaModBlocks.SHEIKAH_STONE_WALL.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
