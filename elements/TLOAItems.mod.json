@@ -1,0 +1,11 @@
+{
+  "_fv": 72,
+  "_type": "tab",
+  "definition": {
+    "name": "TLOA Items",
+    "icon": {
+      "value": "CUSTOM:SheikahSlate"
+    },
+    "showSearch": true
+  }
+}
