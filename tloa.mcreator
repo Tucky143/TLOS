@@ -1804,7 +1804,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahLight",
@@ -1820,7 +1821,8 @@
           "src/main/java/net/mcreator/tloa/block/SheikahLightBlock.java",
           "src/main/resources/assets/tloa/models/item/sheikah_light.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahGrate",
@@ -1836,7 +1838,8 @@
           "src/main/resources/assets/tloa/models/block/sheikah_grate.json",
           "src/main/resources/data/tloa/loot_table/blocks/sheikah_grate.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahGrateWall",
@@ -1855,7 +1858,8 @@
           "src/main/resources/assets/tloa/blockstates/sheikah_grate_wall.json",
           "src/main/resources/data/tloa/loot_table/blocks/sheikah_grate_wall.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahPlate",
@@ -1871,7 +1875,8 @@
           "src/main/resources/assets/tloa/models/block/sheikah_plate.json",
           "src/main/resources/assets/tloa/blockstates/sheikah_plate.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "ChiseledSheikahPlate",
@@ -1887,7 +1892,8 @@
           "src/main/resources/assets/tloa/blockstates/chiseled_sheikah_plate.json",
           "src/main/resources/data/tloa/loot_table/blocks/chiseled_sheikah_plate.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "GlowingChiseledSheikahPlate",
@@ -1903,7 +1909,8 @@
           "src/main/resources/assets/tloa/models/block/glowing_chiseled_sheikah_plate.json",
           "src/main/resources/assets/tloa/blockstates/glowing_chiseled_sheikah_plate.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "GlowingSheikahPlate",
@@ -1919,7 +1926,8 @@
           "src/main/resources/data/tloa/loot_table/blocks/glowing_sheikah_plate.json",
           "src/main/resources/assets/tloa/models/block/glowing_sheikah_plate.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahPlateSlab",
@@ -1937,7 +1945,8 @@
           "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_top.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_full.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahPlateStair",
@@ -1955,7 +1964,8 @@
           "src/main/resources/assets/tloa/models/block/sheikah_plate_stair_inner.json",
           "src/main/java/net/mcreator/tloa/block/SheikahPlateStairBlock.java"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahPlateWall",
@@ -1974,7 +1984,8 @@
           "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_post.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_side_tall.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahStone",
@@ -1990,7 +2001,8 @@
           "src/main/resources/assets/tloa/blockstates/sheikah_stone.json",
           "src/main/resources/assets/tloa/models/item/sheikah_stone.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahStoneSlab",
@@ -2008,7 +2020,8 @@
           "src/main/java/net/mcreator/tloa/block/SheikahStoneSlabBlock.java",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_top.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahStoneStair",
@@ -2026,7 +2039,8 @@
           "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_outer.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_inner.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
     },
     {
       "name": "SheikahStoneWall",
@@ -2045,7 +2059,136 @@
           "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_side_tall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_inventory.json"
         ]
-      }
+      },
+      "path": "~/Sheikah"
+    },
+    {
+      "name": "FlamebladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flameblade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/FlamebladeLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Swords"
+    },
+    {
+      "name": "Flameblade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flameblade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/flameblade.json",
+          "src/main/java/net/mcreator/tloa/item/FlamebladeItem.java"
+        ]
+      },
+      "path": "~/Swords"
+    },
+    {
+      "name": "FlamebladeEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flameblade_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/FlamebladeEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Swords"
+    },
+    {
+      "name": "GreatFlameblade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_flameblade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/item/GreatFlamebladeItem.java",
+          "src/main/resources/assets/tloa/models/item/great_flameblade.json"
+        ]
+      },
+      "path": "~/Swords"
+    },
+    {
+      "name": "GreatFlamebladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_flameblade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/GreatFlamebladeLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Swords"
+    },
+    {
+      "name": "GreatFlamebladeEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_flameblade_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/GreatFlamebladeEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Swords"
     }
   ],
   "variable_elements": [
@@ -2158,7 +2301,6 @@
       "~CUSTOM:LostSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:SheikahLight",
       "~CUSTOM:SheikahStoneWall",
       "~CUSTOM:SheikahStoneStair",
       "~CUSTOM:SheikahStoneSlab",
@@ -2178,7 +2320,6 @@
       "CUSTOM:LostFenceGate"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
-      "~CUSTOM:SheikahLight",
       "~CUSTOM:SheikahStoneWall",
       "~CUSTOM:SheikahStoneStair",
       "~CUSTOM:SheikahStoneSlab",
@@ -2210,6 +2351,8 @@
       "~CUSTOM:LostStairs"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:GreatFlameblade",
+      "~CUSTOM:Flameblade",
       "~CUSTOM:KokiriSword",
       "~CUSTOM:MasterSwordPowered",
       "~CUSTOM:MasterSword"
@@ -2219,7 +2362,26 @@
       "CUSTOM:DekuPlanks"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:TLOSItems": [
+      "SheikahSlate",
+      "Paraglider",
+      "MasterSword",
+      "MasterSwordPowered",
+      "KokiriSword",
+      "Flameblade",
+      "LightBow",
+      "DekuShield",
+      "HylianShield",
+      "GreenRupee",
+      "BlueRupee",
+      "RedRupee",
+      "PurpleRupee",
+      "SilverRupee",
+      "GoldRupee",
+      "GreatFlameblade"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
@@ -2244,6 +2406,7 @@
       "block.tloa.lost_planks": "Lost Planks",
       "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
+      "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
       "block.tloa.deku_wood": "Deku Wood",
@@ -2263,6 +2426,7 @@
       "gui.tloa.rupee_counter.label_money": "Money",
       "item.tloa.red_rupee.description_0": "Item representing 20 rupees",
       "block.tloa.lost_pressure_plate": "Lost Pressure Plate",
+      "item.tloa.flameblade": "Flameblade",
       "block.tloa.deku_stairs": "Deku Stairs",
       "block.tlom.lost_stairs": "Lost Stairs",
       "entity.tlos.square_remote_bomb": "Square Remote Bomb",
@@ -2395,6 +2559,10 @@
       },
       {
         "name": "Swords",
+        "children": []
+      },
+      {
+        "name": "Sheikah",
         "children": []
       }
     ]
