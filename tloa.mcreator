@@ -4,8 +4,8 @@
       "name": "TLOSItems",
       "type": "tab",
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "tloa_items",
+      "locked_code": false,
+      "registry_name": "tloa_item_tab",
       "metadata": {
         "files": []
       }
@@ -2366,20 +2366,20 @@
     "CUSTOM:TLOSItems": [
       "SheikahSlate",
       "Paraglider",
+      "DekuShield",
+      "HylianShield",
       "MasterSword",
       "MasterSwordPowered",
       "KokiriSword",
       "Flameblade",
+      "GreatFlameblade",
       "LightBow",
-      "DekuShield",
-      "HylianShield",
       "GreenRupee",
       "BlueRupee",
       "RedRupee",
       "PurpleRupee",
       "SilverRupee",
-      "GoldRupee",
-      "GreatFlameblade"
+      "GoldRupee"
     ]
   },
   "language_map": {
@@ -2436,6 +2436,7 @@
       "item.tloa.master_sword_powered": "Master Sword (POWERED)",
       "block.tloa.sheikah_plate_stair": "Sheikah Plate Stair",
       "block.tlos.lost_stairs": "Lost Stairs",
+      "item_group.tloa.tloa_item_tab": "TLOA Items",
       "item.tlom.red_rupee.description_0": "Item representing 20 rupees",
       "block.tloa.lost_button": "Lost Button",
       "item.tloa.silver_rupee": "Silver Rupee",
@@ -2448,7 +2449,6 @@
       "block.tloa.lost_stairs": "Lost Stairs",
       "block.tlom.lost_button": "Lost Button",
       "block.tlos.lost_wood": "Lost Wood",
-      "item_group.tloa.tloa_items": "TLOA Items",
       "block.tloa.lost_slab": "Lost Slab",
       "entity.tloa.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_blocks": "TLOS Blocks",
@@ -2570,8 +2570,8 @@
   "workspaceSettings": {
     "modid": "tloa",
     "modName": "The Legend of Alex",
-    "version": "0.0.1",
-    "description": "The Legend of Alex, a zelda based mod.",
+    "version": "0.0.2",
+    "description": "The Legend of Alex, a Zelda based mod.",
     "author": "Tucky143",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

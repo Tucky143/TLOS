@@ -1,6 +1,5 @@
 package net.mcreator.tloa.procedures;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.block.Rotation;
@@ -61,11 +60,6 @@ public class CryonisAbilityProcedure {
 						if (_ent instanceof ServerPlayer _serverPlayer)
 							_serverPlayer.connection.teleport(x, (y + 4.2), z, _ent.getYRot(), _ent.getXRot());
 					}
-					entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 4), (entity.getDeltaMovement().z())));
-					entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 4), (entity.getDeltaMovement().z())));
-					TloaMod.queueServerWork(8, () -> {
-						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 4), (entity.getDeltaMovement().z())));
-					});
 					TloaMod.queueServerWork(200, () -> {
 						if (world instanceof ServerLevel _serverworld) {
 							StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("tloa", "cryonis_empty"));
@@ -115,11 +109,6 @@ public class CryonisAbilityProcedure {
 							if (_ent instanceof ServerPlayer _serverPlayer)
 								_serverPlayer.connection.teleport(x, (y + 6.2), z, _ent.getYRot(), _ent.getXRot());
 						}
-						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 4), (entity.getDeltaMovement().z())));
-						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 4), (entity.getDeltaMovement().z())));
-						TloaMod.queueServerWork(8, () -> {
-							entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() * 4), (entity.getDeltaMovement().z())));
-						});
 						TloaMod.queueServerWork(200, () -> {
 							if (world instanceof ServerLevel _serverworld) {
 								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("tloa", "cryonis_empty"));

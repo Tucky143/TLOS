@@ -1,0 +1,99 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2024-12-29 21:50:06
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.entity.Entity.teleportTo(double, double, double)" because "_ent" is null
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.procedures.MagnesisAbilityProcedure$2.timedLoop(MagnesisAbilityProcedure.java:117) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.procedures.MagnesisAbilityProcedure$2.lambda$timedLoop$0(MagnesisAbilityProcedure.java:143) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.TloaMod.lambda$tick$2(TloaMod.java:96) ~[%23185!/:?] {re:classloading}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.TloaMod.tick(TloaMod.java:96) ~[%23185!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23141!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23141!/:?] {}
+	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.event.EventHooks.fireServerTickPost(EventHooks.java:1002) ~[neoforge-21.1.65-minecraft.jar%23184!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:943) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 115398920 bytes (110 MiB) / 830472192 bytes (792 MiB) up to 4219469824 bytes (4024 MiB)
+	CPUs: 20
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i7-12700H
+	Identifier: Intel64 Family 6 Model 154 Stepping 3
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 2.69
+	Number of physical packages: 1
+	Number of physical CPUs: 14
+	Number of logical CPUs: 20
+	Graphics card #0 name: Intel(R) Iris(R) Xe Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 30.0.101.1029
+	Graphics card #1 name: NVIDIA GeForce RTX 3060 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 6144.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 31.0.15.5222
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 24792.05
+	Virtual memory used (MiB): 16634.93
+	Swap memory total (MiB): 8704.00
+	Swap memory used (MiB): 177.06
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 179831.42, total: 487085.00
+	Space in storage for workdir (MiB): available: 179831.42, total: 487085.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/113, l='ServerLevel[Test 1]', x=116.87, y=70.69, z=8.03]]
+	Active Data Packs: vanilla, mod_data, mod/neoforge, mod/tloa
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/neoforge, mod/tloa, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: 7007811546339844209
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.65
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.65-minecraft.jar                    |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |NeoForge                      |neoforge                      |21.1.65             |Manifest: NOSIGNATURE
+		main                                              |The Legend of Alex            |tloa                          |0.0.1               |Manifest: NOSIGNATURE
+	Crash Report UUID: 887db6b5-cd53-4ae5-a676-05668840de16
+	FML: 4.0.24
+	NeoForge: 21.1.65

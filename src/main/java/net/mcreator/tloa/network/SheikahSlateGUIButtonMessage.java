@@ -73,15 +73,15 @@ public record SheikahSlateGUIButtonMessage(int buttonID, int x, int y, int z) im
 		}
 		if (buttonID == 2) {
 
-			StasisProcedure.execute(entity);
+			CryonisProcedure.execute(entity);
 		}
 		if (buttonID == 3) {
 
-			CryonisProcedure.execute(entity);
+			MasterCycleProcedure.execute(entity);
 		}
 		if (buttonID == 4) {
 
-			MasterCycleProcedure.execute(entity);
+			StasisProcedure.execute(entity);
 		}
 	}
 

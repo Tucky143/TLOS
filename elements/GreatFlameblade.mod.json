@@ -5,7 +5,7 @@
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "flameblade",
+    "texture": "great_flameblade",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Great Flameblade",

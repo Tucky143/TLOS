@@ -52,6 +52,10 @@
     "isAlwaysEdible": false,
     "animation": "block",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

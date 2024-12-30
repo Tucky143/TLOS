@@ -1,0 +1,203 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2024-12-29 21:42:12
+Description: Unexpected error
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.entity.Entity.getStringUUID()" because "TargetBlock" is null
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.procedures.MagnesisAbilityProcedure.execute(MagnesisAbilityProcedure.java:96) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.procedures.UseRuneOnKeyPressedProcedure.execute(UseRuneOnKeyPressedProcedure.java:28) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.network.UseRuneMessage.pressAction(UseRuneMessage.java:55) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.init.TloaModKeyMappings$2.setDown(TloaModKeyMappings.java:45) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyMapping.set(KeyMapping.java:54) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyboardHandler.keyPress(KeyboardHandler.java:480) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyboardHandler.lambda$setup$8(KeyboardHandler.java:515) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyboardHandler.lambda$setup$9(KeyboardHandler.java:515) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWKeyCallbackI.callback(GLFWKeyCallbackI.java:44) ~[lwjgl-glfw-3.3.3.jar%23166!/:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.3.jar%23177!/:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438) ~[lwjgl-glfw-3.3.3.jar%23166!/:build 5] {}
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:134) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:143) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:290) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1217) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.procedures.MagnesisAbilityProcedure.execute(MagnesisAbilityProcedure.java:96) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.procedures.UseRuneOnKeyPressedProcedure.execute(UseRuneOnKeyPressedProcedure.java:28) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.network.UseRuneMessage.pressAction(UseRuneMessage.java:55) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/tloa@0.0.1/net.mcreator.tloa.init.TloaModKeyMappings$2.setDown(TloaModKeyMappings.java:45) ~[%23185!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyMapping.set(KeyMapping.java:54) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyboardHandler.keyPress(KeyboardHandler.java:480) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyboardHandler.lambda$setup$8(KeyboardHandler.java:515) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.KeyboardHandler.lambda$setup$9(KeyboardHandler.java:515) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWKeyCallbackI.callback(GLFWKeyCallbackI.java:44) ~[lwjgl-glfw-3.3.3.jar%23166!/:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.3.jar%23177!/:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438) ~[lwjgl-glfw-3.3.3.jar%23166!/:build 5] {}
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:134) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:143) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+-- Uptime --
+Details:
+	JVM uptime: 37.937s
+	Wall uptime: 27.270s
+	High-res time: 35.748s
+	Client ticks: 397 ticks / 19.850s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2392) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:868) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:828) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.65-minecraft.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.24/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.24.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/102, l='ClientLevel', x=116.87, y=73.31, z=8.03]]
+	Chunk stats: 961, 609
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (112,76,0), Section: (at 0,12,0 in 7,4,0; chunk contains blocks 112,-64,0 to 127,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 123186 game time, 69474 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 153
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/neoforge, mod/tloa
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 452113352 bytes (431 MiB) / 1033895936 bytes (986 MiB) up to 4219469824 bytes (4024 MiB)
+	CPUs: 20
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i7-12700H
+	Identifier: Intel64 Family 6 Model 154 Stepping 3
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 2.69
+	Number of physical packages: 1
+	Number of physical CPUs: 14
+	Number of logical CPUs: 20
+	Graphics card #0 name: Intel(R) Iris(R) Xe Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 30.0.101.1029
+	Graphics card #1 name: NVIDIA GeForce RTX 3060 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 6144.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 31.0.15.5222
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 24792.05
+	Virtual memory used (MiB): 16883.00
+	Swap memory total (MiB): 8704.00
+	Swap memory used (MiB): 176.14
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 179854.84, total: 487085.00
+	Space in storage for workdir (MiB): available: 179854.84, total: 487085.00
+	JVM Flags: 0 total; 
+	Launched Version: 21.1.65
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: Intel(R) Iris(R) Xe Graphics GL version 4.6.0 - Build 30.0.101.1029, Intel
+	Window size: 854x480
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fast
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, mod_resources, mod/neoforge, mod/tloa (incompatible)
+	Current Language: en_us
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 20x 12th Gen Intel(R) Core(TM) i7-12700H
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/102, l='ServerLevel[Test 1]', x=116.87, y=73.31, z=8.03]]
+	Active Data Packs: vanilla, mod_data, mod/neoforge, mod/tloa
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/neoforge, mod/tloa, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: 7007811546339844209
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		neoforge-21.1.65-minecraft.jar                    |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.65-minecraft.jar                    |NeoForge                      |neoforge                      |21.1.65             |Manifest: NOSIGNATURE
+		main                                              |The Legend of Alex            |tloa                          |0.0.1               |Manifest: NOSIGNATURE
+	Crash Report UUID: b1344a06-1143-4aab-bbb1-115bcf2d3304
+	FML: 4.0.24
+	NeoForge: 21.1.65

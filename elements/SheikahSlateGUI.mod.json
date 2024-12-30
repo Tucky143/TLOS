@@ -33,21 +33,7 @@
           "onClick": {
             "name": "Magnesis"
           },
-          "x": 96,
-          "y": 107,
-          "locked": false
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_stasis",
-          "image": "stasis.png",
-          "hoveredImage": "stasis_hovered.png",
-          "onClick": {
-            "name": "Stasis"
-          },
-          "x": 276,
+          "x": 87,
           "y": 107,
           "locked": false
         }
@@ -61,7 +47,7 @@
           "onClick": {
             "name": "Cryonis"
           },
-          "x": 357,
+          "x": 267,
           "y": 107,
           "locked": false
         }
@@ -75,7 +61,21 @@
           "onClick": {
             "name": "MasterCycle"
           },
-          "x": 186,
+          "x": 348,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stasis",
+          "image": "stasis.png",
+          "hoveredImage": "stasis_hovered.png",
+          "onClick": {
+            "name": "Stasis"
+          },
+          "x": 177,
           "y": 107,
           "locked": false
         }
@@ -123,7 +123,7 @@
             "value": -16737793,
             "falpha": 0.0
           },
-          "x": 195,
+          "x": 348,
           "y": 89,
           "locked": false
         }
@@ -139,7 +139,7 @@
             "value": -16737793,
             "falpha": 0.0
           },
-          "x": 294,
+          "x": 195,
           "y": 89,
           "locked": false
         }
@@ -155,7 +155,7 @@
             "value": -16737793,
             "falpha": 0.0
           },
-          "x": 366,
+          "x": 276,
           "y": 89,
           "locked": false
         }
