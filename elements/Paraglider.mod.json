@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:spruce_sign",
+    "texture": "paraglider",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
