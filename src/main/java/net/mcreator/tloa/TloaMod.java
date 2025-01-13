@@ -19,7 +19,6 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.tloa.network.TloaModVariables;
-import net.mcreator.tloa.init.TloaModTabs;
 import net.mcreator.tloa.init.TloaModSounds;
 import net.mcreator.tloa.init.TloaModMenus;
 import net.mcreator.tloa.init.TloaModItems;
