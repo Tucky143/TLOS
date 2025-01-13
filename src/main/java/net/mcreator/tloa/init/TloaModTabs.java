@@ -21,6 +21,25 @@ import net.mcreator.tloa.TloaMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class TloaModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TloaMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_ITEMS = REGISTRY.register("tloa_items",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_items")).icon(() -> new ItemStack(TloaModItems.GREEN_RUPEE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TloaModItems.SHEIKAH_SLATE.get());
+				tabData.accept(TloaModItems.MASTER_SWORD.get());
+				tabData.accept(TloaModItems.MASTER_SWORD_POWERED.get());
+				tabData.accept(TloaModItems.GREEN_RUPEE.get());
+				tabData.accept(TloaModItems.BLUE_RUPEE.get());
+				tabData.accept(TloaModItems.RED_RUPEE.get());
+				tabData.accept(TloaModItems.PURPLE_RUPEE.get());
+				tabData.accept(TloaModItems.SILVER_RUPEE.get());
+				tabData.accept(TloaModItems.GOLD_RUPEE.get());
+				tabData.accept(TloaModItems.LIGHT_BOW.get());
+				tabData.accept(TloaModItems.DEKU_SHIELD.get());
+				tabData.accept(TloaModItems.HYLIAN_SHIELD.get());
+				tabData.accept(TloaModItems.KOKIRI_SWORD.get());
+				tabData.accept(TloaModItems.PARAGLIDER.get());
+				tabData.accept(TloaModItems.FLAMEBLADE.get());
+				tabData.accept(TloaModItems.GREAT_FLAMEBLADE.get());
+			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS_TAB = REGISTRY.register("tloa_blocks_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks_tab")).icon(() -> new ItemStack(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TloaModBlocks.LOST_WOOD.get().asItem());

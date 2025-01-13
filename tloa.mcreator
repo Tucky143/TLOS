@@ -1,16 +1,16 @@
 {
   "mod_elements": [
-          {
+    {
       "name": "TLOSBlocks",
       "type": "tab",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tloa_blocks_tab",
       "metadata": {
         "files": []
       }
     },
-        {
+    {
       "name": "TLOSItems",
       "type": "tab",
       "compiles": true,
@@ -2367,8 +2367,8 @@
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "item.tlos.purple_rupee": "Green Rupee",
       "gui.tloa.rupee_counter.label_empty": "",
+      "item.tlos.purple_rupee": "Green Rupee",
       "block.tloa.sheikah_grate_wall": "Sheikah Grate",
       "key.tlos.use_rune": "Use Rune",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
@@ -2384,14 +2384,14 @@
       "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "block.tloa.lost_planks": "Lost Planks",
       "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
+      "block.tloa.lost_planks": "Lost Planks",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "block.tloa.deku_wood": "Deku Wood",
       "item.tloa.blue_rupee": "Blue Rupee",
+      "block.tloa.deku_wood": "Deku Wood",
       "block.tloa.deku_planks": "Deku Planks",
       "block.tloa.sheikah_light": "Sheikah Light",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
@@ -2430,6 +2430,7 @@
       "block.tlom.lost_button": "Lost Button",
       "block.tlos.lost_wood": "Lost Wood",
       "block.tloa.lost_slab": "Lost Slab",
+      "item_group.tloa.tloa_items": "TLOA Items",
       "entity.tloa.square_remote_bomb": "Square Remote Bomb",
       "item_group.tlos.tlos_blocks": "TLOS Blocks",
       "block.tloa.sheikah_plate_slab": "Sheikah Plate Slab",
@@ -2449,8 +2450,6 @@
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tlom.purple_rupee": "Green Rupee",
       "item.tlos.master_sword_powered": "Master Sword (POWERED)",
-      "item_group.tloa.tloa_blocks_tab": "TLOA Blocks",
-      "item_group.tloa.tloa_items": "TLOA Items",
       "block.tloa.deku_slab": "Deku Slab",
       "block.tlos.lost_log": "Lost Log",
       "item.tlom.red_rupee": "Green Rupee",
@@ -2482,6 +2481,7 @@
       "block.tlos.lost_fence_gate": "Lost Fence Gate",
       "entity.tlom.master_cycle_zero": "Master Cycle ZERO",
       "block.tlos.lost_fence": "Lost Fence",
+      "item_group.tloa.tloa_blocks_tab": "TLOA Blocks",
       "biome.tlos.lost_woods": "Lost Woods",
       "item.tloa.blue_rupee.description_0": "Item representing 5 rupees",
       "gui.tloa.sheikah_slate_gui.label_cryonis": "Cryonis",
