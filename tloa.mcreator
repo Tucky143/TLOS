@@ -2189,6 +2189,88 @@
         ]
       },
       "path": "~/Swords"
+    },
+    {
+      "name": "ClimbingKeyOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbing_key_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/ClimbingKeyOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClimbingKeyOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbing_key_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/ClimbingKeyOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClimbingKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbing_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/network/ClimbingKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Climbing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/ClimbingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2239,6 +2321,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
+    },
+    {
+      "name": "climbing",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -2340,6 +2428,60 @@
       "~CUSTOM:SheikahPlateWall",
       "~CUSTOM:SheikahGrateWall"
     ],
+    "BLOCKS:mod:climbable": [
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "CUSTOM:SheikahStone",
+      "Blocks.STONE#0",
+      "Blocks.STONE#1",
+      "Blocks.STONE#3",
+      "Blocks.STONE#5",
+      "Blocks.SANDSTONE#0",
+      "Blocks.STONEBRICK#0",
+      "CUSTOM:LostWood",
+      "CUSTOM:LostLog",
+      "CUSTOM:LostPlanks",
+      "CUSTOM:DekuWood",
+      "CUSTOM:DekuLog",
+      "CUSTOM:DekuPlanks",
+      "CUSTOM:SheikahLight",
+      "CUSTOM:SheikahGrate",
+      "CUSTOM:SheikahPlate",
+      "CUSTOM:ChiseledSheikahPlate",
+      "CUSTOM:GlowingChiseledSheikahPlate",
+      "CUSTOM:GlowingSheikahPlate",
+      "Blocks.TUFF",
+      "Blocks.GRASS",
+      "Blocks.GRASS_PATH",
+      "Blocks.MYCELIUM",
+      "Blocks.MUD",
+      "Blocks.PACKED_MUD",
+      "Blocks.COBBLESTONE",
+      "Blocks.LOG#0",
+      "Blocks.LOG#1",
+      "Blocks.LOG#2",
+      "Blocks.LOG#3",
+      "Blocks.LOG2#0",
+      "Blocks.LOG2#1",
+      "Blocks.WARPED_STEM",
+      "Blocks.CRIMSON_STEM",
+      "Blocks.MANGROVE_LOG",
+      "Blocks.CHERRY_LOG",
+      "Blocks.BAMBOO_BLOCK",
+      "Blocks.OAK_WOOD",
+      "Blocks.SPRUCE_WOOD",
+      "Blocks.BIRCH_WOOD",
+      "Blocks.JUNGLE_WOOD",
+      "Blocks.ACACIA_WOOD",
+      "Blocks.DARK_OAK_WOOD",
+      "Blocks.WARPED_HYPHAE",
+      "Blocks.CRIMSON_HYPHAE",
+      "Blocks.MANGROVE_WOOD",
+      "Blocks.CHERRY_WOOD",
+      "Blocks.NETHER_BRICK",
+      "Blocks.RED_NETHER_BRICK"
+    ],
     "BIOMES:mod:is_zelda": [
       "CUSTOM:CentralKorokForest",
       "CUSTOM:KorokForest"
@@ -2367,8 +2509,8 @@
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "item.tlos.purple_rupee": "Green Rupee",
       "gui.tloa.rupee_counter.label_empty": "",
+      "item.tlos.purple_rupee": "Green Rupee",
       "block.tloa.sheikah_grate_wall": "Sheikah Grate",
       "key.tlos.use_rune": "Use Rune",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
@@ -2384,14 +2526,14 @@
       "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "block.tloa.lost_planks": "Lost Planks",
       "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
+      "block.tloa.lost_planks": "Lost Planks",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "block.tloa.deku_wood": "Deku Wood",
       "item.tloa.blue_rupee": "Blue Rupee",
+      "block.tloa.deku_wood": "Deku Wood",
       "block.tloa.deku_planks": "Deku Planks",
       "block.tloa.sheikah_light": "Sheikah Light",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
@@ -2493,6 +2635,7 @@
       "item.tloa.green_rupee": "Green Rupee",
       "block.tloa.sheikah_plate_wall": "Sheikah Plate Wall",
       "block.tlom.lost_pressure_plate": "Lost Pressure Plate",
+      "key.tloa.climbing_key": "Climbing",
       "subtitles.master_cycle_crushes": "Master Cycle Drives",
       "item.tlom.sheikah_slate": "Sheikah Slate",
       "key.tlom.open_sheikah_slate_gui": "Open Sheikah Slate",

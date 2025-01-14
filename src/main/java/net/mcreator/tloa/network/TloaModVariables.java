@@ -67,6 +67,7 @@ public class TloaModVariables {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
 			clone.bullet_time_active = original.bullet_time_active;
+			clone.climbing = original.climbing;
 			if (!event.isWasDeath()) {
 				clone.cryonis_activated = original.cryonis_activated;
 				clone.magnesis_activated = original.magnesis_activated;
@@ -219,6 +220,7 @@ public class TloaModVariables {
 		public boolean master_cycle_activated = false;
 		public boolean bullet_time_active = false;
 		public double money = 0.0;
+		public boolean climbing = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -230,6 +232,7 @@ public class TloaModVariables {
 			nbt.putBoolean("master_cycle_activated", master_cycle_activated);
 			nbt.putBoolean("bullet_time_active", bullet_time_active);
 			nbt.putDouble("money", money);
+			nbt.putBoolean("climbing", climbing);
 			return nbt;
 		}
 
@@ -242,6 +245,7 @@ public class TloaModVariables {
 			master_cycle_activated = nbt.getBoolean("master_cycle_activated");
 			bullet_time_active = nbt.getBoolean("bullet_time_active");
 			money = nbt.getDouble("money");
+			climbing = nbt.getBoolean("climbing");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
