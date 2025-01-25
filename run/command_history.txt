@@ -1,5 +1,3 @@
-/setblock 108 67 -23 tloa:sheikah_light
-/setblock 108 67 -23 tloa:sheikah_light replace
 /fill 108 66 -27
 /fill 108 66 -27 ~ ~ ~ tloa:sheikah_light outline
 /give @a tloa:sheikah_grate
@@ -48,3 +46,5 @@
 /setblock ~ ~ ~ stone
 /kill
 /tp d757a815-f600-413f-b158-73a81c416a42 ~ ~-2 ~
+/give @a tloa:frostblade
+/summon pig

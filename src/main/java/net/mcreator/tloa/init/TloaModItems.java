@@ -42,6 +42,7 @@ import net.mcreator.tloa.item.HylianShieldItem;
 import net.mcreator.tloa.item.GreenRupeeItem;
 import net.mcreator.tloa.item.GreatFlamebladeItem;
 import net.mcreator.tloa.item.GoldRupeeItem;
+import net.mcreator.tloa.item.FrostbladeItem;
 import net.mcreator.tloa.item.FlamebladeItem;
 import net.mcreator.tloa.item.DekuShieldItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
@@ -100,6 +101,7 @@ public class TloaModItems {
 	public static final DeferredItem<Item> SHEIKAH_STONE_WALL = block(TloaModBlocks.SHEIKAH_STONE_WALL);
 	public static final DeferredItem<Item> FLAMEBLADE = REGISTRY.register("flameblade", FlamebladeItem::new);
 	public static final DeferredItem<Item> GREAT_FLAMEBLADE = REGISTRY.register("great_flameblade", GreatFlamebladeItem::new);
+	public static final DeferredItem<Item> FROSTBLADE = REGISTRY.register("frostblade", FrostbladeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
