@@ -1,46 +1,50 @@
+/fill 108 66 -27
+/fill 108 66 -27 ~ ~ ~ tloa:sheikah_light outline
+/give @a tloa:sheikah_grate
+/give @a tloa:sheikah_grate_wall
+/kill
+/fill 120 62 -125
+/fill 120 62 -125 124 77 -121 tloa:sheikah_light
+/fill 120 62 -125 124 92 -121 tloa:sheikah_light
+/fill 119 61 -126 125 93 -120 tloa:sheikah_grate
+/fill 120 62 -125 124 92 -121 tloa:sheikah_light
+/fill 119 61 -126 125 93 -120 tloa:sheikah_grate outline
 /time set night
-/time set midnight
-/time set day
-/tick rate 20
-/tick rate 200
-/summon tlos:square_remote_bomb
-/kill 0a64c95a-aa6a-485d-bd9f-715ceaadeee4
-/kill 63a31f8c-5195-448d-a6f8-0e27118628c4
-/summon tlos:square_remote_bomb
-/kill @e
-/give @a minecraft:acacia_fence
-/give @a minecraft:enchanted_golden_apple 64
-/summon pig
-/locate biome tlos:korok_forest
-/tp @s -453 66 317
-/locate biome tlos:lost_woods
-/tp @s 2913 173 -2856
-/place feature tlos:lost_woods_tree
-/summon minecraft:wither
-/summon pig
-/summon cow
-/summon minecraft:chicken
-/locate biome tlos:central_korok_forest
-/locate biome tlos:lost_woods
-/tp @s 3155 71 306
-/locate biome tlos:central_korok_forest
-/summon minecraft:skeleton
-/locate biome tloa:central_korok_forest
-/tp @s 1199 92 898
-/locate biome tloa:central_korok_forest
-/tp @s 3286 -46 -3381
-/tick rate 3
-/tick rate 20
-/give @a tloa:sheikah_slate
-/give @a bow
-/summon tloa:master_cycle_zero
-/give @a tloa:deku_button
-/data get entity @p
-/data remove entity @p tloa:money
-/data modify entity @p tloa:money set value 1
-/data
-/data get entity Dev
-/summon tloa:master_cycle_zero
+/fill 119 93 -126
+/fill ~ ~ ~
+/fill 126 93 -119
+/fill 126 93 -119 ~ ~ ~ tloa:sheikah_plate
+/fill 118 99 -127
+/fill 118 99 -127 126 99 -119 tloa:sheikah_plate
+/fill 118 100 -127
+/fill 118 100 -127 126 102 -119 tloa:sheikah_plate replace air
+/setblock ~ ~ ~60 tloa:sheikah_light
+/give @a minecraft:debug_stick
+/execute in minecraft:the_end run tp 0 ~ 0
 /summon wither
-/time set day
-/kill @e
+/kill
+/give @a tloa:flameblade
+/weather clear
+/give @a tloa:gold_rupee
+/kill
+/give @a tloa:paraglider
+/give @a tloa:flameblade
+/give @a tloa:great_flameblade
+/summon minecraft:falling_block
+/tick rate 100
+/tick rate 1000
+/tick rate 10000
+/tick rate 5000
+/tick rate 50000
+/tick rate 10000
+/give @a tloa:paraglider
+/summon boat
+/tp ~ ~1000 ~
+/tp ~ ~-1000 ~
+/summon boat
+/reload
+/setblock ~ ~ ~ stone
+/kill
+/tp d757a815-f600-413f-b158-73a81c416a42 ~ ~-2 ~
+/give @a tloa:frostblade
+/summon pig

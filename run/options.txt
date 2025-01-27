@@ -22,8 +22,8 @@ narrator:0
 particles:0
 reducedDebugInfo:false
 renderClouds:"false"
-renderDistance:5
-simulationDistance:12
+renderDistance:12
+simulationDistance:10
 screenEffectScale:1.0
 soundDevice:""
 autoJump:false
@@ -123,6 +123,7 @@ key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.tloa.open_sheikah_slate_gui:key.keyboard.r
 key_key.tloa.use_rune:key.keyboard.x
+key_key.tloa.climbing_key:key.keyboard.q
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
