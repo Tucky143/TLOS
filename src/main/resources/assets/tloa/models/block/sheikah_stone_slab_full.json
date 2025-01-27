@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "tloa:block/sheikah_stone",
+    "bottom": "tloa:block/sheikah_stone",
+    "top": "tloa:block/sheikah_stone",
+    "side": "tloa:block/sheikah_stone"
+  },
+  "render_type": "solid"
+}

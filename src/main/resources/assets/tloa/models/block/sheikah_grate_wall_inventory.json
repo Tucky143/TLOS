@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "tloa:block/sheikah_grate",
+    "particle": "tloa:block/sheikah_grate"
+  },
+  "render_type": "cutout"
+}

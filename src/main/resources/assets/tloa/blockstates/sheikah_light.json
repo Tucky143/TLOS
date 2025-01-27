@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "claimed=false": {
+      "model": "tloa:block/sheikah_light"
+    },
+        "claimed=true": {
+      "model": "tloa:block/sheikah_light_claimed"
+    }
+  }
+}

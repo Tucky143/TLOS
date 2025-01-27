@@ -1,0 +1,41 @@
+{
+  "_fv": 72,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "great_flameblade",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Great Flameblade",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:TLOSItems"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 25,
+    "damageVsEntity": 6.8,
+    "usageCount": 264,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GreatFlamebladeLivingEntityIsHitWithTool"
+    },
+    "onEntitySwing": {
+      "name": "GreatFlamebladeEntitySwingsItem"
+    }
+  }
+}

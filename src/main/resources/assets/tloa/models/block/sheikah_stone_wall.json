@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "tloa:block/sheikah_stone",
+    "particle": "tloa:block/sheikah_stone"
+  },
+  "render_type": "solid"
+}

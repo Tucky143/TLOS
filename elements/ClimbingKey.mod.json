@@ -1,0 +1,15 @@
+{
+  "_fv": 72,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Q",
+    "keyBindingName": "Climbing",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "ClimbingKeyOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "ClimbingKeyOnKeyReleased"
+    }
+  }
+}

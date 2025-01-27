@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tloa:block/sheikah_plate_slab"
+    },
+    "type=top": {
+      "model": "tloa:block/sheikah_plate_slab_top"
+    },
+    "type=double": {
+      "model": "tloa:block/sheikah_plate_slab_full"
+    }
+  }
+}
