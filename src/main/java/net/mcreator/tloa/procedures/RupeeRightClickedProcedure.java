@@ -19,6 +19,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.tloa.network.TloaModVariables;
 import net.mcreator.tloa.init.TloaModItems;
+import net.mcreator.tloa.TloaMod;
 
 import javax.annotation.Nullable;
 
@@ -119,6 +120,20 @@ public class RupeeRightClickedProcedure {
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("tloa:rupee_added")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 				}
+			}
+			if (false == entity.getData(TloaModVariables.PLAYER_VARIABLES).RupeeCounterOn) {
+				{
+					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+					_vars.RupeeCounterOn = true;
+					_vars.syncPlayerVariables(entity);
+				}
+				TloaMod.queueServerWork(60, () -> {
+					{
+						TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+						_vars.RupeeCounterOn = false;
+						_vars.syncPlayerVariables(entity);
+					}
+				});
 			}
 		}
 	}

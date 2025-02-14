@@ -11,13 +11,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.level.saveddata.SavedData;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
@@ -38,7 +33,6 @@ public class TloaModVariables {
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		TloaMod.addNetworkMessage(SavedDataSyncMessage.TYPE, SavedDataSyncMessage.STREAM_CODEC, SavedDataSyncMessage::handleData);
 		TloaMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
@@ -66,149 +60,19 @@ public class TloaModVariables {
 		public static void clonePlayer(PlayerEvent.Clone event) {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
-			clone.bullet_time_active = original.bullet_time_active;
 			clone.climbing = original.climbing;
+			clone.RupeeCounterOn = original.RupeeCounterOn;
 			if (!event.isWasDeath()) {
 				clone.cryonis_activated = original.cryonis_activated;
 				clone.magnesis_activated = original.magnesis_activated;
 				clone.remote_bomb_activated = original.remote_bomb_activated;
 				clone.stasis_activated = original.stasis_activated;
 				clone.master_cycle_activated = original.master_cycle_activated;
+				clone.player_holding_remote_bomb = original.player_holding_remote_bomb;
+				clone.bullet_time_active = original.bullet_time_active;
 				clone.money = original.money;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData mapdata = MapVariables.get(event.getEntity().level());
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (mapdata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-	}
-
-	public static class WorldVariables extends SavedData {
-		public static final String DATA_NAME = "tloa_worldvars";
-
-		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
-			WorldVariables data = new WorldVariables();
-			data.read(tag, lookupProvider);
-			return data;
-		}
-
-		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof ServerLevel level)
-				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, this));
-		}
-
-		static WorldVariables clientSide = new WorldVariables();
-
-		public static WorldVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class MapVariables extends SavedData {
-		public static final String DATA_NAME = "tloa_mapvars";
-		public boolean player_holding_remote_bomb = false;
-
-		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
-			MapVariables data = new MapVariables();
-			data.read(tag, lookupProvider);
-			return data;
-		}
-
-		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			player_holding_remote_bomb = nbt.getBoolean("player_holding_remote_bomb");
-		}
-
-		@Override
-		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putBoolean("player_holding_remote_bomb", player_holding_remote_bomb);
-			return nbt;
-		}
-
-		public void syncData(LevelAccessor world) {
-			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, this));
-		}
-
-		static MapVariables clientSide = new MapVariables();
-
-		public static MapVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public record SavedDataSyncMessage(int dataType, SavedData data) implements CustomPacketPayload {
-		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(TloaMod.MODID, "saved_data_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, SavedDataSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SavedDataSyncMessage message) -> {
-			buffer.writeInt(message.dataType);
-			if (message.data != null)
-				buffer.writeNbt(message.data.save(new CompoundTag(), buffer.registryAccess()));
-		}, (RegistryFriendlyByteBuf buffer) -> {
-			int dataType = buffer.readInt();
-			CompoundTag nbt = buffer.readNbt();
-			SavedData data = null;
-			if (nbt != null) {
-				data = dataType == 0 ? new MapVariables() : new WorldVariables();
-				if (data instanceof MapVariables mapVariables)
-					mapVariables.read(nbt, buffer.registryAccess());
-				else if (data instanceof WorldVariables worldVariables)
-					worldVariables.read(nbt, buffer.registryAccess());
-			}
-			return new SavedDataSyncMessage(dataType, data);
-		});
-
-		@Override
-		public Type<SavedDataSyncMessage> type() {
-			return TYPE;
-		}
-
-		public static void handleData(final SavedDataSyncMessage message, final IPayloadContext context) {
-			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.enqueueWork(() -> {
-					if (message.dataType == 0)
-						MapVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
-					else
-						WorldVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
-				}).exceptionally(e -> {
-					context.connection().disconnect(Component.literal(e.getMessage()));
-					return null;
-				});
-			}
 		}
 	}
 
@@ -218,9 +82,11 @@ public class TloaModVariables {
 		public boolean remote_bomb_activated = false;
 		public boolean stasis_activated = false;
 		public boolean master_cycle_activated = false;
+		public boolean player_holding_remote_bomb = false;
 		public boolean bullet_time_active = false;
 		public double money = 0.0;
 		public boolean climbing = false;
+		public boolean RupeeCounterOn = true;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -230,9 +96,11 @@ public class TloaModVariables {
 			nbt.putBoolean("remote_bomb_activated", remote_bomb_activated);
 			nbt.putBoolean("stasis_activated", stasis_activated);
 			nbt.putBoolean("master_cycle_activated", master_cycle_activated);
+			nbt.putBoolean("player_holding_remote_bomb", player_holding_remote_bomb);
 			nbt.putBoolean("bullet_time_active", bullet_time_active);
 			nbt.putDouble("money", money);
 			nbt.putBoolean("climbing", climbing);
+			nbt.putBoolean("RupeeCounterOn", RupeeCounterOn);
 			return nbt;
 		}
 
@@ -243,9 +111,11 @@ public class TloaModVariables {
 			remote_bomb_activated = nbt.getBoolean("remote_bomb_activated");
 			stasis_activated = nbt.getBoolean("stasis_activated");
 			master_cycle_activated = nbt.getBoolean("master_cycle_activated");
+			player_holding_remote_bomb = nbt.getBoolean("player_holding_remote_bomb");
 			bullet_time_active = nbt.getBoolean("bullet_time_active");
 			money = nbt.getDouble("money");
 			climbing = nbt.getBoolean("climbing");
+			RupeeCounterOn = nbt.getBoolean("RupeeCounterOn");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

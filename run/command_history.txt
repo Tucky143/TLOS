@@ -1,19 +1,3 @@
-/fill 118 100 -127
-/fill 118 100 -127 126 102 -119 tloa:sheikah_plate replace air
-/setblock ~ ~ ~60 tloa:sheikah_light
-/give @a minecraft:debug_stick
-/execute in minecraft:the_end run tp 0 ~ 0
-/summon wither
-/kill
-/give @a tloa:flameblade
-/weather clear
-/give @a tloa:gold_rupee
-/kill
-/give @a tloa:paraglider
-/give @a tloa:flameblade
-/give @a tloa:great_flameblade
-/summon minecraft:falling_block
-/tick rate 100
 /tick rate 1000
 /tick rate 10000
 /tick rate 5000
@@ -48,3 +32,19 @@
 /item replace entity
 /item replace entity ecfcfee8-0afb-4f48-a721-fb8c7eb6624a weapon.mainhand with tloa:thunder_blade
 /effect give @a tloa:shocked 10 0 true
+/data modify entity @p tloa:rupee insert -10000
+/data modify entity @p tloa:rupee insert -10000 value -1000
+/data modify entity @p tloa:rupee insert -1000 value -1000
+/data modify entity @p tloa:rupee insert 1 value -1000
+/data modify entity @p tloa:rupee insert 0 value -1000
+/data modify entity @p tloa:rupee insert -1 value -1000
+/kill
+/time set day
+/weather clear
+/locate structure tloa:tower
+/tp @s -368 ~ -480
+/tp 0 ~ 0
+/locate structure tloa:tower
+/tp @s -752 ~ -1632
+/locate structure tloa:tower
+/kill

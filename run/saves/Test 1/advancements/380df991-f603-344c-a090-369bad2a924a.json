@@ -8,15 +8,21 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2024-12-03 22:07:15 -0700",
-      "minecraft:old_growth_birch_forest": "2024-12-04 20:17:33 -0700",
       "minecraft:beach": "2024-12-03 22:11:30 -0700",
       "minecraft:forest": "2024-12-23 18:35:00 -0700",
       "minecraft:taiga": "2024-12-03 21:58:04 -0700",
-      "minecraft:ocean": "2024-12-03 22:11:12 -0700",
+      "minecraft:deep_ocean": "2025-02-14 15:59:16 -0700",
       "minecraft:river": "2024-12-04 20:12:19 -0700",
-      "minecraft:grove": "2025-01-13 18:57:32 -0700",
       "minecraft:lush_caves": "2024-12-30 00:12:23 -0700",
+      "minecraft:deep_cold_ocean": "2025-02-14 15:51:16 -0700",
+      "minecraft:old_growth_birch_forest": "2024-12-04 20:17:33 -0700",
+      "minecraft:windswept_forest": "2025-02-14 15:49:09 -0700",
+      "minecraft:ocean": "2024-12-03 22:11:12 -0700",
+      "minecraft:grove": "2025-01-13 18:57:32 -0700",
+      "minecraft:birch_forest": "2025-02-14 15:59:13 -0700",
+      "minecraft:windswept_hills": "2025-02-14 15:59:05 -0700",
       "minecraft:old_growth_spruce_taiga": "2024-12-23 14:38:21 -0700",
+      "minecraft:plains": "2025-02-14 16:00:09 -0700",
       "minecraft:jagged_peaks": "2025-01-13 18:57:30 -0700"
     },
     "done": false
@@ -749,6 +755,30 @@
   "minecraft:recipes/redstone/piston": {
     "criteria": {
       "has_redstone": "2025-02-14 14:40:16 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2025-02-14 15:10:49 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2025-02-14 15:36:58 -0700"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2025-02-14 15:36:58 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2025-02-14 15:36:58 -0700"
     },
     "done": true
   },

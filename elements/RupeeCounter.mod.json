@@ -2,7 +2,7 @@
   "_fv": 77,
   "_type": "overlay",
   "definition": {
-    "priority": "NORMAL",
+    "priority": "HIGH",
     "components": [
       {
         "type": "image",
@@ -10,8 +10,8 @@
           "image": "rupee_background.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_RIGHT",
-          "x": 342,
-          "y": 0,
+          "x": 344,
+          "y": 35,
           "locked": false
         }
       },
@@ -21,8 +21,8 @@
           "image": "green_rupee.png",
           "use1Xscale": true,
           "anchorPoint": "TOP_RIGHT",
-          "x": 342,
-          "y": 3,
+          "x": 344,
+          "y": 40,
           "locked": false
         }
       },
@@ -40,19 +40,22 @@
           },
           "anchorPoint": "TOP_RIGHT",
           "x": 360,
-          "y": 7,
+          "y": 40,
           "locked": false
         }
       }
     ],
     "baseTexture": "",
     "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "RupeeCounterDisplayOverlayIngame"
+    },
     "gridSettings": {
-      "sx": 10,
+      "sx": 16,
       "sy": 9,
-      "ox": 11,
+      "ox": 15,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

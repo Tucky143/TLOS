@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.tloa.procedures.RupeeCounterDisplayOverlayIngameProcedure;
 import net.mcreator.tloa.procedures.MoneyOverlayValueProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -22,7 +23,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 
 @EventBusSubscriber({Dist.CLIENT})
 public class RupeeCounterOverlay {
-	@SubscribeEvent(priority = EventPriority.NORMAL)
+	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getGuiGraphics().guiWidth();
 		int h = event.getGuiGraphics().guiHeight();
@@ -43,14 +44,14 @@ public class RupeeCounterOverlay {
 		RenderSystem.setShader(GameRenderer::getPositionTexShader);
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
-		if (true) {
-			event.getGuiGraphics().blit(ResourceLocation.parse("tloa:textures/screens/rupee_background.png"), w - 85, 0, 0, 0, 84, 24, 84, 24);
+		if (RupeeCounterDisplayOverlayIngameProcedure.execute(entity)) {
+			event.getGuiGraphics().blit(ResourceLocation.parse("tloa:textures/screens/rupee_background.png"), w - 83, 35, 0, 0, 85, 25, 85, 25);
 
-			event.getGuiGraphics().blit(ResourceLocation.parse("tloa:textures/screens/green_rupee.png"), w - 85, 3, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("tloa:textures/screens/green_rupee.png"), w - 83, 40, 0, 0, 16, 16, 16, 16);
 
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					MoneyOverlayValueProcedure.execute(entity), w - 67, 7, -1, false);
+					MoneyOverlayValueProcedure.execute(entity), w - 67, 40, -1, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

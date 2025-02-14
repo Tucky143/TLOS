@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.tloa.network.UseRuneMessage;
+import net.mcreator.tloa.network.RupeeCounterKeybindMessage;
 import net.mcreator.tloa.network.OpenSheikahSlateGUIMessage;
 import net.mcreator.tloa.network.ClimbingKeyMessage;
 
@@ -66,6 +67,19 @@ public class TloaModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping RUPEE_COUNTER_KEYBIND = new KeyMapping("key.tloa.rupee_counter_keybind", GLFW.GLFW_KEY_C, "key.categories.ui") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new RupeeCounterKeybindMessage(0, 0));
+				RupeeCounterKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long CLIMBING_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
@@ -73,6 +87,7 @@ public class TloaModKeyMappings {
 		event.register(OPEN_SHEIKAH_SLATE_GUI);
 		event.register(USE_RUNE);
 		event.register(CLIMBING_KEY);
+		event.register(RUPEE_COUNTER_KEYBIND);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -83,6 +98,7 @@ public class TloaModKeyMappings {
 				OPEN_SHEIKAH_SLATE_GUI.consumeClick();
 				USE_RUNE.consumeClick();
 				CLIMBING_KEY.consumeClick();
+				RUPEE_COUNTER_KEYBIND.consumeClick();
 			}
 		}
 	}

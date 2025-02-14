@@ -533,10 +533,6 @@
           {
             "name": "sourceentity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2408,6 +2404,72 @@
         ]
       },
       "path": "~/Swords/Elemental Weapons"
+    },
+    {
+      "name": "RupeeCounterDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rupee_counter_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/RupeeCounterDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "RupeeCounterKeybindOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rupee_counter_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/RupeeCounterKeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "RupeeCounterKeybind",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rupee_counter_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/network/RupeeCounterKeybindMessage.java"
+        ]
+      },
+      "path": "~/Rupee"
+    },
+    {
+      "name": "Tower",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/worldgen/structure_set/tower.json",
+          "src/main/resources/data/tloa/worldgen/template_pool/tower.json",
+          "src/main/resources/data/tloa/worldgen/structure/tower.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2444,13 +2506,13 @@
     {
       "name": "player_holding_remote_bomb",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bullet_time_active",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -2464,6 +2526,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "RupeeCounterOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
     }
   ],
   "sound_elements": [
@@ -2673,9 +2741,9 @@
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "item.tloa.great_frostblade": "Great Frostblade",
-      "gui.tloa.rupee_counter.label_empty": "",
       "item.tlos.purple_rupee": "Green Rupee",
+      "gui.tloa.rupee_counter.label_empty": "",
+      "item.tloa.great_frostblade": "Great Frostblade",
       "block.tloa.sheikah_grate_wall": "Sheikah Grate",
       "key.tlos.use_rune": "Use Rune",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
@@ -2691,14 +2759,14 @@
       "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
       "block.tloa.lost_planks": "Lost Planks",
+      "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "item.tloa.blue_rupee": "Blue Rupee",
       "block.tloa.deku_wood": "Deku Wood",
+      "item.tloa.blue_rupee": "Blue Rupee",
       "item.tloa.frostblade": "Frostblade",
       "block.tloa.deku_planks": "Deku Planks",
       "block.tloa.sheikah_light": "Sheikah Light",
@@ -2791,6 +2859,7 @@
       "item.tloa.green_rupee.description_0": "Item representing 1 rupee",
       "block.tlos.lost_fence_gate": "Lost Fence Gate",
       "entity.tlom.master_cycle_zero": "Master Cycle ZERO",
+      "key.tloa.rupee_counter_keybind": "Rupee Counter",
       "block.tlos.lost_fence": "Lost Fence",
       "item_group.tloa.tloa_blocks_tab": "TLOA Blocks",
       "biome.tlos.lost_woods": "Lost Woods",

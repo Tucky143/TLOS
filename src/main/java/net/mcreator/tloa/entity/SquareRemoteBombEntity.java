@@ -103,7 +103,7 @@ public class SquareRemoteBombEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level();
 
-		SquareRemoteBombRightClickedOnEntityProcedure.execute(world, entity, sourceentity);
+		SquareRemoteBombRightClickedOnEntityProcedure.execute(entity, sourceentity);
 		return retval;
 	}
 
