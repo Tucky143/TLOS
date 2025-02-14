@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "tloa:sheikah_light",
+    "tloa:sheikah_grate",
+    "tloa:sheikah_grate_wall",
+    "tloa:sheikah_plate",
+    "tloa:chiseled_sheikah_plate",
+    "tloa:glowing_chiseled_sheikah_plate",
+    "tloa:glowing_sheikah_plate",
+    "tloa:sheikah_plate_slab",
+    "tloa:sheikah_plate_stair",
+    "tloa:sheikah_plate_wall",
+    "tloa:sheikah_stone",
+    "tloa:sheikah_stone_slab",
+    "tloa:sheikah_stone_stair",
+    "tloa:sheikah_stone_wall"
+  ]
+}
