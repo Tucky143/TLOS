@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "tloa:great_thunderblade",
+    "tloa:thunder_blade",
     "tloa:great_frostblade",
     "tloa:frostblade",
     "tloa:great_flameblade",

@@ -21,6 +21,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.tloa.network.TloaModVariables;
 import net.mcreator.tloa.init.TloaModTabs;
 import net.mcreator.tloa.init.TloaModSounds;
+import net.mcreator.tloa.init.TloaModMobEffects;
 import net.mcreator.tloa.init.TloaModMenus;
 import net.mcreator.tloa.init.TloaModItems;
 import net.mcreator.tloa.init.TloaModEntities;
@@ -51,6 +52,7 @@ public class TloaMod {
 		TloaModTabs.REGISTRY.register(modEventBus);
 		TloaModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
+		TloaModMobEffects.REGISTRY.register(modEventBus);
 		TloaModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init

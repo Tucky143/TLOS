@@ -2063,7 +2063,7 @@
           }
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "Flameblade",
@@ -2077,7 +2077,7 @@
           "src/main/java/net/mcreator/tloa/item/FlamebladeItem.java"
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "FlamebladeEntitySwingsItem",
@@ -2108,7 +2108,7 @@
           }
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "GreatFlameblade",
@@ -2122,7 +2122,7 @@
           "src/main/resources/assets/tloa/models/item/great_flameblade.json"
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "GreatFlamebladeLivingEntityIsHitWithTool",
@@ -2141,7 +2141,7 @@
           }
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "GreatFlamebladeEntitySwingsItem",
@@ -2172,7 +2172,7 @@
           }
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "ClimbingKeyOnKeyPressed",
@@ -2268,7 +2268,7 @@
           "src/main/resources/assets/tloa/models/item/frostblade.json"
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "FrostbladeLivingEntityIsHitWithTool",
@@ -2303,7 +2303,7 @@
           }
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "FrostbladeEntitySwingsItem",
@@ -2334,7 +2334,7 @@
           }
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
     },
     {
       "name": "GreatFrostblade",
@@ -2348,7 +2348,66 @@
           "src/main/java/net/mcreator/tloa/item/GreatFrostbladeItem.java"
         ]
       },
-      "path": "~/Swords"
+      "path": "~/Swords/Elemental Weapons"
+    },
+    {
+      "name": "Shocked",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shocked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/potion/ShockedMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "ThunderBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/item/ThunderBladeItem.java",
+          "src/main/resources/assets/tloa/models/item/thunder_blade.json"
+        ]
+      },
+      "path": "~/Swords/Elemental Weapons"
+    },
+    {
+      "name": "ThunderBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/ThunderBladeLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Swords/Elemental Weapons"
+    },
+    {
+      "name": "GreatThunderblade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_thunderblade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/great_thunderblade.json",
+          "src/main/java/net/mcreator/tloa/item/GreatThunderbladeItem.java"
+        ]
+      },
+      "path": "~/Swords/Elemental Weapons"
     }
   ],
   "variable_elements": [
@@ -2571,6 +2630,8 @@
       "~CUSTOM:LostStairs"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:GreatThunderblade",
+      "~CUSTOM:ThunderBlade",
       "~CUSTOM:GreatFrostblade",
       "~CUSTOM:Frostblade",
       "~CUSTOM:GreatFlameblade",
@@ -2587,6 +2648,13 @@
   "tab_element_order": {
     "CUSTOM:TLOSItems": [
       "Paraglider",
+      "SheikahSlate",
+      "GreenRupee",
+      "BlueRupee",
+      "RedRupee",
+      "PurpleRupee",
+      "SilverRupee",
+      "GoldRupee",
       "MasterSwordPowered",
       "MasterSword",
       "KokiriSword",
@@ -2594,25 +2662,20 @@
       "GreatFlameblade",
       "Frostblade",
       "GreatFrostblade",
+      "ThunderBlade",
+      "GreatThunderblade",
       "HylianShield",
       "DekuShield",
-      "LightBow",
-      "GreenRupee",
-      "BlueRupee",
-      "RedRupee",
-      "PurpleRupee",
-      "SilverRupee",
-      "GoldRupee",
-      "SheikahSlate"
+      "LightBow"
     ]
   },
   "language_map": {
     "en_us": {
       "item.tlos.green_rupee": "Green Rupee",
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
-      "item.tlos.purple_rupee": "Green Rupee",
+      "item.tloa.great_frostblade": "Great Frostblade",
       "gui.tloa.rupee_counter.label_empty": "",
-      "item.tloa.great_frostblade": "Frostblade",
+      "item.tlos.purple_rupee": "Green Rupee",
       "block.tloa.sheikah_grate_wall": "Sheikah Grate",
       "key.tlos.use_rune": "Use Rune",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
@@ -2628,17 +2691,18 @@
       "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "block.tloa.lost_planks": "Lost Planks",
       "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
+      "block.tloa.lost_planks": "Lost Planks",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
       "item.tlos.gold_rupee.description_0": "Item representing 300 rupees",
-      "block.tloa.deku_wood": "Deku Wood",
       "item.tloa.blue_rupee": "Blue Rupee",
+      "block.tloa.deku_wood": "Deku Wood",
       "item.tloa.frostblade": "Frostblade",
       "block.tloa.deku_planks": "Deku Planks",
       "block.tloa.sheikah_light": "Sheikah Light",
+      "item.tloa.thunder_blade": "Thunderblade",
       "item.tlos.blue_rupee.description_0": "Item representing 5 rupees",
       "item.tlom.green_rupee.description_0": "Item representing 1 rupee",
       "gui.tloa.sheikah_slate_gui.label_remote_bomb": "Remote Bomb",
@@ -2687,6 +2751,7 @@
       "item.tlom.blue_rupee.description_0": "Item representing 5 rupees",
       "block.tlos.lost_pressure_plate": "Lost Pressure Plate",
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
+      "effect.tloa.shocked": "Shocked",
       "block.tlom.lost_slab": "Lost Slab",
       "biome.tlos.central_korok_forest": "Central Korok Forest",
       "block.tloa.lost_fence": "Lost Fence",
@@ -2719,6 +2784,7 @@
       "item.tlom.gold_rupee.description_0": "Item representing 300 rupees",
       "item.tlom.silver_rupee": "Green Rupee",
       "block.tloa.sheikah_stone_wall": "Sheikah Stone Wall",
+      "item.tloa.great_thunderblade": "Great Thunderblade",
       "block.tloa.deku_log": "Deku Log",
       "item.tloa.paraglider": "Paraglider",
       "block.tlos.lost_planks": "Lost Planks",
@@ -2786,7 +2852,12 @@
       },
       {
         "name": "Swords",
-        "children": []
+        "children": [
+          {
+            "name": "Elemental Weapons",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Sheikah",
@@ -2811,5 +2882,5 @@
     "credits": "Tucky143",
     "modElementsPackage": "net.mcreator.tloa"
   },
-  "mcreatorVersion": 202500107421
+  "mcreatorVersion": 202500107513
 }
