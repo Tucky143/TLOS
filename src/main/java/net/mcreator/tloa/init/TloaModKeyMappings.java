@@ -18,6 +18,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.tloa.network.UseRuneMessage;
 import net.mcreator.tloa.network.OpenSheikahSlateGUIMessage;
+import net.mcreator.tloa.network.ClimbingKeyMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class TloaModKeyMappings {
@@ -47,11 +48,31 @@ public class TloaModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping CLIMBING_KEY = new KeyMapping("key.tloa.climbing_key", GLFW.GLFW_KEY_Q, "key.categories.movement") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new ClimbingKeyMessage(0, 0));
+				ClimbingKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				CLIMBING_KEY_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - CLIMBING_KEY_LASTPRESS);
+				PacketDistributor.sendToServer(new ClimbingKeyMessage(1, dt));
+				ClimbingKeyMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
+	private static long CLIMBING_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(OPEN_SHEIKAH_SLATE_GUI);
 		event.register(USE_RUNE);
+		event.register(CLIMBING_KEY);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +82,7 @@ public class TloaModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				OPEN_SHEIKAH_SLATE_GUI.consumeClick();
 				USE_RUNE.consumeClick();
+				CLIMBING_KEY.consumeClick();
 			}
 		}
 	}

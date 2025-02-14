@@ -304,8 +304,8 @@
       "registry_name": "master_cycle_zero",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/entity/MasterCycleZEROEntity.java",
-          "src/main/java/net/mcreator/tloa/client/renderer/MasterCycleZERORenderer.java"
+          "src/main/java/net/mcreator/tloa/client/renderer/MasterCycleZERORenderer.java",
+          "src/main/java/net/mcreator/tloa/entity/MasterCycleZEROEntity.java"
         ]
       },
       "path": "~/Sheikah Slate"
@@ -421,8 +421,8 @@
       "registry_name": "master_sword_powered",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/item/MasterSwordPoweredItem.java",
-          "src/main/resources/assets/tloa/models/item/master_sword_powered.json"
+          "src/main/resources/assets/tloa/models/item/master_sword_powered.json",
+          "src/main/java/net/mcreator/tloa/item/MasterSwordPoweredItem.java"
         ]
       },
       "path": "~/Swords"
@@ -581,9 +581,9 @@
       "registry_name": "lost_woods",
       "metadata": {
         "files": [
-          "src/main/resources/data/tloa/worldgen/configured_feature/lost_woods_tree.json",
           "src/main/resources/data/tloa/worldgen/biome/lost_woods.json",
-          "src/main/resources/data/tloa/worldgen/placed_feature/lost_woods_tree.json"
+          "src/main/resources/data/tloa/worldgen/placed_feature/lost_woods_tree.json",
+          "src/main/resources/data/tloa/worldgen/configured_feature/lost_woods_tree.json"
         ]
       }
     },
@@ -655,11 +655,11 @@
       "registry_name": "lost_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/block/lost_wood.json",
-          "src/main/resources/assets/tloa/models/item/lost_wood.json",
           "src/main/resources/data/tloa/loot_table/blocks/lost_wood.json",
+          "src/main/resources/assets/tloa/blockstates/lost_wood.json",
           "src/main/java/net/mcreator/tloa/block/LostWoodBlock.java",
-          "src/main/resources/assets/tloa/blockstates/lost_wood.json"
+          "src/main/resources/assets/tloa/models/item/lost_wood.json",
+          "src/main/resources/assets/tloa/models/block/lost_wood.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -672,11 +672,11 @@
       "registry_name": "lost_log",
       "metadata": {
         "files": [
-          "src/main/resources/data/tloa/loot_table/blocks/lost_log.json",
+          "src/main/resources/assets/tloa/blockstates/lost_log.json",
+          "src/main/resources/assets/tloa/models/item/lost_log.json",
           "src/main/resources/assets/tloa/models/block/lost_log.json",
           "src/main/java/net/mcreator/tloa/block/LostLogBlock.java",
-          "src/main/resources/assets/tloa/models/item/lost_log.json",
-          "src/main/resources/assets/tloa/blockstates/lost_log.json"
+          "src/main/resources/data/tloa/loot_table/blocks/lost_log.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -689,11 +689,11 @@
       "registry_name": "lost_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/tloa/loot_table/blocks/lost_planks.json",
           "src/main/java/net/mcreator/tloa/block/LostPlanksBlock.java",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_planks.json",
+          "src/main/resources/assets/tloa/models/item/lost_planks.json",
           "src/main/resources/assets/tloa/blockstates/lost_planks.json",
-          "src/main/resources/assets/tloa/models/block/lost_planks.json",
-          "src/main/resources/assets/tloa/models/item/lost_planks.json"
+          "src/main/resources/assets/tloa/models/block/lost_planks.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -706,13 +706,13 @@
       "registry_name": "lost_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/tloa/loot_table/blocks/lost_stairs.json",
-          "src/main/resources/assets/tloa/models/block/lost_stairs_outer.json",
-          "src/main/resources/assets/tloa/models/block/lost_stairs.json",
-          "src/main/resources/assets/tloa/models/item/lost_stairs.json",
+          "src/main/resources/assets/tloa/blockstates/lost_stairs.json",
           "src/main/resources/assets/tloa/models/block/lost_stairs_inner.json",
           "src/main/java/net/mcreator/tloa/block/LostStairsBlock.java",
-          "src/main/resources/assets/tloa/blockstates/lost_stairs.json"
+          "src/main/resources/assets/tloa/models/item/lost_stairs.json",
+          "src/main/resources/assets/tloa/models/block/lost_stairs_outer.json",
+          "src/main/resources/assets/tloa/models/block/lost_stairs.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_stairs.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -725,13 +725,13 @@
       "registry_name": "lost_slab",
       "metadata": {
         "files": [
-          "src/main/resources/data/tloa/loot_table/blocks/lost_slab.json",
-          "src/main/resources/assets/tloa/models/block/lost_slab_full.json",
           "src/main/java/net/mcreator/tloa/block/LostSlabBlock.java",
+          "src/main/resources/assets/tloa/models/block/lost_slab.json",
+          "src/main/resources/assets/tloa/blockstates/lost_slab.json",
           "src/main/resources/assets/tloa/models/item/lost_slab.json",
           "src/main/resources/assets/tloa/models/block/lost_slab_top.json",
-          "src/main/resources/assets/tloa/models/block/lost_slab.json",
-          "src/main/resources/assets/tloa/blockstates/lost_slab.json"
+          "src/main/resources/data/tloa/loot_table/blocks/lost_slab.json",
+          "src/main/resources/assets/tloa/models/block/lost_slab_full.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -746,11 +746,11 @@
         "files": [
           "src/main/resources/assets/tloa/models/block/lost_fence_post.json",
           "src/main/java/net/mcreator/tloa/block/LostFenceBlock.java",
-          "src/main/resources/assets/tloa/blockstates/lost_fence.json",
-          "src/main/resources/assets/tloa/models/item/lost_fence.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_fence.json",
           "src/main/resources/assets/tloa/models/block/lost_fence_inventory.json",
+          "src/main/resources/assets/tloa/blockstates/lost_fence.json",
           "src/main/resources/assets/tloa/models/block/lost_fence.json",
-          "src/main/resources/data/tloa/loot_table/blocks/lost_fence.json"
+          "src/main/resources/assets/tloa/models/item/lost_fence.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -763,14 +763,14 @@
       "registry_name": "lost_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/block/lost_fence_gate_wall.json",
-          "src/main/java/net/mcreator/tloa/block/LostFenceGateBlock.java",
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate_open.json",
           "src/main/resources/assets/tloa/models/item/lost_fence_gate.json",
           "src/main/resources/data/tloa/loot_table/blocks/lost_fence_gate.json",
-          "src/main/resources/assets/tloa/models/block/lost_fence_gate_open.json",
-          "src/main/resources/assets/tloa/models/block/lost_fence_gate_wall_open.json",
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate_wall.json",
+          "src/main/resources/assets/tloa/blockstates/lost_fence_gate.json",
+          "src/main/java/net/mcreator/tloa/block/LostFenceGateBlock.java",
           "src/main/resources/assets/tloa/models/block/lost_fence_gate.json",
-          "src/main/resources/assets/tloa/blockstates/lost_fence_gate.json"
+          "src/main/resources/assets/tloa/models/block/lost_fence_gate_wall_open.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -783,12 +783,12 @@
       "registry_name": "lost_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/item/lost_pressure_plate.json",
-          "src/main/resources/assets/tloa/models/block/lost_pressure_plate_down.json",
-          "src/main/resources/assets/tloa/blockstates/lost_pressure_plate.json",
+          "src/main/java/net/mcreator/tloa/block/LostPressurePlateBlock.java",
           "src/main/resources/data/tloa/loot_table/blocks/lost_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/block/lost_pressure_plate_down.json",
           "src/main/resources/assets/tloa/models/block/lost_pressure_plate.json",
-          "src/main/java/net/mcreator/tloa/block/LostPressurePlateBlock.java"
+          "src/main/resources/assets/tloa/blockstates/lost_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/item/lost_pressure_plate.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -801,13 +801,13 @@
       "registry_name": "lost_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/item/lost_button.json",
           "src/main/java/net/mcreator/tloa/block/LostButtonBlock.java",
-          "src/main/resources/assets/tloa/models/block/lost_button_inventory.json",
+          "src/main/resources/data/tloa/loot_table/blocks/lost_button.json",
           "src/main/resources/assets/tloa/blockstates/lost_button.json",
           "src/main/resources/assets/tloa/models/block/lost_button_pressed.json",
-          "src/main/resources/data/tloa/loot_table/blocks/lost_button.json",
-          "src/main/resources/assets/tloa/models/block/lost_button.json"
+          "src/main/resources/assets/tloa/models/block/lost_button.json",
+          "src/main/resources/assets/tloa/models/block/lost_button_inventory.json",
+          "src/main/resources/assets/tloa/models/item/lost_button.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -951,8 +951,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/tloa/worldgen/placed_feature/lost_tree.json",
-          "src/main/resources/data/tloa/worldgen/configured_feature/lost_tree.json",
-          "src/main/resources/data/tloa/neoforge/biome_modifier/lost_tree_biome_modifier.json"
+          "src/main/resources/data/tloa/neoforge/biome_modifier/lost_tree_biome_modifier.json",
+          "src/main/resources/data/tloa/worldgen/configured_feature/lost_tree.json"
         ]
       },
       "path": "~/Lost Wood"
@@ -966,8 +966,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/tloa/worldgen/placed_feature/central_korok_forest_tree.json",
-          "src/main/resources/data/tloa/worldgen/biome/central_korok_forest.json",
-          "src/main/resources/data/tloa/worldgen/configured_feature/central_korok_forest_tree.json"
+          "src/main/resources/data/tloa/worldgen/configured_feature/central_korok_forest_tree.json",
+          "src/main/resources/data/tloa/worldgen/biome/central_korok_forest.json"
         ]
       }
     },
@@ -985,22 +985,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -1042,8 +1026,8 @@
       "registry_name": "blue_rupee",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/item/BlueRupeeItem.java",
-          "src/main/resources/assets/tloa/models/item/blue_rupee.json"
+          "src/main/resources/assets/tloa/models/item/blue_rupee.json",
+          "src/main/java/net/mcreator/tloa/item/BlueRupeeItem.java"
         ]
       },
       "path": "~/Rupee"
@@ -1129,8 +1113,8 @@
       "registry_name": "silver_rupee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/item/silver_rupee.json",
-          "src/main/java/net/mcreator/tloa/item/SilverRupeeItem.java"
+          "src/main/java/net/mcreator/tloa/item/SilverRupeeItem.java",
+          "src/main/resources/assets/tloa/models/item/silver_rupee.json"
         ]
       },
       "path": "~/Rupee"
@@ -1188,10 +1172,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tloa/blockstates/deku_wood.json",
-          "src/main/resources/assets/tloa/models/item/deku_wood.json",
+          "src/main/java/net/mcreator/tloa/block/DekuWoodBlock.java",
           "src/main/resources/data/tloa/loot_table/blocks/deku_wood.json",
           "src/main/resources/assets/tloa/models/block/deku_wood.json",
-          "src/main/java/net/mcreator/tloa/block/DekuWoodBlock.java"
+          "src/main/resources/assets/tloa/models/item/deku_wood.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1205,10 +1189,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tloa/models/block/deku_log.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_log.json",
           "src/main/resources/assets/tloa/blockstates/deku_log.json",
-          "src/main/resources/assets/tloa/models/item/deku_log.json",
           "src/main/java/net/mcreator/tloa/block/DekuLogBlock.java",
-          "src/main/resources/data/tloa/loot_table/blocks/deku_log.json"
+          "src/main/resources/assets/tloa/models/item/deku_log.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1221,11 +1205,11 @@
       "registry_name": "deku_planks",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/block/DekuPlanksBlock.java",
-          "src/main/resources/assets/tloa/models/item/deku_planks.json",
-          "src/main/resources/data/tloa/loot_table/blocks/deku_planks.json",
           "src/main/resources/assets/tloa/blockstates/deku_planks.json",
-          "src/main/resources/assets/tloa/models/block/deku_planks.json"
+          "src/main/resources/data/tloa/loot_table/blocks/deku_planks.json",
+          "src/main/resources/assets/tloa/models/block/deku_planks.json",
+          "src/main/java/net/mcreator/tloa/block/DekuPlanksBlock.java",
+          "src/main/resources/assets/tloa/models/item/deku_planks.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1238,11 +1222,11 @@
       "registry_name": "deku_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/block/deku_leaves.json",
-          "src/main/java/net/mcreator/tloa/block/DekuLeavesBlock.java",
+          "src/main/resources/assets/tloa/models/item/deku_leaves.json",
           "src/main/resources/assets/tloa/blockstates/deku_leaves.json",
           "src/main/resources/data/tloa/loot_table/blocks/deku_leaves.json",
-          "src/main/resources/assets/tloa/models/item/deku_leaves.json"
+          "src/main/resources/assets/tloa/models/block/deku_leaves.json",
+          "src/main/java/net/mcreator/tloa/block/DekuLeavesBlock.java"
         ]
       },
       "path": "~/Deku Wood"
@@ -1256,12 +1240,12 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/tloa/block/DekuStairsBlock.java",
-          "src/main/resources/assets/tloa/blockstates/deku_stairs.json",
-          "src/main/resources/assets/tloa/models/block/deku_stairs.json",
+          "src/main/resources/assets/tloa/models/item/deku_stairs.json",
           "src/main/resources/assets/tloa/models/block/deku_stairs_inner.json",
           "src/main/resources/assets/tloa/models/block/deku_stairs_outer.json",
           "src/main/resources/data/tloa/loot_table/blocks/deku_stairs.json",
-          "src/main/resources/assets/tloa/models/item/deku_stairs.json"
+          "src/main/resources/assets/tloa/models/block/deku_stairs.json",
+          "src/main/resources/assets/tloa/blockstates/deku_stairs.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1274,13 +1258,13 @@
       "registry_name": "deku_slab",
       "metadata": {
         "files": [
+          "src/main/resources/assets/tloa/models/block/deku_slab.json",
           "src/main/java/net/mcreator/tloa/block/DekuSlabBlock.java",
-          "src/main/resources/assets/tloa/models/block/deku_slab_top.json",
+          "src/main/resources/assets/tloa/models/block/deku_slab_full.json",
           "src/main/resources/assets/tloa/models/item/deku_slab.json",
           "src/main/resources/assets/tloa/blockstates/deku_slab.json",
-          "src/main/resources/assets/tloa/models/block/deku_slab_full.json",
-          "src/main/resources/data/tloa/loot_table/blocks/deku_slab.json",
-          "src/main/resources/assets/tloa/models/block/deku_slab.json"
+          "src/main/resources/assets/tloa/models/block/deku_slab_top.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_slab.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1295,11 +1279,11 @@
         "files": [
           "src/main/resources/assets/tloa/models/item/deku_fence.json",
           "src/main/resources/assets/tloa/blockstates/deku_fence.json",
-          "src/main/java/net/mcreator/tloa/block/DekuFenceBlock.java",
-          "src/main/resources/assets/tloa/models/block/deku_fence_post.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence.json",
           "src/main/resources/assets/tloa/models/block/deku_fence_inventory.json",
           "src/main/resources/data/tloa/loot_table/blocks/deku_fence.json",
-          "src/main/resources/assets/tloa/models/block/deku_fence.json"
+          "src/main/resources/assets/tloa/models/block/deku_fence_post.json",
+          "src/main/java/net/mcreator/tloa/block/DekuFenceBlock.java"
         ]
       },
       "path": "~/Deku Wood"
@@ -1313,13 +1297,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tloa/models/item/deku_fence_gate.json",
-          "src/main/resources/data/tloa/loot_table/blocks/deku_fence_gate.json",
-          "src/main/java/net/mcreator/tloa/block/DekuFenceGateBlock.java",
-          "src/main/resources/assets/tloa/models/block/deku_fence_gate_open.json",
           "src/main/resources/assets/tloa/models/block/deku_fence_gate_wall.json",
+          "src/main/java/net/mcreator/tloa/block/DekuFenceGateBlock.java",
           "src/main/resources/assets/tloa/models/block/deku_fence_gate.json",
+          "src/main/resources/assets/tloa/models/block/deku_fence_gate_open.json",
           "src/main/resources/assets/tloa/models/block/deku_fence_gate_wall_open.json",
-          "src/main/resources/assets/tloa/blockstates/deku_fence_gate.json"
+          "src/main/resources/assets/tloa/blockstates/deku_fence_gate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_fence_gate.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1332,12 +1316,12 @@
       "registry_name": "deku_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/block/deku_pressure_plate_down.json",
-          "src/main/resources/data/tloa/loot_table/blocks/deku_pressure_plate.json",
-          "src/main/resources/assets/tloa/models/block/deku_pressure_plate.json",
           "src/main/resources/assets/tloa/blockstates/deku_pressure_plate.json",
-          "src/main/resources/assets/tloa/models/item/deku_pressure_plate.json",
-          "src/main/java/net/mcreator/tloa/block/DekuPressurePlateBlock.java"
+          "src/main/java/net/mcreator/tloa/block/DekuPressurePlateBlock.java",
+          "src/main/resources/assets/tloa/models/block/deku_pressure_plate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_pressure_plate.json",
+          "src/main/resources/assets/tloa/models/block/deku_pressure_plate_down.json",
+          "src/main/resources/assets/tloa/models/item/deku_pressure_plate.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1351,12 +1335,12 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/tloa/block/DekuButtonBlock.java",
-          "src/main/resources/data/tloa/loot_table/blocks/deku_button.json",
-          "src/main/resources/assets/tloa/models/item/deku_button.json",
-          "src/main/resources/assets/tloa/models/block/deku_button_inventory.json",
+          "src/main/resources/assets/tloa/models/block/deku_button_pressed.json",
           "src/main/resources/assets/tloa/blockstates/deku_button.json",
-          "src/main/resources/assets/tloa/models/block/deku_button.json",
-          "src/main/resources/assets/tloa/models/block/deku_button_pressed.json"
+          "src/main/resources/assets/tloa/models/block/deku_button_inventory.json",
+          "src/main/resources/assets/tloa/models/item/deku_button.json",
+          "src/main/resources/data/tloa/loot_table/blocks/deku_button.json",
+          "src/main/resources/assets/tloa/models/block/deku_button.json"
         ]
       },
       "path": "~/Deku Wood"
@@ -1499,8 +1483,8 @@
       "registry_name": "light_bow",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/item/light_bow.json",
-          "src/main/java/net/mcreator/tloa/item/LightBowItem.java"
+          "src/main/java/net/mcreator/tloa/item/LightBowItem.java",
+          "src/main/resources/assets/tloa/models/item/light_bow.json"
         ]
       },
       "path": "~/Bows"
@@ -1513,8 +1497,8 @@
       "registry_name": "light_arrow_item",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/item/LightArrowItemItem.java",
-          "src/main/resources/assets/tloa/models/item/light_arrow_item.json"
+          "src/main/resources/assets/tloa/models/item/light_arrow_item.json",
+          "src/main/java/net/mcreator/tloa/item/LightArrowItemItem.java"
         ]
       },
       "path": "~/Bows"
@@ -1558,8 +1542,8 @@
       "registry_name": "light_arrow",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/client/renderer/LightArrowRenderer.java",
-          "src/main/java/net/mcreator/tloa/entity/LightArrowEntity.java"
+          "src/main/java/net/mcreator/tloa/entity/LightArrowEntity.java",
+          "src/main/java/net/mcreator/tloa/client/renderer/LightArrowRenderer.java"
         ]
       },
       "path": "~/Bows"
@@ -1672,8 +1656,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tloa/models/item/deku_shield_0.json",
-          "src/main/java/net/mcreator/tloa/item/DekuShieldItem.java",
-          "src/main/resources/assets/tloa/models/item/deku_shield.json"
+          "src/main/resources/assets/tloa/models/item/deku_shield.json",
+          "src/main/java/net/mcreator/tloa/item/DekuShieldItem.java"
         ]
       },
       "path": "~/Shields"
@@ -1687,8 +1671,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/tloa/item/HylianShieldItem.java",
-          "src/main/resources/assets/tloa/models/item/hylian_shield_0.json",
-          "src/main/resources/assets/tloa/models/item/hylian_shield.json"
+          "src/main/resources/assets/tloa/models/item/hylian_shield.json",
+          "src/main/resources/assets/tloa/models/item/hylian_shield_0.json"
         ]
       },
       "path": "~/Shields"
@@ -1832,11 +1816,11 @@
       "registry_name": "sheikah_grate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/blockstates/sheikah_grate.json",
-          "src/main/resources/assets/tloa/models/item/sheikah_grate.json",
           "src/main/java/net/mcreator/tloa/block/SheikahGrateBlock.java",
+          "src/main/resources/assets/tloa/blockstates/sheikah_grate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_grate.json",
           "src/main/resources/assets/tloa/models/block/sheikah_grate.json",
-          "src/main/resources/data/tloa/loot_table/blocks/sheikah_grate.json"
+          "src/main/resources/assets/tloa/models/item/sheikah_grate.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1849,14 +1833,14 @@
       "registry_name": "sheikah_grate_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/models/block/sheikah_grate_wall.json",
-          "src/main/resources/assets/tloa/models/item/sheikah_grate_wall.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_grate_wall_side_tall.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_grate_wall_post.json",
           "src/main/resources/assets/tloa/models/block/sheikah_grate_wall_inventory.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_grate_wall_side_tall.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_grate_wall.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_grate_wall.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_grate_wall.json",
           "src/main/java/net/mcreator/tloa/block/SheikahGrateWallBlock.java",
-          "src/main/resources/assets/tloa/blockstates/sheikah_grate_wall.json",
-          "src/main/resources/data/tloa/loot_table/blocks/sheikah_grate_wall.json"
+          "src/main/resources/assets/tloa/models/block/sheikah_grate_wall_post.json",
+          "src/main/resources/assets/tloa/blockstates/sheikah_grate_wall.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1869,10 +1853,10 @@
       "registry_name": "sheikah_plate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/block/SheikahPlateBlock.java",
           "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate.json",
           "src/main/resources/assets/tloa/models/item/sheikah_plate.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahPlateBlock.java",
           "src/main/resources/assets/tloa/blockstates/sheikah_plate.json"
         ]
       },
@@ -1887,10 +1871,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tloa/models/item/chiseled_sheikah_plate.json",
-          "src/main/java/net/mcreator/tloa/block/ChiseledSheikahPlateBlock.java",
-          "src/main/resources/assets/tloa/models/block/chiseled_sheikah_plate.json",
+          "src/main/resources/data/tloa/loot_table/blocks/chiseled_sheikah_plate.json",
           "src/main/resources/assets/tloa/blockstates/chiseled_sheikah_plate.json",
-          "src/main/resources/data/tloa/loot_table/blocks/chiseled_sheikah_plate.json"
+          "src/main/java/net/mcreator/tloa/block/ChiseledSheikahPlateBlock.java",
+          "src/main/resources/assets/tloa/models/block/chiseled_sheikah_plate.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1903,11 +1887,11 @@
       "registry_name": "glowing_chiseled_sheikah_plate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/block/GlowingChiseledSheikahPlateBlock.java",
-          "src/main/resources/assets/tloa/models/item/glowing_chiseled_sheikah_plate.json",
           "src/main/resources/data/tloa/loot_table/blocks/glowing_chiseled_sheikah_plate.json",
-          "src/main/resources/assets/tloa/models/block/glowing_chiseled_sheikah_plate.json",
-          "src/main/resources/assets/tloa/blockstates/glowing_chiseled_sheikah_plate.json"
+          "src/main/java/net/mcreator/tloa/block/GlowingChiseledSheikahPlateBlock.java",
+          "src/main/resources/assets/tloa/blockstates/glowing_chiseled_sheikah_plate.json",
+          "src/main/resources/assets/tloa/models/item/glowing_chiseled_sheikah_plate.json",
+          "src/main/resources/assets/tloa/models/block/glowing_chiseled_sheikah_plate.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1920,11 +1904,11 @@
       "registry_name": "glowing_sheikah_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/blockstates/glowing_sheikah_plate.json",
-          "src/main/resources/assets/tloa/models/item/glowing_sheikah_plate.json",
           "src/main/java/net/mcreator/tloa/block/GlowingSheikahPlateBlock.java",
           "src/main/resources/data/tloa/loot_table/blocks/glowing_sheikah_plate.json",
-          "src/main/resources/assets/tloa/models/block/glowing_sheikah_plate.json"
+          "src/main/resources/assets/tloa/models/block/glowing_sheikah_plate.json",
+          "src/main/resources/assets/tloa/models/item/glowing_sheikah_plate.json",
+          "src/main/resources/assets/tloa/blockstates/glowing_sheikah_plate.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1937,13 +1921,13 @@
       "registry_name": "sheikah_plate_slab",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/block/SheikahPlateSlabBlock.java",
-          "src/main/resources/assets/tloa/models/block/sheikah_plate_slab.json",
           "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_slab.json",
           "src/main/resources/assets/tloa/blockstates/sheikah_plate_slab.json",
           "src/main/resources/assets/tloa/models/item/sheikah_plate_slab.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_top.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_full.json"
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_full.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahPlateSlabBlock.java",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_slab.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_slab_top.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1956,13 +1940,13 @@
       "registry_name": "sheikah_plate_stair",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/blockstates/sheikah_plate_stair.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_stair_outer.json",
-          "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_stair.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahPlateStairBlock.java",
           "src/main/resources/assets/tloa/models/item/sheikah_plate_stair.json",
+          "src/main/resources/assets/tloa/blockstates/sheikah_plate_stair.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_stair.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_stair.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_plate_stair_inner.json",
-          "src/main/java/net/mcreator/tloa/block/SheikahPlateStairBlock.java"
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_stair_inner.json"
         ]
       },
       "path": "~/Sheikah"
@@ -1975,13 +1959,13 @@
       "registry_name": "sheikah_plate_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/blockstates/sheikah_plate_wall.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_inventory.json",
-          "src/main/java/net/mcreator/tloa/block/SheikahPlateWallBlock.java",
-          "src/main/resources/assets/tloa/models/item/sheikah_plate_wall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_wall.json",
-          "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_wall.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_plate_wall.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahPlateWallBlock.java",
+          "src/main/resources/assets/tloa/blockstates/sheikah_plate_wall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_post.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_inventory.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_plate_wall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_plate_wall_side_tall.json"
         ]
       },
@@ -1995,11 +1979,11 @@
       "registry_name": "sheikah_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/tloa/block/SheikahStoneBlock.java",
-          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_stone.json",
           "src/main/resources/assets/tloa/blockstates/sheikah_stone.json",
-          "src/main/resources/assets/tloa/models/item/sheikah_stone.json"
+          "src/main/resources/assets/tloa/models/block/sheikah_stone.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_stone.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneBlock.java",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone.json"
         ]
       },
       "path": "~/Sheikah"
@@ -2013,12 +1997,12 @@
       "metadata": {
         "files": [
           "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_slab.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_full.json",
-          "src/main/resources/assets/tloa/models/item/sheikah_stone_slab.json",
           "src/main/resources/assets/tloa/blockstates/sheikah_stone_slab.json",
           "src/main/java/net/mcreator/tloa/block/SheikahStoneSlabBlock.java",
-          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_top.json"
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_top.json",
+          "src/main/resources/assets/tloa/models/item/sheikah_stone_slab.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_slab_full.json"
         ]
       },
       "path": "~/Sheikah"
@@ -2031,13 +2015,13 @@
       "registry_name": "sheikah_stone_stair",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/blockstates/sheikah_stone_stair.json",
-          "src/main/java/net/mcreator/tloa/block/SheikahStoneStairBlock.java",
           "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_stair.json",
           "src/main/resources/assets/tloa/models/item/sheikah_stone_stair.json",
+          "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_inner.json",
+          "src/main/resources/assets/tloa/blockstates/sheikah_stone_stair.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_stair.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_outer.json",
-          "src/main/resources/assets/tloa/models/block/sheikah_stone_stair_inner.json"
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneStairBlock.java"
         ]
       },
       "path": "~/Sheikah"
@@ -2050,12 +2034,12 @@
       "registry_name": "sheikah_stone_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tloa/blockstates/sheikah_stone_wall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_post.json",
-          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_wall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_wall.json",
-          "src/main/java/net/mcreator/tloa/block/SheikahStoneWallBlock.java",
           "src/main/resources/assets/tloa/models/item/sheikah_stone_wall.json",
+          "src/main/resources/assets/tloa/blockstates/sheikah_stone_wall.json",
+          "src/main/resources/data/tloa/loot_table/blocks/sheikah_stone_wall.json",
+          "src/main/java/net/mcreator/tloa/block/SheikahStoneWallBlock.java",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_side_tall.json",
           "src/main/resources/assets/tloa/models/block/sheikah_stone_wall_inventory.json"
         ]
@@ -2351,6 +2335,20 @@
         ]
       },
       "path": "~/Swords"
+    },
+    {
+      "name": "GreatFrostblade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_frostblade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/great_frostblade.json",
+          "src/main/java/net/mcreator/tloa/item/GreatFrostbladeItem.java"
+        ]
+      },
+      "path": "~/Swords"
     }
   ],
   "variable_elements": [
@@ -2503,11 +2501,6 @@
     "ITEMS:minecraft:enchantable/bow": [
       "CUSTOM:LightBow"
     ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:SheikahStoneWall",
-      "~CUSTOM:SheikahPlateWall",
-      "~CUSTOM:SheikahGrateWall"
-    ],
     "BLOCKS:mod:climbable": [
       "Blocks.DIRT#0",
       "Blocks.DIRT#1",
@@ -2562,6 +2555,11 @@
       "Blocks.NETHER_BRICK",
       "Blocks.RED_NETHER_BRICK"
     ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahPlateWall",
+      "~CUSTOM:SheikahGrateWall"
+    ],
     "BIOMES:mod:is_zelda": [
       "CUSTOM:CentralKorokForest",
       "CUSTOM:KorokForest"
@@ -2573,6 +2571,7 @@
       "~CUSTOM:LostStairs"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:GreatFrostblade",
       "~CUSTOM:Frostblade",
       "~CUSTOM:GreatFlameblade",
       "~CUSTOM:Flameblade",
@@ -2594,6 +2593,7 @@
       "Flameblade",
       "GreatFlameblade",
       "Frostblade",
+      "GreatFrostblade",
       "HylianShield",
       "DekuShield",
       "LightBow",
@@ -2602,7 +2602,8 @@
       "RedRupee",
       "PurpleRupee",
       "SilverRupee",
-      "GoldRupee"
+      "GoldRupee",
+      "SheikahSlate"
     ]
   },
   "language_map": {
@@ -2611,6 +2612,7 @@
       "item.tlom.sheikah_slate_on": "Sheikah Slate (ON)",
       "item.tlos.purple_rupee": "Green Rupee",
       "gui.tloa.rupee_counter.label_empty": "",
+      "item.tloa.great_frostblade": "Frostblade",
       "block.tloa.sheikah_grate_wall": "Sheikah Grate",
       "key.tlos.use_rune": "Use Rune",
       "item.tlom.master_sword_powered": "Master Sword (POWERED)",
@@ -2697,7 +2699,7 @@
       "block.tlos.lost_log": "Lost Log",
       "item.tlom.red_rupee": "Green Rupee",
       "item_group.tlom.tloa_blocks": "TLOA Blocks",
-      "item.tloa.sheikah_slate_on": "Sheikah Slate",
+      "item.tloa.sheikah_slate_on": "Sheikah Slate (ON)",
       "item.tloa.master_sword": "Master Sword",
       "item.tloa.hylian_shield": "Hylian Shield",
       "block.tlom.lost_fence_gate": "Lost Fence Gate",
@@ -2809,5 +2811,5 @@
     "credits": "Tucky143",
     "modElementsPackage": "net.mcreator.tloa"
   },
-  "mcreatorVersion": 202400447413
+  "mcreatorVersion": 202500107421
 }

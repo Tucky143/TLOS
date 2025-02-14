@@ -4,12 +4,12 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="tloa"
-version="0.0.1"
+version="0.0.2"
 displayName="The Legend of Alex"
 displayURL="https://mcreator.net"
 credits="Tucky143"
 authors="Tucky143"
-description="The Legend of Alex, a zelda based mod."
+description="The Legend of Alex, a Zelda based mod."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -17,7 +17,7 @@ description="The Legend of Alex, a zelda based mod."
 [[dependencies.tloa]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.65,)"
+    versionRange="[21.1.92,)"
     ordering="AFTER"
     side="BOTH"
 

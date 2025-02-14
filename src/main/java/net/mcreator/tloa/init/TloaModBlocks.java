@@ -9,6 +9,17 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.tloa.block.SheikahStoneWallBlock;
+import net.mcreator.tloa.block.SheikahStoneStairBlock;
+import net.mcreator.tloa.block.SheikahStoneSlabBlock;
+import net.mcreator.tloa.block.SheikahStoneBlock;
+import net.mcreator.tloa.block.SheikahPlateWallBlock;
+import net.mcreator.tloa.block.SheikahPlateStairBlock;
+import net.mcreator.tloa.block.SheikahPlateSlabBlock;
+import net.mcreator.tloa.block.SheikahPlateBlock;
+import net.mcreator.tloa.block.SheikahLightBlock;
+import net.mcreator.tloa.block.SheikahGrateWallBlock;
+import net.mcreator.tloa.block.SheikahGrateBlock;
 import net.mcreator.tloa.block.LostWoodBlock;
 import net.mcreator.tloa.block.LostStairsBlock;
 import net.mcreator.tloa.block.LostSlabBlock;
@@ -18,6 +29,8 @@ import net.mcreator.tloa.block.LostLogBlock;
 import net.mcreator.tloa.block.LostFenceGateBlock;
 import net.mcreator.tloa.block.LostFenceBlock;
 import net.mcreator.tloa.block.LostButtonBlock;
+import net.mcreator.tloa.block.GlowingSheikahPlateBlock;
+import net.mcreator.tloa.block.GlowingChiseledSheikahPlateBlock;
 import net.mcreator.tloa.block.DekuWoodBlock;
 import net.mcreator.tloa.block.DekuStairsBlock;
 import net.mcreator.tloa.block.DekuSlabBlock;
@@ -28,6 +41,7 @@ import net.mcreator.tloa.block.DekuLeavesBlock;
 import net.mcreator.tloa.block.DekuFenceGateBlock;
 import net.mcreator.tloa.block.DekuFenceBlock;
 import net.mcreator.tloa.block.DekuButtonBlock;
+import net.mcreator.tloa.block.ChiseledSheikahPlateBlock;
 import net.mcreator.tloa.TloaMod;
 
 public class TloaModBlocks {
@@ -51,6 +65,20 @@ public class TloaModBlocks {
 	public static final DeferredBlock<Block> DEKU_FENCE_GATE = REGISTRY.register("deku_fence_gate", DekuFenceGateBlock::new);
 	public static final DeferredBlock<Block> DEKU_PRESSURE_PLATE = REGISTRY.register("deku_pressure_plate", DekuPressurePlateBlock::new);
 	public static final DeferredBlock<Block> DEKU_BUTTON = REGISTRY.register("deku_button", DekuButtonBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_LIGHT = REGISTRY.register("sheikah_light", SheikahLightBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_GRATE = REGISTRY.register("sheikah_grate", SheikahGrateBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_GRATE_WALL = REGISTRY.register("sheikah_grate_wall", SheikahGrateWallBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_PLATE = REGISTRY.register("sheikah_plate", SheikahPlateBlock::new);
+	public static final DeferredBlock<Block> CHISELED_SHEIKAH_PLATE = REGISTRY.register("chiseled_sheikah_plate", ChiseledSheikahPlateBlock::new);
+	public static final DeferredBlock<Block> GLOWING_CHISELED_SHEIKAH_PLATE = REGISTRY.register("glowing_chiseled_sheikah_plate", GlowingChiseledSheikahPlateBlock::new);
+	public static final DeferredBlock<Block> GLOWING_SHEIKAH_PLATE = REGISTRY.register("glowing_sheikah_plate", GlowingSheikahPlateBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_PLATE_SLAB = REGISTRY.register("sheikah_plate_slab", SheikahPlateSlabBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_PLATE_STAIR = REGISTRY.register("sheikah_plate_stair", SheikahPlateStairBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_PLATE_WALL = REGISTRY.register("sheikah_plate_wall", SheikahPlateWallBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_STONE = REGISTRY.register("sheikah_stone", SheikahStoneBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_STONE_SLAB = REGISTRY.register("sheikah_stone_slab", SheikahStoneSlabBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_STONE_STAIR = REGISTRY.register("sheikah_stone_stair", SheikahStoneStairBlock::new);
+	public static final DeferredBlock<Block> SHEIKAH_STONE_WALL = REGISTRY.register("sheikah_stone_wall", SheikahStoneWallBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

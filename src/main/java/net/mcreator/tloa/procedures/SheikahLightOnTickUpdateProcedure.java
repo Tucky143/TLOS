@@ -13,7 +13,7 @@ public class SheikahLightOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		double random = 0;
 		if (!(blockstate.getBlock().getStateDefinition().getProperty("claimed") instanceof BooleanProperty _getbp1 && blockstate.getValue(_getbp1))) {
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty()) {
+			if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(50 / 2d), e -> true).isEmpty()) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);

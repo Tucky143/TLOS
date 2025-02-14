@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "tloa:sheikah_stone_slab",
+    "tloa:sheikah_plate_slab",
     "tloa:deku_slab",
     "tloa:lost_slab"
   ]

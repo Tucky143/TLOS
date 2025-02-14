@@ -17,7 +17,7 @@ public class RemoteBombAbilityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!world.getEntitiesOfClass(SquareRemoteBombEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty()) {
+		if (!world.getEntitiesOfClass(SquareRemoteBombEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(50 / 2d), e -> true).isEmpty()) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {

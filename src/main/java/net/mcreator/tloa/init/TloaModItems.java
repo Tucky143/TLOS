@@ -32,6 +32,7 @@ import net.mcreator.tloa.item.SheikahSlateOnItem;
 import net.mcreator.tloa.item.SheikahSlateItem;
 import net.mcreator.tloa.item.RedRupeeItem;
 import net.mcreator.tloa.item.PurpleRupeeItem;
+import net.mcreator.tloa.item.ParagliderItem;
 import net.mcreator.tloa.item.MasterSwordPoweredItem;
 import net.mcreator.tloa.item.MasterSwordItem;
 import net.mcreator.tloa.item.LightBowItem;
@@ -39,7 +40,11 @@ import net.mcreator.tloa.item.LightArrowItemItem;
 import net.mcreator.tloa.item.KokiriSwordItem;
 import net.mcreator.tloa.item.HylianShieldItem;
 import net.mcreator.tloa.item.GreenRupeeItem;
+import net.mcreator.tloa.item.GreatFrostbladeItem;
+import net.mcreator.tloa.item.GreatFlamebladeItem;
 import net.mcreator.tloa.item.GoldRupeeItem;
+import net.mcreator.tloa.item.FrostbladeItem;
+import net.mcreator.tloa.item.FlamebladeItem;
 import net.mcreator.tloa.item.DekuShieldItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
 import net.mcreator.tloa.TloaMod;
@@ -80,6 +85,25 @@ public class TloaModItems {
 	public static final DeferredItem<Item> DEKU_SHIELD = REGISTRY.register("deku_shield", DekuShieldItem::new);
 	public static final DeferredItem<Item> HYLIAN_SHIELD = REGISTRY.register("hylian_shield", HylianShieldItem::new);
 	public static final DeferredItem<Item> KOKIRI_SWORD = REGISTRY.register("kokiri_sword", KokiriSwordItem::new);
+	public static final DeferredItem<Item> PARAGLIDER = REGISTRY.register("paraglider", ParagliderItem::new);
+	public static final DeferredItem<Item> SHEIKAH_LIGHT = block(TloaModBlocks.SHEIKAH_LIGHT);
+	public static final DeferredItem<Item> SHEIKAH_GRATE = block(TloaModBlocks.SHEIKAH_GRATE);
+	public static final DeferredItem<Item> SHEIKAH_GRATE_WALL = block(TloaModBlocks.SHEIKAH_GRATE_WALL);
+	public static final DeferredItem<Item> SHEIKAH_PLATE = block(TloaModBlocks.SHEIKAH_PLATE);
+	public static final DeferredItem<Item> CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.CHISELED_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> GLOWING_CHISELED_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> GLOWING_SHEIKAH_PLATE = block(TloaModBlocks.GLOWING_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> SHEIKAH_PLATE_SLAB = block(TloaModBlocks.SHEIKAH_PLATE_SLAB);
+	public static final DeferredItem<Item> SHEIKAH_PLATE_STAIR = block(TloaModBlocks.SHEIKAH_PLATE_STAIR);
+	public static final DeferredItem<Item> SHEIKAH_PLATE_WALL = block(TloaModBlocks.SHEIKAH_PLATE_WALL);
+	public static final DeferredItem<Item> SHEIKAH_STONE = block(TloaModBlocks.SHEIKAH_STONE);
+	public static final DeferredItem<Item> SHEIKAH_STONE_SLAB = block(TloaModBlocks.SHEIKAH_STONE_SLAB);
+	public static final DeferredItem<Item> SHEIKAH_STONE_STAIR = block(TloaModBlocks.SHEIKAH_STONE_STAIR);
+	public static final DeferredItem<Item> SHEIKAH_STONE_WALL = block(TloaModBlocks.SHEIKAH_STONE_WALL);
+	public static final DeferredItem<Item> FLAMEBLADE = REGISTRY.register("flameblade", FlamebladeItem::new);
+	public static final DeferredItem<Item> GREAT_FLAMEBLADE = REGISTRY.register("great_flameblade", GreatFlamebladeItem::new);
+	public static final DeferredItem<Item> FROSTBLADE = REGISTRY.register("frostblade", FrostbladeItem::new);
+	public static final DeferredItem<Item> GREAT_FROSTBLADE = REGISTRY.register("great_frostblade", GreatFrostbladeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

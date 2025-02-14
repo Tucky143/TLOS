@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "tloa:great_frostblade",
+    "tloa:frostblade",
+    "tloa:great_flameblade",
+    "tloa:flameblade",
     "tloa:kokiri_sword",
     "tloa:master_sword_powered",
     "tloa:master_sword"
