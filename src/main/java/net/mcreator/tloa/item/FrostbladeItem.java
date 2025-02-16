@@ -49,13 +49,13 @@ public class FrostbladeItem extends SwordItem {
 	};
 
 	public FrostbladeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3.8f, -2f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3.8f, -3f)));
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		FrostbladeLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		FrostbladeLivingEntityIsHitWithToolProcedure.execute(entity);
 		return retval;
 	}
 

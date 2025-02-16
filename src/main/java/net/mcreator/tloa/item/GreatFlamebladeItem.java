@@ -49,7 +49,7 @@ public class GreatFlamebladeItem extends SwordItem {
 	};
 
 	public GreatFlamebladeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5.8f, -2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 0f, -3.2f)).fireResistant());
 	}
 
 	@Override

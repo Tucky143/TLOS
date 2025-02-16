@@ -31,6 +31,7 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.PURPLE_RUPEE.get());
 				tabData.accept(TloaModItems.SILVER_RUPEE.get());
 				tabData.accept(TloaModItems.GOLD_RUPEE.get());
+				tabData.accept(TloaModItems.LIGHT_BOW.get());
 				tabData.accept(TloaModItems.MASTER_SWORD_POWERED.get());
 				tabData.accept(TloaModItems.MASTER_SWORD.get());
 				tabData.accept(TloaModItems.KOKIRI_SWORD.get());
@@ -40,9 +41,11 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.GREAT_FROSTBLADE.get());
 				tabData.accept(TloaModItems.THUNDER_BLADE.get());
 				tabData.accept(TloaModItems.GREAT_THUNDERBLADE.get());
+				tabData.accept(TloaModItems.FLAMESPEAR.get());
+				tabData.accept(TloaModItems.FROSTSPEAR.get());
+				tabData.accept(TloaModItems.THUNDERSPEAR.get());
 				tabData.accept(TloaModItems.HYLIAN_SHIELD.get());
 				tabData.accept(TloaModItems.DEKU_SHIELD.get());
-				tabData.accept(TloaModItems.LIGHT_BOW.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS_TAB = REGISTRY.register("tloa_blocks_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks_tab")).icon(() -> new ItemStack(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE.get())).displayItems((parameters, tabData) -> {

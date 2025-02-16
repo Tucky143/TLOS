@@ -47,7 +47,7 @@ public class ThunderBladeItem extends SwordItem {
 	};
 
 	public ThunderBladeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3.8f, -2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3.8f, -3f)).fireResistant());
 	}
 
 	@Override

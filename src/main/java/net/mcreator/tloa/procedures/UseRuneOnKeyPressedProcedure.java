@@ -24,5 +24,8 @@ public class UseRuneOnKeyPressedProcedure {
 		if (entity.getData(TloaModVariables.PLAYER_VARIABLES).stasis_activated) {
 			StasisAbilityProcedure.execute(world, x, y, z);
 		}
+		if (entity.getData(TloaModVariables.PLAYER_VARIABLES).magnesis_activated) {
+			MagnesisAbilityProcedure.execute(world, entity);
+		}
 	}
 }

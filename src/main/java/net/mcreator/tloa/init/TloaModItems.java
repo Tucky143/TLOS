@@ -27,6 +27,7 @@ import net.mcreator.tloa.procedures.PurpleRupeePropertyValueProviderProcedure;
 import net.mcreator.tloa.procedures.GreenRupeePropertyValueProviderProcedure;
 import net.mcreator.tloa.procedures.GoldRupeePropertyValueProviderProcedure;
 import net.mcreator.tloa.procedures.BlueRupeePropertyValueProviderProcedure;
+import net.mcreator.tloa.item.ThunderspearItem;
 import net.mcreator.tloa.item.ThunderBladeItem;
 import net.mcreator.tloa.item.SilverRupeeItem;
 import net.mcreator.tloa.item.SheikahSlateOnItem;
@@ -45,7 +46,9 @@ import net.mcreator.tloa.item.GreatThunderbladeItem;
 import net.mcreator.tloa.item.GreatFrostbladeItem;
 import net.mcreator.tloa.item.GreatFlamebladeItem;
 import net.mcreator.tloa.item.GoldRupeeItem;
+import net.mcreator.tloa.item.FrostspearItem;
 import net.mcreator.tloa.item.FrostbladeItem;
+import net.mcreator.tloa.item.FlamespearItem;
 import net.mcreator.tloa.item.FlamebladeItem;
 import net.mcreator.tloa.item.DekuShieldItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
@@ -108,6 +111,9 @@ public class TloaModItems {
 	public static final DeferredItem<Item> GREAT_FROSTBLADE = REGISTRY.register("great_frostblade", GreatFrostbladeItem::new);
 	public static final DeferredItem<Item> THUNDER_BLADE = REGISTRY.register("thunder_blade", ThunderBladeItem::new);
 	public static final DeferredItem<Item> GREAT_THUNDERBLADE = REGISTRY.register("great_thunderblade", GreatThunderbladeItem::new);
+	public static final DeferredItem<Item> FROSTSPEAR = REGISTRY.register("frostspear", FrostspearItem::new);
+	public static final DeferredItem<Item> FLAMESPEAR = REGISTRY.register("flamespear", FlamespearItem::new);
+	public static final DeferredItem<Item> THUNDERSPEAR = REGISTRY.register("thunderspear", ThunderspearItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,46 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Frozen",
+    "icon": "frozen",
+    "color": {
+      "value": -10425601,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "SNOWFLAKE"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": -1.0,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -1.0,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": -1.0,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
+  }
+}

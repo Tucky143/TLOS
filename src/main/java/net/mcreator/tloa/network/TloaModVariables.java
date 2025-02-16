@@ -71,6 +71,7 @@ public class TloaModVariables {
 				clone.player_holding_remote_bomb = original.player_holding_remote_bomb;
 				clone.bullet_time_active = original.bullet_time_active;
 				clone.money = original.money;
+				clone.magnesis_active = original.magnesis_active;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -87,6 +88,7 @@ public class TloaModVariables {
 		public double money = 0.0;
 		public boolean climbing = false;
 		public boolean RupeeCounterOn = true;
+		public boolean magnesis_active = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -101,6 +103,7 @@ public class TloaModVariables {
 			nbt.putDouble("money", money);
 			nbt.putBoolean("climbing", climbing);
 			nbt.putBoolean("RupeeCounterOn", RupeeCounterOn);
+			nbt.putBoolean("magnesis_active", magnesis_active);
 			return nbt;
 		}
 
@@ -116,6 +119,7 @@ public class TloaModVariables {
 			money = nbt.getDouble("money");
 			climbing = nbt.getBoolean("climbing");
 			RupeeCounterOn = nbt.getBoolean("RupeeCounterOn");
+			magnesis_active = nbt.getBoolean("magnesis_active");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

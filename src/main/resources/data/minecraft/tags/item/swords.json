@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "tloa:thunderspear",
+    "tloa:flamespear",
+    "tloa:frostspear",
     "tloa:great_thunderblade",
     "tloa:thunder_blade",
     "tloa:great_frostblade",
