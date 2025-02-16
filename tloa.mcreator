@@ -2895,8 +2895,8 @@
       "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "block.tloa.lost_planks": "Lost Planks",
       "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
+      "block.tloa.lost_planks": "Lost Planks",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
@@ -3086,7 +3086,7 @@
   "workspaceSettings": {
     "modid": "tloa",
     "modName": "The Legend of Alex",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "The Legend of Alex, a Zelda based mod.",
     "author": "Tucky143",
     "websiteURL": "https://mcreator.net",
