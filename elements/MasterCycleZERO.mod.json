@@ -22,7 +22,16 @@
       "fixedValue": 1.4
     },
     "modelLayers": [],
-    "animations": [],
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:MasterCycleAnimation.MasterCycleWheels"
+        },
+        "speed": 1.0,
+        "walking": true,
+        "amplitude": 1.0
+      }
+    ],
     "modelWidth": 0.6,
     "modelHeight": 0.9,
     "modelShadowSize": 0.5,
