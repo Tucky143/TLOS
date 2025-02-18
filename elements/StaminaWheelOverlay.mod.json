@@ -1,0 +1,36 @@
+{
+  "_fv": 77,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "stamina_wheel.png",
+          "spritesCount": 15,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "StaminaWheelOverlayDrain"
+          },
+          "anchorPoint": "CENTER",
+          "x": 174,
+          "y": 128,
+          "locked": true
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "StaminaWheelOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 24,
+      "sy": 24,
+      "ox": 10,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

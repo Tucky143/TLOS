@@ -1,50 +1,50 @@
-/tp d757a815-f600-413f-b158-73a81c416a42 ~ ~-2 ~
-/give @a tloa:frostblade
-/summon pig
-/summon pig ~ ~ ~ {noAi:1}
-/summon bat
-/summon bee
-/summon pig
-/give @a tloa:great_frostblade
-/summon pig
-/give @a minecraft:debug_stick
-/give @a minecraft:enchanted_golden_apple 64
-/effect give @a tloa:shocked 10 1 true
-/effect give @a tloa:shocked 10 0 true
-/summon pig
-/effect give @a tloa:shocked 10 0 true
-/summon witch
-/summon minecraft:skeleton
-/summon minecraft:zombie
-/item replace entity
-/item replace entity ecfcfee8-0afb-4f48-a721-fb8c7eb6624a weapon.mainhand with tloa:thunder_blade
-/effect give @a tloa:shocked 10 0 true
-/data modify entity @p tloa:rupee insert -10000
-/data modify entity @p tloa:rupee insert -10000 value -1000
-/data modify entity @p tloa:rupee insert -1000 value -1000
-/data modify entity @p tloa:rupee insert 1 value -1000
-/data modify entity @p tloa:rupee insert 0 value -1000
-/data modify entity @p tloa:rupee insert -1 value -1000
-/kill
-/time set day
-/weather clear
-/locate structure tloa:tower
-/tp @s -368 ~ -480
-/tp 0 ~ 0
-/locate structure tloa:tower
-/tp @s -752 ~ -1632
-/locate structure tloa:tower
-/kill
-/summon pig 132.23 63.00 -133.18
-/summon wither
-/kill @e
-/summon pig
-/damage @p 1 minecraft:player_attack
-/damage @p 1
-/summon minecraft:creeper
-/summon minecraft:text_display
-/summon minecraft:text_display 133.35 62.00 -121.32 {text:10}
-/summon tloa:square_remote_bomb
-/give @a tloa:sheikah_grate
-/give @a tloa:sheikah_slate
-/summon minecraft:zombie
+//undo
+/redo
+//stack back
+//undo
+//stack me
+//undo
+//stack back
+//move back 1
+//stack back
+//move back 1
+//replace stone air
+//replace air
+//wand
+/tool
+/tool stacker dirt
+/tool navwand
+//undo
+//redo
+/tool farwand
+/tool unbind
+//brush
+//brush smooth dirt
+//undo
+/redo
+//brush sphere
+//brush sphere dirt
+//undo
+//brush raise sphere
+//undo
+/undo
+/brush gravity
+/brush splatter dirt
+//undo
+//set dirt
+//replace air dirt
+//set dirt
+//replace air dirt
+//undo
+//replace air dirt
+//undo 5
+//redo 4
+//replace dirt air
+/locate structure tloa:shrine_of_resurrection
+/tp @s 16 ~ 64
+/locate structure tloa:shrine_of_resurrection
+//replace dirt air
+//undo
+//replace air dirt
+/locate structure tloa:shrine_of_resurrection
+/tp @s -640 ~ -640

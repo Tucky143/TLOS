@@ -62,6 +62,9 @@ public class TloaModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.climbing = original.climbing;
 			clone.RupeeCounterOn = original.RupeeCounterOn;
+			clone.max_player_health = original.max_player_health;
+			clone.max_player_stamina = original.max_player_stamina;
+			clone.climbing_key_pressed = original.climbing_key_pressed;
 			if (!event.isWasDeath()) {
 				clone.cryonis_activated = original.cryonis_activated;
 				clone.magnesis_activated = original.magnesis_activated;
@@ -72,6 +75,8 @@ public class TloaModVariables {
 				clone.bullet_time_active = original.bullet_time_active;
 				clone.money = original.money;
 				clone.magnesis_active = original.magnesis_active;
+				clone.current_player_stamina = original.current_player_stamina;
+				clone.can_stamina_drain = original.can_stamina_drain;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -89,6 +94,11 @@ public class TloaModVariables {
 		public boolean climbing = false;
 		public boolean RupeeCounterOn = true;
 		public boolean magnesis_active = false;
+		public double max_player_health = 14.0;
+		public double max_player_stamina = 40.0;
+		public double current_player_stamina = 40.0;
+		public boolean can_stamina_drain = true;
+		public boolean climbing_key_pressed = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -104,6 +114,11 @@ public class TloaModVariables {
 			nbt.putBoolean("climbing", climbing);
 			nbt.putBoolean("RupeeCounterOn", RupeeCounterOn);
 			nbt.putBoolean("magnesis_active", magnesis_active);
+			nbt.putDouble("max_player_health", max_player_health);
+			nbt.putDouble("max_player_stamina", max_player_stamina);
+			nbt.putDouble("current_player_stamina", current_player_stamina);
+			nbt.putBoolean("can_stamina_drain", can_stamina_drain);
+			nbt.putBoolean("climbing_key_pressed", climbing_key_pressed);
 			return nbt;
 		}
 
@@ -120,6 +135,11 @@ public class TloaModVariables {
 			climbing = nbt.getBoolean("climbing");
 			RupeeCounterOn = nbt.getBoolean("RupeeCounterOn");
 			magnesis_active = nbt.getBoolean("magnesis_active");
+			max_player_health = nbt.getDouble("max_player_health");
+			max_player_stamina = nbt.getDouble("max_player_stamina");
+			current_player_stamina = nbt.getDouble("current_player_stamina");
+			can_stamina_drain = nbt.getBoolean("can_stamina_drain");
+			climbing_key_pressed = nbt.getBoolean("climbing_key_pressed");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

@@ -29,19 +29,45 @@ public class ClimbingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(TloaModVariables.PLAYER_VARIABLES).climbing) {
+		if (entity.getData(TloaModVariables.PLAYER_VARIABLES).climbing_key_pressed) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z - 0.35))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
 				entity.push(0, 0.08, 0);
 				entity.fallDistance = 2;
+				{
+					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+					_vars.climbing = true;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z + 0.35))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
 				entity.push(0, 0.08, 0);
 				entity.fallDistance = 2;
+				{
+					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+					_vars.climbing = true;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else if ((world.getBlockState(BlockPos.containing(x - 0.35, y, z))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
 				entity.push(0, 0.08, 0);
 				entity.fallDistance = 2;
+				{
+					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+					_vars.climbing = true;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else if ((world.getBlockState(BlockPos.containing(x + 0.35, y, z))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
 				entity.push(0, 0.08, 0);
 				entity.fallDistance = 2;
+				{
+					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+					_vars.climbing = true;
+					_vars.syncPlayerVariables(entity);
+				}
+			} else {
+				{
+					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+					_vars.climbing = false;
+					_vars.syncPlayerVariables(entity);
+				}
 			}
 		}
 	}

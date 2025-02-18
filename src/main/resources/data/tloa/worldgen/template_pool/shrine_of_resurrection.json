@@ -1,0 +1,29 @@
+{
+  "name": "tloa:shrine_of_resurrection",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "tloa:shrine_of_resurrection",
+        "projection": "rigid",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

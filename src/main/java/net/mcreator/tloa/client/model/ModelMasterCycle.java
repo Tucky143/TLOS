@@ -15,7 +15,7 @@ import net.minecraft.client.model.EntityModel;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-// Made with Blockbench 4.10.4
+// Made with Blockbench 4.12.2
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 public class ModelMasterCycle<T extends Entity> extends EntityModel<T> {
@@ -41,8 +41,8 @@ public class ModelMasterCycle<T extends Entity> extends EntityModel<T> {
 						.addBox(-2.0F, -7.0F, -23.0F, 4.0F, 2.0F, 9.0F, new CubeDeformation(0.05F)).texOffs(0, 32).addBox(-2.0F, -5.0F, -25.0F, 4.0F, 3.0F, 4.0F, new CubeDeformation(0.05F)).texOffs(28, 15)
 						.addBox(-2.0F, -2.0F, -28.0F, 4.0F, 1.0F, 6.0F, new CubeDeformation(0.05F)).texOffs(-1, 102).addBox(-2.0F, -4.0F, -2.0F, 4.0F, 2.0F, 10.0F, new CubeDeformation(0.05F)),
 				PartPose.offset(0.0F, 12.0F, 6.0F));
-		PartDefinition front_tire = partdefinition.addOrReplaceChild("front_tire", CubeListBuilder.create().texOffs(48, 21).addBox(-1.0F, -4.0F, -3.9F, 2.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 20.0F, -11.0F));
-		PartDefinition back_tire = partdefinition.addOrReplaceChild("back_tire", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.0F, -4.0F, 2.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 20.0F, 11.0F));
+		PartDefinition front_tire = partdefinition.addOrReplaceChild("front_tire", CubeListBuilder.create().texOffs(48, 21).addBox(-1.0F, -4.0F, -3.9F, 2.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 20.0F, -10.0F));
+		PartDefinition back_tire = partdefinition.addOrReplaceChild("back_tire", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.0F, -4.0F, 2.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 20.0F, 10.0F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
@@ -54,7 +54,5 @@ public class ModelMasterCycle<T extends Entity> extends EntityModel<T> {
 	}
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		this.front_tire.xRot = ageInTicks;
-		this.back_tire.xRot = ageInTicks;
 	}
 }

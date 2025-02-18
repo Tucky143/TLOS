@@ -981,6 +981,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -2562,6 +2578,176 @@
         ]
       },
       "path": "~/Swords/Elemental Weapons"
+    },
+    {
+      "name": "StaminaDrain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_drain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/StaminaDrainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StaminaWheelOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_wheel_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/StaminaWheelOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StaminaWheelOverlayDrain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_wheel_overlay_drain",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/StaminaWheelOverlayDrainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StaminaWheelOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_wheel_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/client/screens/StaminaWheelOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "StaminaVesselRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_vessel_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/StaminaVesselRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StaminaVessel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_vessel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/stamina_vessel.json",
+          "src/main/java/net/mcreator/tloa/item/StaminaVesselItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HealthSync",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health_sync",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/HealthSyncProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartContainer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_container",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/heart_container.json",
+          "src/main/java/net/mcreator/tloa/item/HeartContainerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HeartContainerRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_container_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/HeartContainerRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShrineOfResurrection",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrine_of_resurrection",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/worldgen/template_pool/shrine_of_resurrection.json",
+          "src/main/resources/data/tloa/worldgen/structure/shrine_of_resurrection.json",
+          "src/main/resources/data/tloa/worldgen/structure_set/shrine_of_resurrection.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2629,6 +2815,36 @@
       "name": "magnesis_active",
       "type": "logic",
       "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "max_player_health",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "14.0"
+    },
+    {
+      "name": "max_player_stamina",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "40.0"
+    },
+    {
+      "name": "current_player_stamina",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "40.0"
+    },
+    {
+      "name": "can_stamina_drain",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
+    },
+    {
+      "name": "climbing_key_pressed",
+      "type": "logic",
+      "scope": "player_persistent",
       "value": "false"
     }
   ],
@@ -2870,7 +3086,9 @@
       "Frostspear",
       "Thunderspear",
       "HylianShield",
-      "DekuShield"
+      "DekuShield",
+      "StaminaVessel",
+      "HeartContainer"
     ]
   },
   "language_map": {
@@ -2930,6 +3148,7 @@
       "item.tlos.sheikah_slate": "Sheikah Slate",
       "item.tloa.master_sword_powered": "Master Sword (POWERED)",
       "block.tloa.sheikah_plate_stair": "Sheikah Plate Stair",
+      "item.tloa.heart_container": "Heart Container",
       "block.tlos.lost_stairs": "Lost Stairs",
       "item.tlom.red_rupee.description_0": "Item representing 20 rupees",
       "block.tloa.lost_button": "Lost Button",
@@ -2958,6 +3177,7 @@
       "gui.tlos.testing_sword_gui.testing_sword_input": "INPUT",
       "effect.tloa.shocked": "Shocked",
       "block.tlom.lost_slab": "Lost Slab",
+      "item.tloa.stamina_vessel": "Stamina Vessel",
       "biome.tlos.central_korok_forest": "Central Korok Forest",
       "block.tloa.lost_fence": "Lost Fence",
       "item.tlos.green_rupee.description_0": "Item representing 1 rupee",
@@ -3017,8 +3237,10 @@
       "key.tlom.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tlom.master_sword": "Master Sword",
       "item.tloa.deku_shield": "Deku Shield",
+      "item.tloa.heart_container.description_0": "Increases your health by one",
       "block.tlom.lost_planks": "Lost Planks",
       "biome.tlom.central_korok_forest": "Central Korok Forest",
+      "item.tloa.stamina_vessel.description_0": "Increases your stamina by one",
       "gui.tloa.sheikah_slate_gui.label_magnesis": "Magnesis",
       "item.tlos.master_sword": "Master Sword",
       "item.tloa.flamespear": "Flamespear",
@@ -3086,7 +3308,7 @@
   "workspaceSettings": {
     "modid": "tloa",
     "modName": "The Legend of Alex",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "The Legend of Alex, a Zelda based mod.",
     "author": "Tucky143",
     "websiteURL": "https://mcreator.net",

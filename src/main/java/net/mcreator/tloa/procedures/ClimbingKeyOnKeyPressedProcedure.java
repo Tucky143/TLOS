@@ -10,7 +10,7 @@ public class ClimbingKeyOnKeyPressedProcedure {
 			return;
 		{
 			TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
-			_vars.climbing = true;
+			_vars.climbing_key_pressed = true;
 			_vars.syncPlayerVariables(entity);
 		}
 	}
