@@ -30,33 +30,10 @@ public class ClimbingProcedure {
 		if (entity == null)
 			return;
 		if (entity.getData(TloaModVariables.PLAYER_VARIABLES).climbing_key_pressed) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z - 0.35))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
-				entity.push(0, 0.08, 0);
-				entity.fallDistance = 2;
-				{
-					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
-					_vars.climbing = true;
-					_vars.syncPlayerVariables(entity);
-				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y, z + 0.35))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
-				entity.push(0, 0.08, 0);
-				entity.fallDistance = 2;
-				{
-					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
-					_vars.climbing = true;
-					_vars.syncPlayerVariables(entity);
-				}
-			} else if ((world.getBlockState(BlockPos.containing(x - 0.35, y, z))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
-				entity.push(0, 0.08, 0);
-				entity.fallDistance = 2;
-				{
-					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
-					_vars.climbing = true;
-					_vars.syncPlayerVariables(entity);
-				}
-			} else if ((world.getBlockState(BlockPos.containing(x + 0.35, y, z))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
-				entity.push(0, 0.08, 0);
-				entity.fallDistance = 2;
+			if ((world.getBlockState(BlockPos.containing(x, y, z - 0.35))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))
+					|| (world.getBlockState(BlockPos.containing(x, y, z + 0.35))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))
+					|| (world.getBlockState(BlockPos.containing(x - 0.35, y, z))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))
+					|| (world.getBlockState(BlockPos.containing(x + 0.35, y, z))).is(BlockTags.create(ResourceLocation.parse("tloa:climbable")))) {
 				{
 					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
 					_vars.climbing = true;
@@ -67,6 +44,20 @@ public class ClimbingProcedure {
 					TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
 					_vars.climbing = false;
 					_vars.syncPlayerVariables(entity);
+				}
+			}
+			if (entity.getData(TloaModVariables.PLAYER_VARIABLES).can_stamina_drain == false) {
+				if (entity.getData(TloaModVariables.PLAYER_VARIABLES).climbing) {
+					{
+						TloaModVariables.PlayerVariables _vars = entity.getData(TloaModVariables.PLAYER_VARIABLES);
+						_vars.climbing = false;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			} else {
+				if (entity.getData(TloaModVariables.PLAYER_VARIABLES).climbing) {
+					entity.push(0, 0.08, 0);
+					entity.fallDistance = 2;
 				}
 			}
 		}

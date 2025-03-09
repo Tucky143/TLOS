@@ -1,0 +1,48 @@
+{
+  "_fv": 77,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "fabric",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Fabric"
+    },
+    "name": "fabric_recipe",
+    "namespace": "mod"
+  }
+}

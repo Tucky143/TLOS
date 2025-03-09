@@ -1,0 +1,48 @@
+{
+  "_fv": 77,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "paraglider",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Fabric"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:Fabric"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "CUSTOM:Fabric"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Paraglider"
+    },
+    "name": "paraglider_recipe_2",
+    "namespace": "mod"
+  }
+}

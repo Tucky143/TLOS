@@ -581,7 +581,8 @@
           "src/main/resources/data/tloa/worldgen/placed_feature/lost_woods_tree.json",
           "src/main/resources/data/tloa/worldgen/configured_feature/lost_woods_tree.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "LostWoodsFogColor",
@@ -611,7 +612,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "LostWoodsFog",
@@ -641,7 +643,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "LostWood",
@@ -951,7 +954,7 @@
           "src/main/resources/data/tloa/worldgen/configured_feature/lost_tree.json"
         ]
       },
-      "path": "~/Lost Wood"
+      "path": "~/Biomes"
     },
     {
       "name": "CentralKorokForest",
@@ -965,7 +968,8 @@
           "src/main/resources/data/tloa/worldgen/configured_feature/central_korok_forest_tree.json",
           "src/main/resources/data/tloa/worldgen/biome/central_korok_forest.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "BulletTime",
@@ -2748,6 +2752,78 @@
           "src/main/resources/data/tloa/worldgen/structure_set/shrine_of_resurrection.json"
         ]
       }
+    },
+    {
+      "name": "Fabric",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/item/FabricItem.java",
+          "src/main/resources/assets/tloa/models/item/fabric.json"
+        ]
+      }
+    },
+    {
+      "name": "FabricExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabric_extension",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "FabricRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabric_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/fabric_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ParagliderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paraglider_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/paraglider_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ParagliderRecipe2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paraglider_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/paraglider_recipe_2.json"
+        ]
+      }
+    },
+    {
+      "name": "KokiriSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kokiri_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/recipe/kokiri_sword_recipe.json"
+        ]
+      },
+      "path": "~/Swords"
     }
   ],
   "variable_elements": [
@@ -2870,37 +2946,10 @@
     "ITEMS:mod:light_bow": [
       "CUSTOM:LightBow"
     ],
-    "BLOCKS:minecraft:wooden_fences": [
-      "CUSTOM:DekuFence",
-      "CUSTOM:DekuFenceGate"
-    ],
-    "BLOCKS:minecraft:prevent_mob_spawning_inside": [
-      "CUSTOM:SheikahLight",
-      "CUSTOM:SheikahGrate",
-      "CUSTOM:SheikahGrateWall",
-      "CUSTOM:SheikahPlate",
-      "CUSTOM:ChiseledSheikahPlate",
-      "CUSTOM:GlowingChiseledSheikahPlate",
-      "CUSTOM:GlowingSheikahPlate",
-      "CUSTOM:SheikahPlateSlab",
-      "CUSTOM:SheikahPlateStair",
-      "CUSTOM:SheikahPlateWall",
-      "CUSTOM:SheikahStone",
-      "CUSTOM:SheikahStoneSlab",
-      "CUSTOM:SheikahStoneStair",
-      "CUSTOM:SheikahStoneWall"
-    ],
-    "ITEMS:mod:rupee": [
-      "CUSTOM:GreenRupee",
-      "CUSTOM:BlueRupee",
-      "CUSTOM:RedRupee",
-      "CUSTOM:PurpleRupee",
-      "CUSTOM:SilverRupee",
-      "CUSTOM:GoldRupee"
-    ],
-    "BIOMES:minecraft:is_overworld": [
-      "CUSTOM:CentralKorokForest",
-      "CUSTOM:KorokForest"
+    "BLOCKS:minecraft:sand": [],
+    "BIOMES:minecraft:without_wandering_trader_spawns": [
+      "CUSTOM:KorokForest",
+      "CUSTOM:CentralKorokForest"
     ],
     "BLOCKS:minecraft:logs": [
       "CUSTOM:LostLog",
@@ -2909,38 +2958,15 @@
     "BLOCKS:minecraft:leaves": [
       "~CUSTOM:DekuLeaves"
     ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:DekuPlanks",
-      "~CUSTOM:DekuLog",
-      "~CUSTOM:DekuWood",
-      "~CUSTOM:LostPlanks",
-      "~CUSTOM:LostLog",
-      "~CUSTOM:LostWood"
+    "BIOMES:minecraft:mineshaft_blocking": [
+      "CUSTOM:KorokForest",
+      "CUSTOM:CentralKorokForest"
     ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:SheikahStoneSlab",
       "~CUSTOM:SheikahPlateSlab",
       "~CUSTOM:DekuSlab",
       "~CUSTOM:LostSlab"
-    ],
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:SheikahStoneWall",
-      "~CUSTOM:SheikahStoneStair",
-      "~CUSTOM:SheikahStoneSlab",
-      "~CUSTOM:SheikahStone",
-      "~CUSTOM:SheikahPlateWall",
-      "~CUSTOM:SheikahPlateStair",
-      "~CUSTOM:SheikahPlateSlab",
-      "~CUSTOM:GlowingSheikahPlate",
-      "~CUSTOM:GlowingChiseledSheikahPlate",
-      "~CUSTOM:ChiseledSheikahPlate",
-      "~CUSTOM:SheikahPlate"
-    ],
-    "BLOCKS:minecraft:fences": [
-      "~CUSTOM:DekuFence",
-      "~CUSTOM:LostFence",
-      "CUSTOM:DekuFenceGate",
-      "CUSTOM:LostFenceGate"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:SheikahStoneWall",
@@ -2954,9 +2980,6 @@
       "~CUSTOM:GlowingChiseledSheikahPlate",
       "~CUSTOM:ChiseledSheikahPlate",
       "~CUSTOM:SheikahPlate"
-    ],
-    "ITEMS:minecraft:enchantable/bow": [
-      "CUSTOM:LightBow"
     ],
     "BLOCKS:mod:climbable": [
       "Blocks.DIRT#0",
@@ -3012,10 +3035,8 @@
       "Blocks.NETHER_BRICK",
       "Blocks.RED_NETHER_BRICK"
     ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:SheikahStoneWall",
-      "~CUSTOM:SheikahPlateWall",
-      "~CUSTOM:SheikahGrateWall"
+    "ITEMS:minecraft:enchantable/bow": [
+      "CUSTOM:LightBow"
     ],
     "BIOMES:mod:is_zelda": [
       "CUSTOM:CentralKorokForest",
@@ -3041,7 +3062,18 @@
       "~CUSTOM:MasterSwordPowered",
       "~CUSTOM:MasterSword"
     ],
-    "BLOCKS:minecraft:animals_spawnable_on": [
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:LostPlanks",
+      "CUSTOM:DekuPlanks"
+    ],
+    "BIOMES:minecraft:has_closer_water_fog": [
+      "CUSTOM:KorokForest"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "CUSTOM:DekuFence",
+      "CUSTOM:DekuFenceGate"
+    ],
+    "BLOCKS:minecraft:prevent_mob_spawning_inside": [
       "CUSTOM:SheikahLight",
       "CUSTOM:SheikahGrate",
       "CUSTOM:SheikahGrateWall",
@@ -3057,9 +3089,66 @@
       "CUSTOM:SheikahStoneStair",
       "CUSTOM:SheikahStoneWall"
     ],
-    "ITEMS:minecraft:planks": [
-      "CUSTOM:LostPlanks",
-      "CUSTOM:DekuPlanks"
+    "ITEMS:mod:rupee": [
+      "CUSTOM:GreenRupee",
+      "CUSTOM:BlueRupee",
+      "CUSTOM:RedRupee",
+      "CUSTOM:PurpleRupee",
+      "CUSTOM:SilverRupee",
+      "CUSTOM:GoldRupee"
+    ],
+    "BIOMES:minecraft:is_overworld": [
+      "CUSTOM:CentralKorokForest",
+      "CUSTOM:KorokForest"
+    ],
+    "BLOCKS:minecraft:dirt": [],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:DekuPlanks",
+      "~CUSTOM:DekuLog",
+      "~CUSTOM:DekuWood",
+      "~CUSTOM:LostPlanks",
+      "~CUSTOM:LostLog",
+      "~CUSTOM:LostWood"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahStoneStair",
+      "~CUSTOM:SheikahStoneSlab",
+      "~CUSTOM:SheikahStone",
+      "~CUSTOM:SheikahPlateWall",
+      "~CUSTOM:SheikahPlateStair",
+      "~CUSTOM:SheikahPlateSlab",
+      "~CUSTOM:GlowingSheikahPlate",
+      "~CUSTOM:GlowingChiseledSheikahPlate",
+      "~CUSTOM:ChiseledSheikahPlate",
+      "~CUSTOM:SheikahPlate"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:DekuFence",
+      "~CUSTOM:LostFence",
+      "CUSTOM:DekuFenceGate",
+      "CUSTOM:LostFenceGate"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahPlateWall",
+      "~CUSTOM:SheikahGrateWall"
+    ],
+    "BLOCKS:minecraft:animals_spawnable_on": [
+      "CUSTOM:SheikahLight",
+      "CUSTOM:SheikahGrate",
+      "CUSTOM:SheikahGrateWall",
+      "CUSTOM:SheikahPlate",
+      "CUSTOM:ChiseledSheikahPlate",
+      "CUSTOM:GlowingChiseledSheikahPlate",
+      "CUSTOM:GlowingSheikahPlate",
+      "CUSTOM:SheikahPlateSlab",
+      "CUSTOM:SheikahPlateStair",
+      "CUSTOM:SheikahPlateWall",
+      "CUSTOM:SheikahStone",
+      "CUSTOM:SheikahStoneSlab",
+      "CUSTOM:SheikahStoneStair",
+      "CUSTOM:SheikahStoneWall"
     ]
   },
   "tab_element_order": {
@@ -3088,7 +3177,8 @@
       "HylianShield",
       "DekuShield",
       "StaminaVessel",
-      "HeartContainer"
+      "HeartContainer",
+      "Fabric"
     ]
   },
   "language_map": {
@@ -3162,6 +3252,7 @@
       "block.tloa.lost_stairs": "Lost Stairs",
       "block.tlom.lost_button": "Lost Button",
       "block.tlos.lost_wood": "Lost Wood",
+      "item.tloa.fabric": "Fabric",
       "block.tloa.lost_slab": "Lost Slab",
       "item_group.tloa.tloa_items": "TLOA Items",
       "entity.tloa.square_remote_bomb": "Square Remote Bomb",
@@ -3302,6 +3393,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Biomes",
+        "children": []
       }
     ]
   },

@@ -51,14 +51,14 @@ public class TloaModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.4f), Climate.Parameter.span(-0.5f, 0f), Climate.Parameter.span(0.4999f, 1f), Climate.Parameter.span(0f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "lost_woods")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.4f), Climate.Parameter.span(-0.5f, 0f), Climate.Parameter.span(0.4999f, 1f), Climate.Parameter.span(0f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "lost_woods")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 0.5f), Climate.Parameter.span(-0.1f, 0.5f), Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.7f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "central_korok_forest")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 0.5f), Climate.Parameter.span(-0.1f, 0.5f), Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.7f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "central_korok_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.5f, 0.1f), Climate.Parameter.span(0.1f, 1f), Climate.Parameter.span(0f, 1f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "lost_woods")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.5f, 0.1f), Climate.Parameter.span(0.1f, 1f), Climate.Parameter.span(0f, 1f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "lost_woods")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 0.5f), Climate.Parameter.span(-0.2f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "central_korok_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 0.5f), Climate.Parameter.span(-0.2f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("tloa", "central_korok_forest")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));

@@ -52,6 +52,7 @@ import net.mcreator.tloa.item.FrostspearItem;
 import net.mcreator.tloa.item.FrostbladeItem;
 import net.mcreator.tloa.item.FlamespearItem;
 import net.mcreator.tloa.item.FlamebladeItem;
+import net.mcreator.tloa.item.FabricItem;
 import net.mcreator.tloa.item.DekuShieldItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
 import net.mcreator.tloa.TloaMod;
@@ -118,6 +119,7 @@ public class TloaModItems {
 	public static final DeferredItem<Item> THUNDERSPEAR = REGISTRY.register("thunderspear", ThunderspearItem::new);
 	public static final DeferredItem<Item> STAMINA_VESSEL = REGISTRY.register("stamina_vessel", StaminaVesselItem::new);
 	public static final DeferredItem<Item> HEART_CONTAINER = REGISTRY.register("heart_container", HeartContainerItem::new);
+	public static final DeferredItem<Item> FABRIC = REGISTRY.register("fabric", FabricItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

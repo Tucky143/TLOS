@@ -1,20 +1,3 @@
-//undo
-/redo
-//stack back
-//undo
-//stack me
-//undo
-//stack back
-//move back 1
-//stack back
-//move back 1
-//replace stone air
-//replace air
-//wand
-/tool
-/tool stacker dirt
-/tool navwand
-//undo
 //redo
 /tool farwand
 /tool unbind
@@ -48,3 +31,20 @@
 //replace air dirt
 /locate structure tloa:shrine_of_resurrection
 /tp @s -640 ~ -640
+/locate biome tloa:lost_woods
+/tp @s 498 -21 1050
+/locate biome tloa:lost_woods
+/tp @s 290 -40 1317
+/tp 0 ~ 0
+/locate biome tloa:lost_woods
+/tp @s 491 -28 -780
+/locate biome tloa:lost_woods
+/tp @s 488 -48 -774
+/tp 0 ~ 0
+/locate biome tloa:lost_woods
+/tp @s -1094 -23 -811
+/locate biome tloa:lost_woods
+/tp @s -1111 89 -1610
+/tp 0 ~ 0
+/locate biome tloa:lost_woods
+/tp @s 596 95 -994

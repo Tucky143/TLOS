@@ -48,6 +48,7 @@ public class TloaModTabs {
 				tabData.accept(TloaModItems.DEKU_SHIELD.get());
 				tabData.accept(TloaModItems.STAMINA_VESSEL.get());
 				tabData.accept(TloaModItems.HEART_CONTAINER.get());
+				tabData.accept(TloaModItems.FABRIC.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TLOA_BLOCKS_TAB = REGISTRY.register("tloa_blocks_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tloa.tloa_blocks_tab")).icon(() -> new ItemStack(TloaModBlocks.GLOWING_CHISELED_SHEIKAH_PLATE.get())).displayItems((parameters, tabData) -> {
@@ -90,6 +91,8 @@ public class TloaModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(TloaModItems.SHEIKAH_SLATE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(TloaModItems.FABRIC.get());
 		}
 	}
 }
