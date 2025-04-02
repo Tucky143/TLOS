@@ -35,7 +35,7 @@ public class MagnesisAbilityProcedure {
 			lookZ = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ();
 			if (!world.getEntitiesOfClass(LivingEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(lookX, lookY, lookZ)).inflate(3 / 2d), e -> true).isEmpty()) {
 				new Object() {
-					void timedLoop(int current, int total, int ticks) {
+					void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 						if (entity.getData(TloaModVariables.PLAYER_VARIABLES).magnesis_active) {
 							for (Entity entityiterator : world.getEntities(entity, new AABB(
 									(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()
@@ -75,8 +75,8 @@ public class MagnesisAbilityProcedure {
 						}
 						final int tick2 = ticks;
 						TloaMod.queueServerWork(tick2, () -> {
-							if (total > current + 1) {
-								timedLoop(current + 1, total, tick2);
+							if (timedlooptotal > timedloopiterator + 1) {
+								timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 							}
 						});
 					}

@@ -26,12 +26,12 @@ public class StasisAbilityProcedure {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false));
 					new Object() {
-						void timedLoop(int current, int total, int ticks) {
+						void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 							entityiterator.setDeltaMovement(new Vec3(0, 0.06, 0));
 							final int tick2 = ticks;
 							TloaMod.queueServerWork(tick2, () -> {
-								if (total > current + 1) {
-									timedLoop(current + 1, total, tick2);
+								if (timedlooptotal > timedloopiterator + 1) {
+									timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 								}
 							});
 						}

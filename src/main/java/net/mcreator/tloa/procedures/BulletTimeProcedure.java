@@ -44,7 +44,7 @@ public class BulletTimeProcedure {
 			if (!entity.onGround()) {
 				if (0.08 < Math.abs(entity.getDeltaMovement().y())) {
 					new Object() {
-						void timedLoop(int current, int total, int ticks) {
+						void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/crossbow")))
 									|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/bow")))) {
 								if (!entity.onGround()) {
@@ -84,8 +84,8 @@ public class BulletTimeProcedure {
 							}
 							final int tick2 = ticks;
 							TloaMod.queueServerWork(tick2, () -> {
-								if (total > current + 1) {
-									timedLoop(current + 1, total, tick2);
+								if (timedlooptotal > timedloopiterator + 1) {
+									timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 								}
 							});
 						}

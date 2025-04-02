@@ -32,7 +32,7 @@ public class SquareRemoteBombRightClickedOnEntityProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 			new Object() {
-				void timedLoop(int current, int total, int ticks) {
+				void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 					{
 						Entity _ent = entity;
 						_ent.teleportTo((sourceentity.getX()), (sourceentity.getY() + 1.5), (sourceentity.getZ()));
@@ -46,8 +46,8 @@ public class SquareRemoteBombRightClickedOnEntityProcedure {
 					}
 					final int tick2 = ticks;
 					TloaMod.queueServerWork(tick2, () -> {
-						if (total > current + 1) {
-							timedLoop(current + 1, total, tick2);
+						if (timedlooptotal > timedloopiterator + 1) {
+							timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 						}
 					});
 				}
