@@ -16,5 +16,7 @@ public class LightArrowProjectileHitsBlockProcedure {
 				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("tloa:light_arrow_splash")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 			}
 		}
+		if (world instanceof Level _level && !_level.isClientSide())
+			_level.explode(null, x, y, z, 100, Level.ExplosionInteraction.TNT);
 	}
 }
