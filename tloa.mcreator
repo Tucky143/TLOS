@@ -2341,7 +2341,8 @@
         "files": [
           "src/main/java/net/mcreator/tloa/potion/ShockedMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "ThunderBlade",
@@ -2562,7 +2563,8 @@
         "files": [
           "src/main/java/net/mcreator/tloa/potion/FrozenMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "FrostbladeLivingEntityIsHitWithTool",
@@ -2824,6 +2826,147 @@
         ]
       },
       "path": "~/Swords"
+    },
+    {
+      "name": "LightningShockedEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_shocked_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/LightningShockedEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "MossySheikahPlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossy_sheikah_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tloa/loot_table/blocks/mossy_sheikah_plate.json",
+          "src/main/java/net/mcreator/tloa/block/MossySheikahPlateBlock.java",
+          "src/main/resources/assets/tloa/blockstates/mossy_sheikah_plate.json",
+          "src/main/resources/assets/tloa/models/block/mossy_sheikah_plate.json",
+          "src/main/resources/assets/tloa/models/item/mossy_sheikah_plate.json"
+        ]
+      },
+      "path": "~/Sheikah"
+    },
+    {
+      "name": "BombPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/BombPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BombEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/BombEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bomb",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/client/renderer/BombRenderer.java",
+          "src/main/java/net/mcreator/tloa/entity/BombEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BombItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tloa/models/item/bomb_item.json",
+          "src/main/java/net/mcreator/tloa/item/BombItemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BombItemRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tloa/procedures/BombItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2996,12 +3139,6 @@
       "CUSTOM:KorokForest",
       "CUSTOM:CentralKorokForest"
     ],
-    "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:SheikahStoneSlab",
-      "~CUSTOM:SheikahPlateSlab",
-      "~CUSTOM:DekuSlab",
-      "~CUSTOM:LostSlab"
-    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:DekuPlanks",
       "~CUSTOM:DekuLog",
@@ -3010,20 +3147,14 @@
       "~CUSTOM:LostLog",
       "~CUSTOM:LostWood"
     ],
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:SheikahStoneWall",
-      "~CUSTOM:SheikahStoneStair",
+    "BLOCKS:minecraft:slabs": [
       "~CUSTOM:SheikahStoneSlab",
-      "~CUSTOM:SheikahStone",
-      "~CUSTOM:SheikahPlateWall",
-      "~CUSTOM:SheikahPlateStair",
       "~CUSTOM:SheikahPlateSlab",
-      "~CUSTOM:GlowingSheikahPlate",
-      "~CUSTOM:GlowingChiseledSheikahPlate",
-      "~CUSTOM:ChiseledSheikahPlate",
-      "~CUSTOM:SheikahPlate"
+      "~CUSTOM:DekuSlab",
+      "~CUSTOM:LostSlab"
     ],
-    "BLOCKS:minecraft:needs_stone_tool": [
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MossySheikahPlate",
       "~CUSTOM:SheikahStoneWall",
       "~CUSTOM:SheikahStoneStair",
       "~CUSTOM:SheikahStoneSlab",
@@ -3041,6 +3172,20 @@
       "~CUSTOM:LostFence",
       "CUSTOM:DekuFenceGate",
       "CUSTOM:LostFenceGate"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:MossySheikahPlate",
+      "~CUSTOM:SheikahStoneWall",
+      "~CUSTOM:SheikahStoneStair",
+      "~CUSTOM:SheikahStoneSlab",
+      "~CUSTOM:SheikahStone",
+      "~CUSTOM:SheikahPlateWall",
+      "~CUSTOM:SheikahPlateStair",
+      "~CUSTOM:SheikahPlateSlab",
+      "~CUSTOM:GlowingSheikahPlate",
+      "~CUSTOM:GlowingChiseledSheikahPlate",
+      "~CUSTOM:ChiseledSheikahPlate",
+      "~CUSTOM:SheikahPlate"
     ],
     "BLOCKS:mod:climbable": [
       "Blocks.DIRT#0",
@@ -3114,20 +3259,6 @@
       "~CUSTOM:DekuStairs",
       "~CUSTOM:LostStairs"
     ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:Thunderspear",
-      "~CUSTOM:Flamespear",
-      "~CUSTOM:Frostspear",
-      "~CUSTOM:GreatThunderblade",
-      "~CUSTOM:ThunderBlade",
-      "~CUSTOM:GreatFrostblade",
-      "~CUSTOM:Frostblade",
-      "~CUSTOM:GreatFlameblade",
-      "~CUSTOM:Flameblade",
-      "~CUSTOM:KokiriSword",
-      "~CUSTOM:MasterSwordPowered",
-      "~CUSTOM:MasterSword"
-    ],
     "BLOCKS:minecraft:animals_spawnable_on": [
       "CUSTOM:SheikahLight",
       "CUSTOM:SheikahGrate",
@@ -3143,6 +3274,20 @@
       "CUSTOM:SheikahStoneSlab",
       "CUSTOM:SheikahStoneStair",
       "CUSTOM:SheikahStoneWall"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Thunderspear",
+      "~CUSTOM:Flamespear",
+      "~CUSTOM:Frostspear",
+      "~CUSTOM:GreatThunderblade",
+      "~CUSTOM:ThunderBlade",
+      "~CUSTOM:GreatFrostblade",
+      "~CUSTOM:Frostblade",
+      "~CUSTOM:GreatFlameblade",
+      "~CUSTOM:Flameblade",
+      "~CUSTOM:KokiriSword",
+      "~CUSTOM:MasterSwordPowered",
+      "~CUSTOM:MasterSword"
     ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:LostPlanks",
@@ -3176,7 +3321,44 @@
       "DekuShield",
       "StaminaVessel",
       "HeartContainer",
-      "Fabric"
+      "Fabric",
+      "BombItem"
+    ],
+    "CUSTOM:TLOSBlocks": [
+      "LostWood",
+      "LostLog",
+      "LostPlanks",
+      "LostStairs",
+      "LostSlab",
+      "LostFence",
+      "LostFenceGate",
+      "LostPressurePlate",
+      "LostButton",
+      "DekuWood",
+      "DekuLog",
+      "DekuPlanks",
+      "DekuLeaves",
+      "DekuStairs",
+      "DekuSlab",
+      "DekuFence",
+      "DekuFenceGate",
+      "DekuPressurePlate",
+      "DekuButton",
+      "SheikahLight",
+      "SheikahGrate",
+      "SheikahGrateWall",
+      "MossySheikahPlate",
+      "SheikahPlate",
+      "ChiseledSheikahPlate",
+      "GlowingChiseledSheikahPlate",
+      "GlowingSheikahPlate",
+      "SheikahPlateSlab",
+      "SheikahPlateStair",
+      "SheikahPlateWall",
+      "SheikahStone",
+      "SheikahStoneSlab",
+      "SheikahStoneStair",
+      "SheikahStoneWall"
     ]
   },
   "language_map": {
@@ -3201,8 +3383,8 @@
       "block.tloa.sheikah_stone": "Sheikah Stone",
       "item.tlom.green_rupee": "Green Rupee",
       "block.tloa.deku_fence": "Deku Fence",
-      "block.tloa.lost_planks": "Lost Planks",
       "gui.tloa.sheikah_slate_gui.label_master_cycle": "Master Cycle",
+      "block.tloa.lost_planks": "Lost Planks",
       "key.tloa.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tloa.great_flameblade": "Great Flameblade",
       "item.tloa.sheikah_slate": "Sheikah Slate",
@@ -3269,11 +3451,14 @@
       "item.tloa.stamina_vessel": "Stamina Vessel",
       "biome.tlos.central_korok_forest": "Central Korok Forest",
       "block.tloa.lost_fence": "Lost Fence",
+      "block.tloa.mossy_sheikah_plate": "Sheikah Plate",
       "item.tlos.green_rupee.description_0": "Item representing 1 rupee",
       "item.tloa.light_arrow_item": "Light Arrow",
       "key.tlos.open_sheikah_slate_gui": "Open Sheikah Slate",
       "item.tlom.purple_rupee": "Green Rupee",
+      "item.tloa.bomb_item": "Bomb",
       "item.tlos.master_sword_powered": "Master Sword (POWERED)",
+      "entity.tloa.bomb": "Bomb",
       "effect.tloa.frozen": "Frozen",
       "block.tloa.deku_slab": "Deku Slab",
       "block.tlos.lost_log": "Lost Log",
@@ -3394,6 +3579,10 @@
       },
       {
         "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]

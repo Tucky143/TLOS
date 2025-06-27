@@ -20,6 +20,7 @@ import net.mcreator.tloa.block.SheikahPlateBlock;
 import net.mcreator.tloa.block.SheikahLightBlock;
 import net.mcreator.tloa.block.SheikahGrateWallBlock;
 import net.mcreator.tloa.block.SheikahGrateBlock;
+import net.mcreator.tloa.block.MossySheikahPlateBlock;
 import net.mcreator.tloa.block.LostWoodBlock;
 import net.mcreator.tloa.block.LostStairsBlock;
 import net.mcreator.tloa.block.LostSlabBlock;
@@ -79,6 +80,7 @@ public class TloaModBlocks {
 	public static final DeferredBlock<Block> SHEIKAH_STONE_SLAB = REGISTRY.register("sheikah_stone_slab", SheikahStoneSlabBlock::new);
 	public static final DeferredBlock<Block> SHEIKAH_STONE_STAIR = REGISTRY.register("sheikah_stone_stair", SheikahStoneStairBlock::new);
 	public static final DeferredBlock<Block> SHEIKAH_STONE_WALL = REGISTRY.register("sheikah_stone_wall", SheikahStoneWallBlock::new);
+	public static final DeferredBlock<Block> MOSSY_SHEIKAH_PLATE = REGISTRY.register("mossy_sheikah_plate", MossySheikahPlateBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

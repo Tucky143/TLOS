@@ -12,6 +12,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.mcreator.tloa.client.renderer.SquareRemoteBombRenderer;
 import net.mcreator.tloa.client.renderer.MasterCycleZERORenderer;
 import net.mcreator.tloa.client.renderer.LightArrowRenderer;
+import net.mcreator.tloa.client.renderer.BombRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class TloaModEntityRenderers {
@@ -20,5 +21,6 @@ public class TloaModEntityRenderers {
 		event.registerEntityRenderer(TloaModEntities.MASTER_CYCLE_ZERO.get(), MasterCycleZERORenderer::new);
 		event.registerEntityRenderer(TloaModEntities.SQUARE_REMOTE_BOMB.get(), SquareRemoteBombRenderer::new);
 		event.registerEntityRenderer(TloaModEntities.LIGHT_ARROW.get(), LightArrowRenderer::new);
+		event.registerEntityRenderer(TloaModEntities.BOMB.get(), BombRenderer::new);
 	}
 }

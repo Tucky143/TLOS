@@ -54,6 +54,7 @@ import net.mcreator.tloa.item.FlamespearItem;
 import net.mcreator.tloa.item.FlamebladeItem;
 import net.mcreator.tloa.item.FabricItem;
 import net.mcreator.tloa.item.DekuShieldItem;
+import net.mcreator.tloa.item.BombItemItem;
 import net.mcreator.tloa.item.BlueRupeeItem;
 import net.mcreator.tloa.TloaMod;
 
@@ -120,6 +121,8 @@ public class TloaModItems {
 	public static final DeferredItem<Item> STAMINA_VESSEL = REGISTRY.register("stamina_vessel", StaminaVesselItem::new);
 	public static final DeferredItem<Item> HEART_CONTAINER = REGISTRY.register("heart_container", HeartContainerItem::new);
 	public static final DeferredItem<Item> FABRIC = REGISTRY.register("fabric", FabricItem::new);
+	public static final DeferredItem<Item> MOSSY_SHEIKAH_PLATE = block(TloaModBlocks.MOSSY_SHEIKAH_PLATE);
+	public static final DeferredItem<Item> BOMB_ITEM = REGISTRY.register("bomb_item", BombItemItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

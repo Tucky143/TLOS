@@ -19,6 +19,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.tloa.entity.SquareRemoteBombEntity;
 import net.mcreator.tloa.entity.MasterCycleZEROEntity;
 import net.mcreator.tloa.entity.LightArrowEntity;
+import net.mcreator.tloa.entity.BombEntity;
 import net.mcreator.tloa.TloaMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -32,6 +33,8 @@ public class TloaModEntities {
 					.sized(0.6f, 0.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LightArrowEntity>> LIGHT_ARROW = register("light_arrow",
 			EntityType.Builder.<LightArrowEntity>of(LightArrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.2f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BombEntity>> BOMB = register("bomb",
+			EntityType.Builder.<BombEntity>of(BombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).fireImmune().sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -43,11 +46,13 @@ public class TloaModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		MasterCycleZEROEntity.init(event);
 		SquareRemoteBombEntity.init(event);
+		BombEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MASTER_CYCLE_ZERO.get(), MasterCycleZEROEntity.createAttributes().build());
 		event.put(SQUARE_REMOTE_BOMB.get(), SquareRemoteBombEntity.createAttributes().build());
+		event.put(BOMB.get(), BombEntity.createAttributes().build());
 	}
 }

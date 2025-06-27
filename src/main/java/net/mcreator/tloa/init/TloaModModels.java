@@ -12,6 +12,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.mcreator.tloa.client.model.Modelarrow;
 import net.mcreator.tloa.client.model.ModelSquareRemoteBomb;
 import net.mcreator.tloa.client.model.ModelMasterCycle;
+import net.mcreator.tloa.client.model.ModelBomb;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class TloaModModels {
@@ -19,6 +20,7 @@ public class TloaModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelSquareRemoteBomb.LAYER_LOCATION, ModelSquareRemoteBomb::createBodyLayer);
 		event.registerLayerDefinition(Modelarrow.LAYER_LOCATION, Modelarrow::createBodyLayer);
+		event.registerLayerDefinition(ModelBomb.LAYER_LOCATION, ModelBomb::createBodyLayer);
 		event.registerLayerDefinition(ModelMasterCycle.LAYER_LOCATION, ModelMasterCycle::createBodyLayer);
 	}
 }

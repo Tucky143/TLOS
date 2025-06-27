@@ -1,5 +1,3 @@
-//redo
-/tool farwand
 /tool unbind
 //brush
 //brush smooth dirt
@@ -48,3 +46,5 @@
 /tp 0 ~ 0
 /locate biome tloa:lost_woods
 /tp @s 596 95 -994
+/gamemode c
+/gamemode creative
